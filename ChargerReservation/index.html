@@ -43,6 +43,8 @@
     
       <link rel="stylesheet" href="../assets/_mkdocstrings.css">
     
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -255,16 +257,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modules.ws.dtos.WebSocketEvent.WebSocketEvent" class="md-nav__link">
-    WebSocketEvent
+  <a href="#connect-url" class="md-nav__link">
+    Connect URL
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#modules.ws.dtos.WebSocketEventRequestContext.WebSocketEventRequestContext" class="md-nav__link">
-    WebSocketEventRequestContext
+  <a href="#reserving-a-charger" class="md-nav__link">
+    Reserving a Charger
   </a>
+  
+    <nav class="md-nav" aria-label="Reserving a Charger">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modules.charger_reservation.dtos.ReserveChargerRequestDTO.ReserveChargerRequestDTO" class="md-nav__link">
+    ReserveChargerRequestDTO
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modules.charger_reservation.enums.ReservationCommandEnum.ReservationCommandEnum" class="md-nav__link">
+    ReservationCommandEnum
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -303,16 +325,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modules.ws.dtos.WebSocketEvent.WebSocketEvent" class="md-nav__link">
-    WebSocketEvent
+  <a href="#connect-url" class="md-nav__link">
+    Connect URL
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#modules.ws.dtos.WebSocketEventRequestContext.WebSocketEventRequestContext" class="md-nav__link">
-    WebSocketEventRequestContext
+  <a href="#reserving-a-charger" class="md-nav__link">
+    Reserving a Charger
   </a>
+  
+    <nav class="md-nav" aria-label="Reserving a Charger">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modules.charger_reservation.dtos.ReserveChargerRequestDTO.ReserveChargerRequestDTO" class="md-nav__link">
+    ReserveChargerRequestDTO
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modules.charger_reservation.enums.ReservationCommandEnum.ReservationCommandEnum" class="md-nav__link">
+    ReservationCommandEnum
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -332,27 +374,56 @@
 
 
 <h1 id="charger-reservation">Charger Reservation</h1>
+<h2 id="connect-url">Connect URL</h2>
+<pre><code>THIS IS A SECRET. MESSAGE A DEV.
+</code></pre>
+<h2 id="reserving-a-charger">Reserving a Charger</h2>
+<ol>
+<li>
+<p>The client connects to the websocket.</p>
+</li>
+<li>
+<p>Upon connecting, the client sends a
+<a class="autorefs autorefs-internal" href="#modules.charger_reservation.dtos.ReserveChargerRequestDTO.ReserveChargerRequestDTO">ReserveChargerRequestDTO</a>
+message with <code>command</code> set to <code>START</code>.</p>
+</li>
+<li>
+<p>Before paying, the client sends a
+<a class="autorefs autorefs-internal" href="#modules.charger_reservation.dtos.ReserveChargerRequestDTO.ReserveChargerRequestDTO">ReserveChargerRequestDTO</a>
+message with <code>command</code> set to <code>HOLD</code>.</p>
+</li>
+<li>
+<p>Upon returning, the client sends a
+<a class="autorefs autorefs-internal" href="#modules.charger_reservation.dtos.ReserveChargerRequestDTO.ReserveChargerRequestDTO">ReserveChargerRequestDTO</a>
+message with <code>command</code> set to <code>RESUME</code>.</p>
+</li>
+<li>
+<p>[Optional] Upon returning, the client sends a
+<a class="autorefs autorefs-internal" href="#modules.charger_reservation.dtos.ReserveChargerRequestDTO.ReserveChargerRequestDTO">ReserveChargerRequestDTO</a>
+message with <code>command</code> set to <code>CANCEL</code>.</p>
+</li>
+</ol>
 
 
 <div class="doc doc-object doc-class">
 
 
 
-<h2 class="doc doc-heading" id="modules.ws.dtos.WebSocketEvent.WebSocketEvent">
-        <code>WebSocketEvent</code>
+<h3 class="doc doc-heading" id="modules.charger_reservation.dtos.ReserveChargerRequestDTO.ReserveChargerRequestDTO">
+        <code>ReserveChargerRequestDTO</code>
 
   
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
   </span>
 
-</h2>
+</h3>
 
 
   <div class="doc doc-contents first">
 
   
-      <p>This comes from AWS.</p>
+      <p>This should be the message of the request from the client.</p>
 
   <p><strong>Attributes:</strong></p>
   <table>
@@ -365,24 +436,68 @@
     </thead>
     <tbody>
         <tr>
-          <td><code>requestContext</code></td>
-          <td>
-                <code><a class="autorefs autorefs-internal" title="modules.ws.dtos.WebSocketEventRequestContext.WebSocketEventRequestContext" href="#modules.ws.dtos.WebSocketEventRequestContext.WebSocketEventRequestContext">WebSocketEventRequestContext</a></code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td><code>body</code></td>
+          <td><code>action</code></td>
           <td>
                 <code>str</code>
           </td>
           <td>
             <div class="doc-md-description">
-              
+              <p>ALWAYS SET TO 'reserveCharger'</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>site_id</code></td>
+          <td>
+                <code>int</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>SITE OF CHARGER TO RESERVE</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>charger_id</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>CHARGER TO RESERVE</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>connector_id</code></td>
+          <td>
+                <code>int</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>CONNECTOR TO BE USED WITHIN THE CHARGER</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>command</code></td>
+          <td>
+                <code><span title="typing.Union">Union</span>[str, <a class="autorefs autorefs-internal" title="modules.charger_reservation.enums.ReservationCommandEnum.ReservationCommandEnum" href="#modules.charger_reservation.enums.ReservationCommandEnum.ReservationCommandEnum">ReservationCommandEnum</a>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>SHOULD BE ONE OF THE ENUM</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>email</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>EMAIL OF RESERVER</p>
             </div>
           </td>
         </tr>
@@ -415,21 +530,16 @@
 
 
 
-<h2 class="doc doc-heading" id="modules.ws.dtos.WebSocketEventRequestContext.WebSocketEventRequestContext">
-        <code>WebSocketEventRequestContext</code>
+<h3 class="doc doc-heading" id="modules.charger_reservation.enums.ReservationCommandEnum.ReservationCommandEnum">
+        <code>ReservationCommandEnum</code>
 
-  
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
-  </span>
 
-</h2>
+</h3>
 
 
   <div class="doc doc-contents first">
 
   
-      <p>This comes from AWS.</p>
 
   <p><strong>Attributes:</strong></p>
   <table>
@@ -442,46 +552,42 @@
     </thead>
     <tbody>
         <tr>
-          <td><code>routeKey</code></td>
+          <td><code>START</code></td>
           <td>
-                <code>str</code>
           </td>
           <td>
             <div class="doc-md-description">
-              
+              <p>USED UPON CONNECTING TO THE WEBSOCKET</p>
             </div>
           </td>
         </tr>
         <tr>
-          <td><code>eventType</code></td>
+          <td><code>HOLD</code></td>
           <td>
-                <code>str</code>
           </td>
           <td>
             <div class="doc-md-description">
-              
+              <p>USED JUST BEFORE PAYMENT REDIRECTION</p>
             </div>
           </td>
         </tr>
         <tr>
-          <td><code>stage</code></td>
+          <td><code>RESUME</code></td>
           <td>
-                <code>str</code>
           </td>
           <td>
             <div class="doc-md-description">
-              
+              <p>USED AFTER PAYING</p>
             </div>
           </td>
         </tr>
         <tr>
-          <td><code>connectionId</code></td>
+          <td><code>CANCEL</code></td>
           <td>
-                <code>str</code>
           </td>
           <td>
             <div class="doc-md-description">
-              
+              <p>USED TO CANCEL RESERVATION</p>
             </div>
           </td>
         </tr>
