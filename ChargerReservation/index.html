@@ -290,6 +290,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#modules.charger_reservation.enums.ReservationErrorEnum.ReservationErrorEnum" class="md-nav__link">
+    ReservationErrorEnum
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -358,6 +365,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#modules.charger_reservation.enums.ReservationErrorEnum.ReservationErrorEnum" class="md-nav__link">
+    ReservationErrorEnum
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -386,21 +400,41 @@
 <p>Upon connecting, the client sends a
 <a class="autorefs autorefs-internal" href="#modules.charger_reservation.dtos.ReserveChargerRequestDTO.ReserveChargerRequestDTO">message</a>
 with <code>command</code> set to <code>START</code>.</p>
+<ul>
+<li>If there is an existing reservation within the time limit, an error will be thrown.</li>
+<li>If there is an existing reservation past the time limit, the reservation will be overwritten.</li>
+<li>If the client disconnects without sending <code>HOLD</code> prior, the reservation will be cancelled.</li>
+<li>If the charger is not <code>Preparing</code>, an error will be thrown.</li>
+</ul>
 </li>
 <li>
 <p>Before paying, the client sends a
 <a class="autorefs autorefs-internal" href="#modules.charger_reservation.dtos.ReserveChargerRequestDTO.ReserveChargerRequestDTO">message</a>
 with <code>command</code> set to <code>HOLD</code>.</p>
+<ul>
+<li>If reservation does not exist, an error will be thrown.</li>
+<li>If a different user email tries to hold the reservation, an error will be thrown.</li>
+<li>If the reservation is not active, an error will be thrown.</li>
+</ul>
 </li>
 <li>
 <p>Upon returning, the client sends a
 <a class="autorefs autorefs-internal" href="#modules.charger_reservation.dtos.ReserveChargerRequestDTO.ReserveChargerRequestDTO">message</a>
 with <code>command</code> set to <code>RESUME</code>.</p>
+<ul>
+<li>If reservation does not exist, an error will be thrown.</li>
+<li>If a different user email tries to hold the reservation, an error will be thrown.</li>
+<li>If the reservation is not on hold, an error will be thrown.</li>
+</ul>
 </li>
 <li>
 <p>[Optional] Upon returning, the client sends a
 <a class="autorefs autorefs-internal" href="#modules.charger_reservation.dtos.ReserveChargerRequestDTO.ReserveChargerRequestDTO">message</a>
 with <code>command</code> set to <code>CANCEL</code>.</p>
+<ul>
+<li>If reservation does not exist, an error will be thrown.</li>
+<li>If a different user email tries to hold the reservation, an error will be thrown.</li>
+</ul>
 </li>
 </ol>
 
@@ -615,6 +649,127 @@ with <code>command</code> set to <code>CANCEL</code>.</p>
   </div>
 
 </div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 class="doc doc-heading" id="modules.charger_reservation.enums.ReservationErrorEnum.ReservationErrorEnum">
+        <code>ReservationErrorEnum</code>
+
+
+</h2>
+
+
+  <div class="doc doc-contents first">
+
+  
+
+  <p><strong>Attributes:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>INVALID_COMMAND</code></td>
+          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>INVALID <code>command</code> FIELD</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>EXISTING_RESERVATION</code></td>
+          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>THERE IS AN EXISTING CHARGER RESERVATION</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>NON_EXISTING_RESERVATION</code></td>
+          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>THERE IS NO EXISTING CHARGER RESERVATION</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>DIFFERENT_USER_EMAIL</code></td>
+          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>DIFFERENT USER IS TRYING TO INTERACT WITH THE RESERVATION</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>CHARGER_NOT_PREPARING</code></td>
+          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>CHARGER IS NOT IN PREPARING STATUS</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>CHARGER_RESERVATION_NOT_HOLDABLE</code></td>
+          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>CHARGER RESERVATION IS NOT HOLDABLE</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>CHARGER_RESERVATION_NOT_RESUMEABLE</code></td>
+          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>CHARGER RESERVATION IS NOT RESUMEABLE</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  </div>
+
+</div><p>options:
+heading_level: 3</p>
 
 
 
