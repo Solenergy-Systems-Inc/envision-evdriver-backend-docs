@@ -448,14 +448,14 @@
   <h1>Flow</h1>
 
 <ol>
-<li>Send a <a href="../%5BPOST%5D%20createPaymentIntent/">Payment Intent</a> Request<ul>
+<li>Send a <a href="../%5BPOST%5D%20createPaymentIntent/">Payment Intent</a> Request.<ul>
 <li>Set <code>capture_type</code> to <code>automatic</code> for immediate payment.</li>
 <li>Set <code>capture_type</code> to <code>manual</code> for credit card hold-and-capture payment.</li>
 </ul>
 </li>
-<li>Create Payment Method in FRONTEND</li>
-<li>Attach Payment Intent and Method in FRONTEND</li>
-<li>[FOR CREDIT CARD] Send a <a href="../%5BPOST%5D%20capturePayment/">Capture</a> Request</li>
+<li>Create Payment Method in FRONTEND.</li>
+<li>Attach Payment Intent and Method in FRONTEND.</li>
+<li>If applicable, capture will be done automatically after charging.</li>
 </ol>
 
 
