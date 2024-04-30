@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../PayMongo%20Link/">
+        <link rel="prev" href="../..">
       
       
-        <link rel="next" href="../%5BPOST%5D%20createPaymentIntent/">
+        <link rel="next" href="../%5BPOST%5D%20remoteStartCharging/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>[POST] capturePayment - Envision EV Documentation</title>
+        <title>Charger Reservation - Envision EV Documentation</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modules.payment.dtos.CapturePaymentRequestDTO.CapturePaymentRequestDTO" class="md-skip">
+        <a href="#connect-url" class="md-skip">
           Skip to content
         </a>
       
@@ -105,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              [POST] capturePayment
+              Charger Reservation
             
           </span>
         </div>
@@ -211,17 +211,19 @@
       
   
   
+    
+  
   
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
@@ -234,7 +236,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Charger
@@ -245,9 +247,27 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../Charger/Charger%20Reservation/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Charger Reservation
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -256,6 +276,65 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#connect-url" class="md-nav__link">
+    Connect URL
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reserving-a-charger" class="md-nav__link">
+    Reserving a Charger
+  </a>
+  
+    <nav class="md-nav" aria-label="Reserving a Charger">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modules.charger.sm_charger_reservation.dtos.ReserveChargerRequestDTO.ReserveChargerRequestDTO" class="md-nav__link">
+    ReserveChargerRequestDTO
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modules.charger.sm_charger_reservation.enums.ReservationCommandEnum.ReservationCommandEnum" class="md-nav__link">
+    ReservationCommandEnum
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modules.charger.sm_charger_reservation.enums.ReservationErrorEnum.ReservationErrorEnum" class="md-nav__link">
+    ReservationErrorEnum
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -267,7 +346,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Charger/%5BPOST%5D%20remoteStartCharging/" class="md-nav__link">
+      <a href="../%5BPOST%5D%20remoteStartCharging/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -292,19 +371,17 @@
       
   
   
-    
-  
   
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
@@ -317,7 +394,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Payment
@@ -330,7 +407,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Flow/" class="md-nav__link">
+      <a href="../../Payment/Flow/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -350,7 +427,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../PayMongo%20Link/" class="md-nav__link">
+      <a href="../../Payment/PayMongo%20Link/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -368,27 +445,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    [POST] capturePayment
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Payment/%5BPOST%5D%20capturePayment/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -397,38 +456,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#modules.payment.dtos.CapturePaymentRequestDTO.CapturePaymentRequestDTO" class="md-nav__link">
-    CapturePaymentRequestDTO
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#modules.payment.dtos.CapturePaymentResponseDTO.CapturePaymentResponseDTO" class="md-nav__link">
-    CapturePaymentResponseDTO
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -440,7 +467,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%5BPOST%5D%20createPaymentIntent/" class="md-nav__link">
+      <a href="../../Payment/%5BPOST%5D%20createPaymentIntent/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -486,16 +513,43 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modules.payment.dtos.CapturePaymentRequestDTO.CapturePaymentRequestDTO" class="md-nav__link">
-    CapturePaymentRequestDTO
+  <a href="#connect-url" class="md-nav__link">
+    Connect URL
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#modules.payment.dtos.CapturePaymentResponseDTO.CapturePaymentResponseDTO" class="md-nav__link">
-    CapturePaymentResponseDTO
+  <a href="#reserving-a-charger" class="md-nav__link">
+    Reserving a Charger
   </a>
+  
+    <nav class="md-nav" aria-label="Reserving a Charger">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modules.charger.sm_charger_reservation.dtos.ReserveChargerRequestDTO.ReserveChargerRequestDTO" class="md-nav__link">
+    ReserveChargerRequestDTO
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modules.charger.sm_charger_reservation.enums.ReservationCommandEnum.ReservationCommandEnum" class="md-nav__link">
+    ReservationCommandEnum
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modules.charger.sm_charger_reservation.enums.ReservationErrorEnum.ReservationErrorEnum" class="md-nav__link">
+    ReservationErrorEnum
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -514,18 +568,65 @@
                   
 
 
-  <h1>[POST] capturePayment</h1>
+  <h1>Charger Reservation</h1>
 
-<pre><code>/api/capturePayment
+<h2 id="connect-url">Connect URL</h2>
+<pre><code>THIS IS A SECRET. MESSAGE A DEV.
 </code></pre>
+<h2 id="reserving-a-charger">Reserving a Charger</h2>
+<ol>
+<li>
+<p>The client connects to the websocket.</p>
+</li>
+<li>
+<p>Upon connecting, the client sends a
+<a class="autorefs autorefs-internal" href="#modules.charger.sm_charger_reservation.dtos.ReserveChargerRequestDTO.ReserveChargerRequestDTO">message</a>
+with <code>command</code> set to <code>START</code>.</p>
+<ul>
+<li>If there is an existing reservation within the time limit, an error will be thrown.</li>
+<li>If there is an existing reservation past the time limit, the reservation will be overwritten.</li>
+<li>If the client disconnects without sending <code>HOLD</code> prior, the reservation will be cancelled.</li>
+<li>If the charger is not <code>Preparing</code>, an error will be thrown.</li>
+</ul>
+</li>
+<li>
+<p>Before paying, the client sends a
+<a class="autorefs autorefs-internal" href="#modules.charger.sm_charger_reservation.dtos.ReserveChargerRequestDTO.ReserveChargerRequestDTO">message</a>
+with <code>command</code> set to <code>HOLD</code>.</p>
+<ul>
+<li>If reservation does not exist, an error will be thrown.</li>
+<li>If a different user email tries to hold the reservation, an error will be thrown.</li>
+<li>If the reservation is not active, an error will be thrown.</li>
+</ul>
+</li>
+<li>
+<p>Upon returning, the client sends a
+<a class="autorefs autorefs-internal" href="#modules.charger.sm_charger_reservation.dtos.ReserveChargerRequestDTO.ReserveChargerRequestDTO">message</a>
+with <code>command</code> set to <code>RESUME</code>.</p>
+<ul>
+<li>If reservation does not exist, an error will be thrown.</li>
+<li>If a different user email tries to hold the reservation, an error will be thrown.</li>
+<li>If the reservation is not on hold, an error will be thrown.</li>
+</ul>
+</li>
+<li>
+<p>[Optional] Upon returning, the client sends a
+<a class="autorefs autorefs-internal" href="#modules.charger.sm_charger_reservation.dtos.ReserveChargerRequestDTO.ReserveChargerRequestDTO">message</a>
+with <code>command</code> set to <code>CANCEL</code>.</p>
+<ul>
+<li>If reservation does not exist, an error will be thrown.</li>
+<li>If a different user email tries to hold the reservation, an error will be thrown.</li>
+</ul>
+</li>
+</ol>
 
 
 <div class="doc doc-object doc-class">
 
 
 
-<h3 class="doc doc-heading" id="modules.payment.dtos.CapturePaymentRequestDTO.CapturePaymentRequestDTO">
-        <code>CapturePaymentRequestDTO</code>
+<h3 class="doc doc-heading" id="modules.charger.sm_charger_reservation.dtos.ReserveChargerRequestDTO.ReserveChargerRequestDTO">
+        <code>ReserveChargerRequestDTO</code>
 
   
   <span class="doc doc-labels">
@@ -538,6 +639,7 @@
   <div class="doc doc-contents first">
 
   
+      <p>This should be the message of the request from the client.</p>
 
   <p><strong>Attributes:</strong></p>
   <table>
@@ -550,24 +652,68 @@
     </thead>
     <tbody>
         <tr>
-          <td><code>payment_intent_id</code></td>
+          <td><code>action</code></td>
           <td>
                 <code>str</code>
           </td>
           <td>
             <div class="doc-md-description">
-              <p>PAYMENT INTENT ID</p>
+              <p>ALWAYS SET TO 'reserveCharger'</p>
             </div>
           </td>
         </tr>
         <tr>
-          <td><code>amount</code></td>
+          <td><code>site_id</code></td>
           <td>
-                <code><span title="typing.Optional">Optional</span>[int]</code>
+                <code>int</code>
           </td>
           <td>
             <div class="doc-md-description">
-              <p>INTENDED AMOUNT TO CAPTURE</p>
+              <p>SITE OF CHARGER TO RESERVE</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>charger_id</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>CHARGER TO RESERVE</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>connector_id</code></td>
+          <td>
+                <code>int</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>CONNECTOR TO BE USED WITHIN THE CHARGER</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>command</code></td>
+          <td>
+                <code><span title="typing.Union">Union</span>[str, <a class="autorefs autorefs-internal" title="modules.charger.sm_charger_reservation.enums.ReservationCommandEnum.ReservationCommandEnum" href="#modules.charger.sm_charger_reservation.enums.ReservationCommandEnum.ReservationCommandEnum">ReservationCommandEnum</a>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>SHOULD BE ONE OF THE ENUM</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>email</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>EMAIL OF RESERVER</p>
             </div>
           </td>
         </tr>
@@ -600,13 +746,9 @@
 
 
 
-<h3 class="doc doc-heading" id="modules.payment.dtos.CapturePaymentResponseDTO.CapturePaymentResponseDTO">
-        <code>CapturePaymentResponseDTO</code>
+<h3 class="doc doc-heading" id="modules.charger.sm_charger_reservation.enums.ReservationCommandEnum.ReservationCommandEnum">
+        <code>ReservationCommandEnum</code>
 
-  
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
-  </span>
 
 </h3>
 
@@ -626,13 +768,162 @@
     </thead>
     <tbody>
         <tr>
-          <td><code>capture_status</code></td>
+          <td><code>START</code></td>
           <td>
-                <code>str</code>
           </td>
           <td>
             <div class="doc-md-description">
-              <p>CAPTURE PAYMENT STATUS</p>
+              <p>USED UPON CONNECTING TO THE WEBSOCKET</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>HOLD</code></td>
+          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>USED JUST BEFORE PAYMENT REDIRECTION</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>RESUME</code></td>
+          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>USED AFTER PAYING</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>CANCEL</code></td>
+          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>USED TO CANCEL RESERVATION</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 class="doc doc-heading" id="modules.charger.sm_charger_reservation.enums.ReservationErrorEnum.ReservationErrorEnum">
+        <code>ReservationErrorEnum</code>
+
+
+</h3>
+
+
+  <div class="doc doc-contents first">
+
+  
+
+  <p><strong>Attributes:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>INVALID_COMMAND</code></td>
+          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>INVALID <code>command</code> FIELD</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>EXISTING_RESERVATION</code></td>
+          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>THERE IS AN EXISTING CHARGER RESERVATION</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>NON_EXISTING_RESERVATION</code></td>
+          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>THERE IS NO EXISTING CHARGER RESERVATION</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>DIFFERENT_USER_EMAIL</code></td>
+          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>DIFFERENT USER IS TRYING TO INTERACT WITH THE RESERVATION</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>CHARGER_NOT_PREPARING</code></td>
+          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>CHARGER IS NOT IN PREPARING STATUS</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>CHARGER_RESERVATION_NOT_HOLDABLE</code></td>
+          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>CHARGER RESERVATION IS NOT HOLDABLE</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>CHARGER_RESERVATION_NOT_RESUMEABLE</code></td>
+          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>CHARGER RESERVATION IS NOT RESUMEABLE</p>
             </div>
           </td>
         </tr>
