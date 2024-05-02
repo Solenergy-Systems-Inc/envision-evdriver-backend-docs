@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../PayMongo%20Link/">
+        <link rel="prev" href="../Flow/">
       
       
-        <link rel="next" href="../%5BPOST%5D%20createPaymentIntent/">
+        <link rel="next" href="../PayMongo%20Link/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>[POST] capturePayment - Envision EV Documentation</title>
+        <title>Capture - Envision EV Documentation</title>
       
     
     
@@ -68,11 +68,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#modules.payment.dtos.CapturePaymentRequestDTO.CapturePaymentRequestDTO" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -105,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              [POST] capturePayment
+              Capture
             
           </span>
         </div>
@@ -348,6 +343,34 @@
                 
   
   
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Capture
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
   
     <li class="md-nav__item">
       <a href="../PayMongo%20Link/" class="md-nav__link">
@@ -359,76 +382,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    [POST] capturePayment
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    [POST] capturePayment
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#modules.payment.dtos.CapturePaymentRequestDTO.CapturePaymentRequestDTO" class="md-nav__link">
-    CapturePaymentRequestDTO
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#modules.payment.dtos.CapturePaymentResponseDTO.CapturePaymentResponseDTO" class="md-nav__link">
-    CapturePaymentResponseDTO
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -479,28 +432,6 @@
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#modules.payment.dtos.CapturePaymentRequestDTO.CapturePaymentRequestDTO" class="md-nav__link">
-    CapturePaymentRequestDTO
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#modules.payment.dtos.CapturePaymentResponseDTO.CapturePaymentResponseDTO" class="md-nav__link">
-    CapturePaymentResponseDTO
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -514,152 +445,20 @@
                   
 
 
-  <h1>[POST] capturePayment</h1>
+  <h1>Capture</h1>
 
-<pre><code>/api/capturePayment
-</code></pre>
-
-
-<div class="doc doc-object doc-class">
-
-
-
-<h3 class="doc doc-heading" id="modules.payment.dtos.CapturePaymentRequestDTO.CapturePaymentRequestDTO">
-        <code>CapturePaymentRequestDTO</code>
-
-  
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
-  </span>
-
-</h3>
-
-
-  <div class="doc doc-contents first">
-
-  
-
-  <p><strong>Attributes:</strong></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td><code>payment_intent_id</code></td>
-          <td>
-                <code>str</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>PAYMENT INTENT ID</p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td><code>amount</code></td>
-          <td>
-                <code><span title="typing.Optional">Optional</span>[int]</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>INTENDED AMOUNT TO CAPTURE</p>
-            </div>
-          </td>
-        </tr>
-    </tbody>
-  </table>
-
-
-
-  
-
-  <div class="doc doc-children">
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-
-  </div>
-
-</div>
-
-<div class="doc doc-object doc-class">
-
-
-
-<h3 class="doc doc-heading" id="modules.payment.dtos.CapturePaymentResponseDTO.CapturePaymentResponseDTO">
-        <code>CapturePaymentResponseDTO</code>
-
-  
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
-  </span>
-
-</h3>
-
-
-  <div class="doc doc-contents first">
-
-  
-
-  <p><strong>Attributes:</strong></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td><code>capture_status</code></td>
-          <td>
-                <code>str</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>CAPTURE PAYMENT STATUS</p>
-            </div>
-          </td>
-        </tr>
-    </tbody>
-  </table>
-
-
-
-  
-
-  <div class="doc doc-children">
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-
-  </div>
-
-</div>
+<p>This page explains the implementation of auto-capture.</p>
+<ol>
+<li>On charger status updates, the <code>insertTransactionData</code> handler is triggered.</li>
+<li>There, we send a message to the <code>CapturePaymentQueue</code> if the following conditions are met:<ul>
+<li>The charger was stopped.</li>
+<li>The capture type of the payment associated with the charging session is 
+  <a class="autorefs autorefs-internal" href="../%5BPOST%5D%20createPaymentIntent/#modules.payment.enums.CaptureTypeEnum.CaptureTypeEnum"><code>manual</code></a>.</li>
+</ul>
+</li>
+<li>The handler associated with the <code>CapturePaymentQueue</code> will then attempt to capture the payment.
+   If it fails, the message will be sent to the dead-letter queue.</li>
+</ol>
 
 
 
