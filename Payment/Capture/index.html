@@ -449,6 +449,8 @@
 
 <p>This page explains the implementation of auto-capture.</p>
 <ol>
+<li>The <code>Charger_Payment_History</code> table is filled during <code>remoteStartCharging</code>. This is to
+   identify whether the charging session is via PayMongo or Wallet.</li>
 <li>On charger status updates, the <code>insertTransactionData</code> handler is triggered.</li>
 <li>There, we send a message to the <code>CapturePaymentQueue</code> if the following conditions are met:<ul>
 <li>The charger was stopped.</li>
