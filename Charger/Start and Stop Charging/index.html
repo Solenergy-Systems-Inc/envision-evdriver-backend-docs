@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#old-system" class="md-skip">
+        <a href="#relevant-branch" class="md-skip">
           Skip to content
         </a>
       
@@ -315,6 +315,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#relevant-branch" class="md-nav__link">
+    <span class="md-ellipsis">
+      RELEVANT BRANCH
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#old-system" class="md-nav__link">
     <span class="md-ellipsis">
       OLD SYSTEM
@@ -550,6 +559,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#relevant-branch" class="md-nav__link">
+    <span class="md-ellipsis">
+      RELEVANT BRANCH
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#old-system" class="md-nav__link">
     <span class="md-ellipsis">
       OLD SYSTEM
@@ -614,6 +632,8 @@
 
   <h1>Start and Stop Charging</h1>
 
+<h2 id="relevant-branch">RELEVANT BRANCH</h2>
+<p><a href="https://github.com/Solenergy-Systems-Inc/envision-vps/tree/main-migration">https://github.com/Solenergy-Systems-Inc/envision-vps/tree/main-migration</a></p>
 <h2 id="old-system">OLD SYSTEM</h2>
 <pre class="mermaid"><code>sequenceDiagram
   participant AWS BE
@@ -656,20 +676,22 @@
   participant EMBEDDED
 
   loop
-    EMBEDDED-&gt;&gt;FastAPI APP: HEARTBEAT &amp; OTHER MESSAGES &lt;br&gt; (CHECK OLD SYSTEM'S NOTE 1)
+    EMBEDDED-&gt;&gt;FastAPI APP: HEARTBEAT &amp; OTHER MESSAGES &lt;br&gt; (CHECK NOTE 1)
   end
 
-  AWS BE-&gt;&gt;FastAPI APP: START CHARGING &lt;br&gt; VIA HTTP &lt;br&gt; (CHECK NOTE 1)
+  AWS BE-&gt;&gt;FastAPI APP: START CHARGING &lt;br&gt; VIA HTTP &lt;br&gt; (CHECK NOTE 2)
   FastAPI APP-&gt;&gt;EMBEDDED: START CHARGING &lt;br&gt; VIA WebSocket
 
   EMBEDDED-&gt;&gt;FastAPI APP: RETURN RESPONSE &lt;br&gt; VIA WebSocket
-  FastAPI APP-&gt;&gt;AWS BE: RETURN RESPONSE &lt;br&gt; VIA HTTP &lt;br&gt; (CHECK NOTE 1)</code></pre>
+  FastAPI APP-&gt;&gt;AWS BE: RETURN RESPONSE &lt;br&gt; VIA HTTP &lt;br&gt; (CHECK NOTE 2)</code></pre>
 <h3 id="notes_1">NOTES</h3>
 <ol>
+<li>Similar to the previous system, when EMBEDDED sends a heartbeat, the WebSocket connection
+   object is saved. However, instead of directly interacting with a dictionary, the class
+   <code>ActiveSocketManager</code> is used.</li>
 <li>The previous system made use of WebSocket to have a way of returning the response from
    EMBEDDED to AWS BE. With <code>asyncio</code>, we can instead <code>await</code> a <code>Future</code> object that will be filled
-   by
-   the isolated loop.</li>
+   by the isolated loop. These <code>Future</code> objects are managed by the <code>WaitingFutureManager</code> class.</li>
 </ol>
 
 
