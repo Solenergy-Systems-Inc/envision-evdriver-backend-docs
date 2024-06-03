@@ -687,11 +687,14 @@
 <h3 id="notes_1">NOTES</h3>
 <ol>
 <li>Similar to the previous system, when EMBEDDED sends a heartbeat, the WebSocket connection
-   object is saved. However, instead of directly interacting with a dictionary, the class
-   <code>ActiveSocketManager</code> is used.</li>
+   object is saved. The object is saved in the global dictionary <code>active_connections</code>.</li>
 <li>The previous system made use of WebSocket to have a way of returning the response from
-   EMBEDDED to AWS BE. With <code>asyncio</code>, we can instead <code>await</code> a <code>Future</code> object that will be filled
-   by the isolated loop. These <code>Future</code> objects are managed by the <code>WaitingFutureManager</code> class.</li>
+   EMBEDDED to AWS BE. With <code>asyncio</code>, we can instead <code>await</code> a <code>Future</code> object that will be
+   filled by the isolated loop. These objects are stored in the global dictionary
+   <code>delayed_start_responses</code> and <code>delayed_stop_responses</code>.</li>
+<li>The global variable <code>auto_stop_threads</code> contains the <code>Timer</code> threads that will automatically
+   stop the charging. This dictionary exists to have a way to cancel the timer if the charging
+   is stopped manually.</li>
 </ol>
 
 
