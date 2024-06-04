@@ -358,9 +358,27 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#notes_1" class="md-nav__link">
+  <a href="#sub-graph-1" class="md-nav__link">
     <span class="md-ellipsis">
-      NOTES
+      Sub-Graph 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sub-graph-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sub-Graph 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sub-graph-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sub-Graph 3
     </span>
   </a>
   
@@ -602,9 +620,27 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#notes_1" class="md-nav__link">
+  <a href="#sub-graph-1" class="md-nav__link">
     <span class="md-ellipsis">
-      NOTES
+      Sub-Graph 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sub-graph-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sub-Graph 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sub-graph-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sub-Graph 3
     </span>
   </a>
   
@@ -670,32 +706,91 @@
 </li>
 </ol>
 <h2 id="new-system">NEW SYSTEM</h2>
+<p>The diagram below includes the inner working of the FastAPI App.</p>
 <pre class="mermaid"><code>sequenceDiagram
   participant AWS BE
+
   participant FastAPI APP
   participant EMBEDDED
 
   loop
-    EMBEDDED-&gt;&gt;FastAPI APP: HEARTBEAT &amp; OTHER MESSAGES &lt;br&gt; (CHECK NOTE 1)
+    EMBEDDED-&gt;&gt;FastAPI APP: HEARTBEAT &amp; OTHER MESSAGES &lt;br&gt; (CHECK Sub-Graph 1)
   end
 
-  AWS BE-&gt;&gt;FastAPI APP: START CHARGING &lt;br&gt; VIA HTTP &lt;br&gt; (CHECK NOTE 2)
-  FastAPI APP-&gt;&gt;EMBEDDED: START CHARGING &lt;br&gt; VIA WebSocket
+  AWS BE-&gt;&gt;FastAPI APP: START CHARGING &lt;br&gt; (CHECK Sub-Graph 2)
+  FastAPI APP-&gt;&gt;EMBEDDED: START CHARGING &lt;br&gt; (CHECK Sub-Graph 2)
 
-  EMBEDDED-&gt;&gt;FastAPI APP: RETURN RESPONSE &lt;br&gt; VIA WebSocket
-  FastAPI APP-&gt;&gt;AWS BE: RETURN RESPONSE &lt;br&gt; VIA HTTP &lt;br&gt; (CHECK NOTE 2)</code></pre>
-<h3 id="notes_1">NOTES</h3>
+  EMBEDDED-&gt;&gt;FastAPI APP: RETURN RESPONSE &lt;br&gt; (CHECK Sub-Graph 2)
+  FastAPI APP-&gt;&gt;AWS BE: RETURN RESPONSE &lt;br&gt; (CHECK Sub-Graph 2)</code></pre>
+<h3 id="sub-graph-1">Sub-Graph 1</h3>
+<p>Whenever the FastAPI APP receives:</p>
 <ol>
-<li>Similar to the previous system, when EMBEDDED sends a heartbeat, the WebSocket connection
-   object is saved. The object is saved in the global dictionary <code>active_connections</code>.</li>
-<li>The previous system made use of WebSocket to have a way of returning the response from
-   EMBEDDED to AWS BE. With <code>asyncio</code>, we can instead <code>await</code> a <code>Future</code> object that will be
-   filled by the isolated loop. These objects are stored in the global dictionary
-   <code>delayed_start_responses</code> and <code>delayed_stop_responses</code>.</li>
-<li>The global variable <code>auto_stop_threads</code> contains the <code>Timer</code> threads that will automatically
-   stop the charging. This dictionary exists to have a way to cancel the timer if the charging
-   is stopped manually.</li>
+<li>Heartbeat from EMBEDDED: the connection object is saved in <code>active_connections.py</code>.</li>
+<li>CallResult or CallError from EMBEDDED: the response is sent to the <code>Future</code> objects in
+   <code>delayed_start_responses.py</code> or <code>delayed_stop_responses.py</code>.</li>
 </ol>
+<pre class="mermaid"><code>flowchart TB
+   embedded_socket.py &lt;--&gt; EMBEDDED
+
+   embedded_socket.py --&gt; active_connections.py
+   embedded_socket.py --&gt; delayed_start_responses.py
+   embedded_socket.py --&gt; delayed_stop_responses.py
+
+   subgraph " "
+      GLOBALS
+
+      active_connections.py
+      auto_stop_threads.py
+      delayed_start_responses.py
+      delayed_stop_responses.py
+
+      style GLOBALS fill:none, stroke:none
+   end</code></pre>
+<h3 id="sub-graph-2">Sub-Graph 2</h3>
+<ol>
+<li><code>start_charging.py</code> and <code>stop_charging.py</code> makes use of data the WebSocket objects in
+   <code>active_connections.py</code> to send the start/stop requests to EMBEDDED.</li>
+<li>The <code>Future</code> objects in <code>delayed_start_responses.py</code> and <code>delayed_stop_responses.py</code> are
+   awaited for the response of embedded from the start/stop request.</li>
+</ol>
+<pre class="mermaid"><code>flowchart TB
+   subgraph " "
+      GLOBALS
+
+      delayed_start_responses.py
+      active_connections.py
+      auto_stop_threads.py
+      delayed_stop_responses.py
+
+      style GLOBALS fill:none, stroke:none
+   end
+
+   active_connections.py --&gt; start_charging.py
+   active_connections.py --&gt; stop_charging.py
+
+   delayed_start_responses.py --&gt; start_charging.py
+   delayed_stop_responses.py --&gt; stop_charging.py
+
+   start_charging.py &lt;--&gt; AWS_BE[AWS BE] 
+   stop_charging.py &lt;--&gt; AWS_BE</code></pre>
+<h3 id="sub-graph-3">Sub-Graph 3</h3>
+<p>The global variable <code>auto_stop_threads</code> contains the <code>Timer</code> threads that will automatically
+stop the charging. This dictionary exists to have a way to cancel the timer if the charging
+is stopped manually.</p>
+<pre class="mermaid"><code>flowchart TB
+   subgraph " "
+      GLOBALS
+
+      delayed_start_responses.py
+      active_connections.py
+      auto_stop_threads.py
+      delayed_stop_responses.py
+
+      style GLOBALS fill:none, stroke:none
+   end
+
+   start_charging.py --&gt; auto_stop_threads.py
+   auto_stop_threads.py --&gt; stop_charging.py</code></pre>
 
 
 
