@@ -774,9 +774,11 @@
    start_charging.py &lt;--&gt; AWS_BE[AWS BE] 
    stop_charging.py &lt;--&gt; AWS_BE</code></pre>
 <h3 id="sub-graph-3">Sub-Graph 3</h3>
-<p>The global variable <code>auto_stop_threads</code> contains the <code>Timer</code> threads that will automatically
-stop the charging. This dictionary exists to have a way to cancel the timer if the charging
-is stopped manually.</p>
+<ol>
+<li>The global variable <code>auto_stop_threads</code> contains the <code>Timer</code> threads that will automatically
+   stop the charging. This dictionary exists to have a way to cancel the timer if the charging
+   is stopped manually.</li>
+</ol>
 <pre class="mermaid"><code>flowchart TB
    subgraph " "
       GLOBALS
