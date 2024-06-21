@@ -9,22 +9,22 @@
       
       
       
-        <link rel="prev" href="../../Charger/%5BPOST%5D%20remoteStartCharging/">
+        <link rel="prev" href="../../Charger/%5BWebSocket%5D%20embeddedSocket/">
       
       
-        <link rel="next" href="../../Payment/Flow/">
+        <link rel="next" href="../%5BPOST%5D%20remoteStartCharging/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.2.7">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.21">
     
     
       
-        <title>[GET] evGraph - Envision EV Documentation</title>
+        <title>Charger Reservation - Envision EV Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.046329b4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.66ac8b77.min.css">
       
       
 
@@ -60,16 +60,13 @@
     <body dir="ltr">
   
     
-    
-      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
-    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
         
-        <a href="#modules.graphing.dtos.EVGraphRequestDTO.EVGraphRequestDTO" class="md-skip">
+        <a href="#connect-url" class="md-skip">
           Skip to content
         </a>
       
@@ -105,12 +102,15 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              [GET] evGraph
+              Charger Reservation
             
           </span>
         </div>
       </div>
     </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -193,6 +193,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../.." class="md-nav__link">
         
@@ -212,6 +213,8 @@
   
   
   
+  
+    
     
     
     
@@ -219,10 +222,9 @@
       
         
         
-        
-        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
+          
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
@@ -246,6 +248,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Charger/Charger%20Reservation/" class="md-nav__link">
         
@@ -266,12 +269,13 @@
   
   
   
+  
     <li class="md-nav__item">
-      <a href="../../Charger/%5BGET%5D%20selectCharger/" class="md-nav__link">
+      <a href="../../Charger/Start%20and%20Stop%20Charging/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    [GET] selectCharger
+    Start and Stop Charging
   </span>
   
 
@@ -286,8 +290,224 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Charger/%5BPOST%5D%20remoteStartCharging/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [POST] remoteStartCharging
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Charger/%5BWebSocket%5D%20clientSocket/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [WebSocket] clientSocket
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Charger/%5BWebSocket%5D%20embeddedSocket/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [WebSocket] embeddedSocket
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Driver
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Driver
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Charger Reservation
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Charger Reservation
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#connect-url" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connect URL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reserving-a-charger" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reserving a Charger
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Reserving a Charger">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modules.charger.sm_charger_reservation.dtos.ReserveChargerRequestDTO.ReserveChargerRequestDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      ReserveChargerRequestDTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modules.charger.sm_charger_reservation.enums.ReservationCommandEnum.ReservationCommandEnum" class="md-nav__link">
+    <span class="md-ellipsis">
+      ReservationCommandEnum
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modules.charger.sm_charger_reservation.enums.ReservationErrorEnum.ReservationErrorEnum" class="md-nav__link">
+    <span class="md-ellipsis">
+      ReservationErrorEnum
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5BPOST%5D%20remoteStartCharging/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -312,153 +532,9 @@
       
   
   
-    
   
   
     
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
-        
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Graphs
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            Graphs
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    [GET] evGraph
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    [GET] evGraph
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#modules.graphing.dtos.EVGraphRequestDTO.EVGraphRequestDTO" class="md-nav__link">
-    EVGraphRequestDTO
-  </a>
-  
-    <nav class="md-nav" aria-label="EVGraphRequestDTO">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#notes" class="md-nav__link">
-    Notes
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#modules.graphing.dtos.EVGraphResponseDTO.EVGraphResponseDTO" class="md-nav__link">
-    EVGraphResponseDTO
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#modules.graphing.dtos.EVGraphStatisticsDTO.EVGraphStatisticsDTO" class="md-nav__link">
-    EVGraphStatisticsDTO
-  </a>
-  
-    <nav class="md-nav" aria-label="EVGraphStatisticsDTO">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#notes_1" class="md-nav__link">
-    Notes
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
     
     
     
@@ -466,10 +542,9 @@
       
         
         
-        
-        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
+          
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
@@ -493,6 +568,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Payment/Flow/" class="md-nav__link">
         
@@ -510,6 +586,7 @@
             
               
                 
+  
   
   
   
@@ -533,6 +610,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Payment/PayMongo%20Link/" class="md-nav__link">
         
@@ -550,6 +628,7 @@
             
               
                 
+  
   
   
   
@@ -600,43 +679,47 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modules.graphing.dtos.EVGraphRequestDTO.EVGraphRequestDTO" class="md-nav__link">
-    EVGraphRequestDTO
-  </a>
-  
-    <nav class="md-nav" aria-label="EVGraphRequestDTO">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#notes" class="md-nav__link">
-    Notes
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#modules.graphing.dtos.EVGraphResponseDTO.EVGraphResponseDTO" class="md-nav__link">
-    EVGraphResponseDTO
+  <a href="#connect-url" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connect URL
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#modules.graphing.dtos.EVGraphStatisticsDTO.EVGraphStatisticsDTO" class="md-nav__link">
-    EVGraphStatisticsDTO
+  <a href="#reserving-a-charger" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reserving a Charger
+    </span>
   </a>
   
-    <nav class="md-nav" aria-label="EVGraphStatisticsDTO">
+    <nav class="md-nav" aria-label="Reserving a Charger">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#notes_1" class="md-nav__link">
-    Notes
+  <a href="#modules.charger.sm_charger_reservation.dtos.ReserveChargerRequestDTO.ReserveChargerRequestDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      ReserveChargerRequestDTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modules.charger.sm_charger_reservation.enums.ReservationCommandEnum.ReservationCommandEnum" class="md-nav__link">
+    <span class="md-ellipsis">
+      ReservationCommandEnum
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modules.charger.sm_charger_reservation.enums.ReservationErrorEnum.ReservationErrorEnum" class="md-nav__link">
+    <span class="md-ellipsis">
+      ReservationErrorEnum
+    </span>
   </a>
   
 </li>
@@ -661,359 +744,398 @@
                   
 
 
-  <h1>[GET] evGraph</h1>
+  <h1>Charger Reservation</h1>
 
-<pre><code>/api/evGraph
+<h2 id="connect-url">Connect URL</h2>
+<pre><code>THIS IS A SECRET. MESSAGE A DEV.
 </code></pre>
-
-
-<div class="doc doc-object doc-class">
-
-
-
-<h3 class="doc doc-heading" id="modules.graphing.dtos.EVGraphRequestDTO.EVGraphRequestDTO">
-        <code>EVGraphRequestDTO</code>
-
-  
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
-  </span>
-
-</h3>
-
-
-  <div class="doc doc-contents first">
-
-  
-
-  <p><strong>Attributes:</strong></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td><code>site_id</code></td>
-          <td>
-                <code>str</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>id of the site</p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td><code>start</code></td>
-          <td>
-                <code>str</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>start datetime of the graph</p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td><code>end</code></td>
-          <td>
-                <code>str</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>end datetime of the graph</p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td><code>tz</code></td>
-          <td>
-                <code>str</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>timezone of the request</p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td><code>graph_type</code></td>
-          <td>
-                <code>str</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>line / bar graph</p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td><code>meter</code></td>
-          <td>
-                <code>str</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>name of the charger meter</p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td><code>charger</code></td>
-          <td>
-                <code>str</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>name of the charger</p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td><code>user_id</code></td>
-          <td>
-                <code>str</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>id of the user logged in</p>
-            </div>
-          </td>
-        </tr>
-    </tbody>
-  </table>
-
-
-
-  
-
-  <div class="doc doc-children">
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-
-  </div>
-
-</div><h5 id="notes">Notes</h5>
+<h2 id="reserving-a-charger">Reserving a Charger</h2>
+<ol>
+<li>
+<p>The client connects to the websocket.</p>
+</li>
+<li>
+<p>Upon connecting, the client sends a
+<a class="autorefs autorefs-internal" href="#modules.charger.sm_charger_reservation.dtos.ReserveChargerRequestDTO.ReserveChargerRequestDTO">message</a>
+with <code>command</code> set to <code>START</code>.</p>
 <ul>
-<li>The only optional parameter is the <code>charger</code></li>
-<li>If the difference between the start and end values are more than a day, the interval between datapoints will be <strong>15 minutes</strong> for the line graph and <strong>1 day</strong> for the bar graph.</li>
+<li>If there is an existing reservation within the time limit, an error will be thrown.</li>
+<li>If there is an existing reservation past the time limit, the reservation will be overwritten.</li>
+<li>If the client disconnects without sending <code>HOLD</code> prior, the reservation will be cancelled.</li>
+<li>If the charger is not <code>Preparing</code>, an error will be thrown.</li>
 </ul>
-
-
-<div class="doc doc-object doc-class">
-
-
-
-<h3 class="doc doc-heading" id="modules.graphing.dtos.EVGraphResponseDTO.EVGraphResponseDTO">
-        <code>EVGraphResponseDTO</code>
-
-  
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
-  </span>
-
-</h3>
-
-
-  <div class="doc doc-contents first">
-
-  
-
-  <p><strong>Attributes:</strong></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td><code>ev_data</code></td>
-          <td>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>list of lists containing the data points</p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td><code>order</code></td>
-          <td>
-                <code>list</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>list of strings containing the order of the data points</p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td><code>statistics</code></td>
-          <td>
-                <code>dict</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>dict containing the statistics of the data points</p>
-            </div>
-          </td>
-        </tr>
-    </tbody>
-  </table>
-
-
-
-  
-
-  <div class="doc doc-children">
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-
-  </div>
-
-</div><p>The statistics object will contain the following keys:
-</p>
-
-
-<div class="doc doc-object doc-class">
-
-
-
-<h3 class="doc doc-heading" id="modules.graphing.dtos.EVGraphStatisticsDTO.EVGraphStatisticsDTO">
-        <code>EVGraphStatisticsDTO</code>
-
-  
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
-  </span>
-
-</h3>
-
-
-  <div class="doc doc-contents first">
-
-  
-
-  <p><strong>Attributes:</strong></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td><code>duration</code></td>
-          <td>
-                <code>list</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>duration of transactions based on ORDER</p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td><code>total_energy</code></td>
-          <td>
-                <code>list</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>list of total energy based on ORDER</p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td><code>latest_value</code></td>
-          <td>
-                <code>list</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>list of latest meter readings based on ORDER</p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td><code>peak_value</code></td>
-          <td>
-                <code>list</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>list of peak meter readings based on ORDER</p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td><code>peak_time</code></td>
-          <td>
-                <code>list</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>list of peak meter readings time based on ORDER</p>
-            </div>
-          </td>
-        </tr>
-    </tbody>
-  </table>
-
-
-
-  
-
-  <div class="doc doc-children">
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-
-  </div>
-
-</div><h5 id="notes_1">Notes</h5>
+</li>
+<li>
+<p>Before paying, the client sends a
+<a class="autorefs autorefs-internal" href="#modules.charger.sm_charger_reservation.dtos.ReserveChargerRequestDTO.ReserveChargerRequestDTO">message</a>
+with <code>command</code> set to <code>HOLD</code>.</p>
 <ul>
-<li>order represents the arrangement of the data points inside the data array. The first datapoint will always be a string literal of the datetime</li>
-<li>The last element of any array will always be the total sum of the values of the datapoints before it</li>
+<li>If reservation does not exist, an error will be thrown.</li>
+<li>If a different user email tries to hold the reservation, an error will be thrown.</li>
+<li>If the reservation is not active, an error will be thrown.</li>
 </ul>
+</li>
+<li>
+<p>Upon returning, the client sends a
+<a class="autorefs autorefs-internal" href="#modules.charger.sm_charger_reservation.dtos.ReserveChargerRequestDTO.ReserveChargerRequestDTO">message</a>
+with <code>command</code> set to <code>RESUME</code>.</p>
+<ul>
+<li>If reservation does not exist, an error will be thrown.</li>
+<li>If a different user email tries to hold the reservation, an error will be thrown.</li>
+<li>If the reservation is not on hold, an error will be thrown.</li>
+</ul>
+</li>
+<li>
+<p>[Optional] Upon returning, the client sends a
+<a class="autorefs autorefs-internal" href="#modules.charger.sm_charger_reservation.dtos.ReserveChargerRequestDTO.ReserveChargerRequestDTO">message</a>
+with <code>command</code> set to <code>CANCEL</code>.</p>
+<ul>
+<li>If reservation does not exist, an error will be thrown.</li>
+<li>If a different user email tries to hold the reservation, an error will be thrown.</li>
+</ul>
+</li>
+</ol>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="modules.charger.sm_charger_reservation.dtos.ReserveChargerRequestDTO.ReserveChargerRequestDTO" class="doc doc-heading">
+          <code>ReserveChargerRequestDTO</code>
+
+
+</h3>
+
+
+  <div class="doc doc-contents first">
+
+  
+      <p>This should be the message of the request from the client.</p>
+
+
+
+  <p><span class="doc-section-title">Attributes:</span></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.charger.sm_charger_reservation.dtos.ReserveChargerRequestDTO.ReserveChargerRequestDTO.action">action</span></code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>ALWAYS SET TO 'reserveCharger'</p>
+            </div>
+          </td>
+        </tr>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.charger.sm_charger_reservation.dtos.ReserveChargerRequestDTO.ReserveChargerRequestDTO.site_id">site_id</span></code></td>
+          <td>
+                <code>int</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>SITE OF CHARGER TO RESERVE</p>
+            </div>
+          </td>
+        </tr>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.charger.sm_charger_reservation.dtos.ReserveChargerRequestDTO.ReserveChargerRequestDTO.charger_id">charger_id</span></code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>CHARGER TO RESERVE</p>
+            </div>
+          </td>
+        </tr>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.charger.sm_charger_reservation.dtos.ReserveChargerRequestDTO.ReserveChargerRequestDTO.connector_id">connector_id</span></code></td>
+          <td>
+                <code>int</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>CONNECTOR TO BE USED WITHIN THE CHARGER</p>
+            </div>
+          </td>
+        </tr>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.charger.sm_charger_reservation.dtos.ReserveChargerRequestDTO.ReserveChargerRequestDTO.command">command</span></code></td>
+          <td>
+                <code><span title="typing.Union">Union</span>[str, <a class="autorefs autorefs-internal" title="modules.charger.sm_charger_reservation.enums.ReservationCommandEnum.ReservationCommandEnum" href="#modules.charger.sm_charger_reservation.enums.ReservationCommandEnum.ReservationCommandEnum">ReservationCommandEnum</a>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>SHOULD BE ONE OF THE ENUM</p>
+            </div>
+          </td>
+        </tr>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.charger.sm_charger_reservation.dtos.ReserveChargerRequestDTO.ReserveChargerRequestDTO.email">email</span></code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>EMAIL OF RESERVER</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  </div>
+
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="modules.charger.sm_charger_reservation.enums.ReservationCommandEnum.ReservationCommandEnum" class="doc doc-heading">
+          <code>ReservationCommandEnum</code>
+
+
+</h3>
+
+
+  <div class="doc doc-contents first">
+
+  
+
+
+
+  <p><span class="doc-section-title">Attributes:</span></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.charger.sm_charger_reservation.enums.ReservationCommandEnum.ReservationCommandEnum.START">START</span></code></td>
+          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>USED UPON CONNECTING TO THE WEBSOCKET</p>
+            </div>
+          </td>
+        </tr>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.charger.sm_charger_reservation.enums.ReservationCommandEnum.ReservationCommandEnum.HOLD">HOLD</span></code></td>
+          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>USED JUST BEFORE PAYMENT REDIRECTION</p>
+            </div>
+          </td>
+        </tr>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.charger.sm_charger_reservation.enums.ReservationCommandEnum.ReservationCommandEnum.RESUME">RESUME</span></code></td>
+          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>USED AFTER PAYING</p>
+            </div>
+          </td>
+        </tr>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.charger.sm_charger_reservation.enums.ReservationCommandEnum.ReservationCommandEnum.CANCEL">CANCEL</span></code></td>
+          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>USED TO CANCEL RESERVATION</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  </div>
+
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="modules.charger.sm_charger_reservation.enums.ReservationErrorEnum.ReservationErrorEnum" class="doc doc-heading">
+          <code>ReservationErrorEnum</code>
+
+
+</h3>
+
+
+  <div class="doc doc-contents first">
+
+  
+
+
+
+  <p><span class="doc-section-title">Attributes:</span></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.charger.sm_charger_reservation.enums.ReservationErrorEnum.ReservationErrorEnum.INVALID_COMMAND">INVALID_COMMAND</span></code></td>
+          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>INVALID <code>command</code> FIELD</p>
+            </div>
+          </td>
+        </tr>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.charger.sm_charger_reservation.enums.ReservationErrorEnum.ReservationErrorEnum.EXISTING_RESERVATION">EXISTING_RESERVATION</span></code></td>
+          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>THERE IS AN EXISTING CHARGER RESERVATION</p>
+            </div>
+          </td>
+        </tr>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.charger.sm_charger_reservation.enums.ReservationErrorEnum.ReservationErrorEnum.NON_EXISTING_RESERVATION">NON_EXISTING_RESERVATION</span></code></td>
+          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>THERE IS NO EXISTING CHARGER RESERVATION</p>
+            </div>
+          </td>
+        </tr>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.charger.sm_charger_reservation.enums.ReservationErrorEnum.ReservationErrorEnum.DIFFERENT_USER_EMAIL">DIFFERENT_USER_EMAIL</span></code></td>
+          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>DIFFERENT USER IS TRYING TO INTERACT WITH THE RESERVATION</p>
+            </div>
+          </td>
+        </tr>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.charger.sm_charger_reservation.enums.ReservationErrorEnum.ReservationErrorEnum.CHARGER_NOT_PREPARING">CHARGER_NOT_PREPARING</span></code></td>
+          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>CHARGER IS NOT IN PREPARING STATUS</p>
+            </div>
+          </td>
+        </tr>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.charger.sm_charger_reservation.enums.ReservationErrorEnum.ReservationErrorEnum.CHARGER_RESERVATION_NOT_HOLDABLE">CHARGER_RESERVATION_NOT_HOLDABLE</span></code></td>
+          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>CHARGER RESERVATION IS NOT HOLDABLE</p>
+            </div>
+          </td>
+        </tr>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.charger.sm_charger_reservation.enums.ReservationErrorEnum.ReservationErrorEnum.CHARGER_RESERVATION_NOT_RESUMEABLE">CHARGER_RESERVATION_NOT_RESUMEABLE</span></code></td>
+          <td>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>CHARGER RESERVATION IS NOT RESUMEABLE</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  </div>
+
+
+</div>
+
+
+
+
+
+
+
 
 
 
@@ -1024,6 +1146,7 @@
             </div>
           
           
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
       </main>
@@ -1051,10 +1174,11 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.dff1b7c8.min.js"></script>
+      <script src="../../assets/javascripts/bundle.a7c05c9e.min.js"></script>
       
     
   </body>

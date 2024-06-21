@@ -16,15 +16,15 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.2.7">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.21">
     
     
       
-        <title>[GET] selectCharger - Envision EV Documentation</title>
+        <title>Start and Stop Charging - Envision EV Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.046329b4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.66ac8b77.min.css">
       
       
 
@@ -60,16 +60,13 @@
     <body dir="ltr">
   
     
-    
-      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
-    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
         
-        <a href="#modules.charger.dtos.SelectChargerRequestDTO.SelectChargerRequestDTO" class="md-skip">
+        <a href="#relevant-branch" class="md-skip">
           Skip to content
         </a>
       
@@ -105,12 +102,15 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              [GET] selectCharger
+              Start and Stop Charging
             
           </span>
         </div>
       </div>
     </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -193,6 +193,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../.." class="md-nav__link">
         
@@ -214,6 +215,8 @@
     
   
   
+  
+    
     
     
     
@@ -221,10 +224,9 @@
       
         
         
-        
-        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
+          
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
@@ -245,6 +247,7 @@
             
               
                 
+  
   
   
   
@@ -270,6 +273,7 @@
     
   
   
+  
     <li class="md-nav__item md-nav__item--active">
       
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
@@ -280,7 +284,7 @@
           
   
   <span class="md-ellipsis">
-    [GET] selectCharger
+    Start and Stop Charging
   </span>
   
 
@@ -291,7 +295,7 @@
         
   
   <span class="md-ellipsis">
-    [GET] selectCharger
+    Start and Stop Charging
   </span>
   
 
@@ -311,22 +315,85 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modules.charger.dtos.SelectChargerRequestDTO.SelectChargerRequestDTO" class="md-nav__link">
-    SelectChargerRequestDTO
+  <a href="#relevant-branch" class="md-nav__link">
+    <span class="md-ellipsis">
+      RELEVANT BRANCH
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#modules.charger.dtos.SelectChargerResponseDTO.SelectChargerResponseDTO" class="md-nav__link">
-    SelectChargerResponseDTO
+  <a href="#old-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      OLD SYSTEM
+    </span>
   </a>
+  
+    <nav class="md-nav" aria-label="OLD SYSTEM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      NOTES
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#modules.charger.dtos.ChargerDTO.ChargerDTO" class="md-nav__link">
-    ChargerDTO
+  <a href="#new-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      NEW SYSTEM
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="NEW SYSTEM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sub-graph-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sub-Graph 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sub-graph-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sub-Graph 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sub-graph-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sub-Graph 3
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#new-new-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      NEW NEW SYSTEM
+    </span>
   </a>
   
 </li>
@@ -345,8 +412,135 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../%5BPOST%5D%20remoteStartCharging/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [POST] remoteStartCharging
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5BWebSocket%5D%20clientSocket/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [WebSocket] clientSocket
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5BWebSocket%5D%20embeddedSocket/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [WebSocket] embeddedSocket
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Driver
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Driver
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Driver/Charger%20Reservation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Charger Reservation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Driver/%5BPOST%5D%20remoteStartCharging/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -372,78 +566,18 @@
   
   
   
+  
     
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
-        
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Graphs
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            Graphs
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Graphs/%5BGET%5D%20evGraph/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    [GET] evGraph
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
     
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
+          
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
@@ -467,6 +601,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Payment/Flow/" class="md-nav__link">
         
@@ -484,6 +619,7 @@
             
               
                 
+  
   
   
   
@@ -507,6 +643,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../Payment/PayMongo%20Link/" class="md-nav__link">
         
@@ -524,6 +661,7 @@
             
               
                 
+  
   
   
   
@@ -574,22 +712,85 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modules.charger.dtos.SelectChargerRequestDTO.SelectChargerRequestDTO" class="md-nav__link">
-    SelectChargerRequestDTO
+  <a href="#relevant-branch" class="md-nav__link">
+    <span class="md-ellipsis">
+      RELEVANT BRANCH
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#modules.charger.dtos.SelectChargerResponseDTO.SelectChargerResponseDTO" class="md-nav__link">
-    SelectChargerResponseDTO
+  <a href="#old-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      OLD SYSTEM
+    </span>
   </a>
+  
+    <nav class="md-nav" aria-label="OLD SYSTEM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      NOTES
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#modules.charger.dtos.ChargerDTO.ChargerDTO" class="md-nav__link">
-    ChargerDTO
+  <a href="#new-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      NEW SYSTEM
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="NEW SYSTEM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sub-graph-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sub-Graph 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sub-graph-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sub-Graph 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sub-graph-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sub-Graph 3
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#new-new-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      NEW NEW SYSTEM
+    </span>
   </a>
   
 </li>
@@ -609,272 +810,160 @@
                   
 
 
-  <h1>[GET] selectCharger</h1>
+  <h1>Start and Stop Charging</h1>
+
+<h2 id="relevant-branch">RELEVANT BRANCH</h2>
+<p><a href="https://github.com/Solenergy-Systems-Inc/envision-vps/tree/main-migration">https://github.com/Solenergy-Systems-Inc/envision-vps/tree/main-migration</a></p>
+<h2 id="old-system">OLD SYSTEM</h2>
+<pre class="mermaid"><code>sequenceDiagram
+  participant FRONTEND
+  participant AWS BE
+  participant FLASK APP
+  participant WebSocket SERVER
+  participant EMBEDDED
+
+  loop
+    EMBEDDED-&gt;&gt;WebSocket SERVER: HEARTBEAT &amp; OTHER MESSAGES &lt;br&gt; (CHECK NOTE 1)
+  end
+
+  FRONTEND-&gt;&gt;AWS BE: START CHARGING &lt;br&gt; VIA HTTP
+  AWS BE-&gt;&gt;FLASK APP: START CHARGING &lt;br&gt; VIA HTTP
+  FLASK APP-&gt;&gt;WebSocket SERVER: START CHARGING &lt;br&gt; VIA WebSocket &lt;br&gt; (CHECK NOTE 2)
+  WebSocket SERVER-&gt;&gt;EMBEDDED: START CHARGING &lt;br&gt; VIA WebSocket
+
+  EMBEDDED-&gt;&gt;WebSocket SERVER: RETURN RESPONSE &lt;br&gt; VIA WebSocket
+  WebSocket SERVER-&gt;&gt;FLASK APP: RETURN RESPONSE &lt;br&gt; VIA WebSocket &lt;br&gt; (CHECK NOTE 2)
+  FLASK APP-&gt;&gt;AWS BE: RETURN RESPONSE &lt;br&gt; VIA HTTP
+  AWS BE-&gt;&gt;FRONTEND: RETURN RESPONSE &lt;br&gt; VIA HTTP</code></pre>
+<h3 id="notes">NOTES</h3>
+<ol>
+<li>Messages from the EMBEDDED are handled here.<ul>
+<li>When the WebSocket SERVER receives a heartbeat, it saves that connection to a global
+  dictionary
+  with the site ID as the key.</li>
+<li>When the EMBEDDED side disconnects, the connection is removed from the global dictionary.</li>
+</ul>
+</li>
+<li>I think this was a workaround. The reason why this connection uses WebSocket instead of HTTP
+   is because the message/response from embedded is received in a separate loop.<ul>
+<li>With HTTP, the separate loop wouldn't be able to send the response.</li>
+<li>With WebSocket, the connection object between FLASK APP and the WebSocket SERVER can be
+  saved in a global dictionary, which can be accessed by the separate loop to send the response.</li>
+</ul>
+</li>
+</ol>
+<h2 id="new-system">NEW SYSTEM</h2>
+<p>The diagram below includes the inner working of the FastAPI App.</p>
+<pre class="mermaid"><code>sequenceDiagram
+  participant FRONTEND
+  participant AWS BE
+  participant FastAPI APP
+  participant EMBEDDED
+
+  loop
+    EMBEDDED-&gt;&gt;FastAPI APP: HEARTBEAT &amp; OTHER MESSAGES &lt;br&gt; (CHECK Sub-Graph 1)
+  end
+
+  FRONTEND-&gt;&gt;AWS BE: START CHARGING &lt;br&gt; VIA HTTP
+  AWS BE-&gt;&gt;FastAPI APP: START CHARGING &lt;br&gt; (CHECK Sub-Graph 2)
+  FastAPI APP-&gt;&gt;EMBEDDED: START CHARGING &lt;br&gt; (CHECK Sub-Graph 2)
+
+  EMBEDDED-&gt;&gt;FastAPI APP: RETURN RESPONSE &lt;br&gt; (CHECK Sub-Graph 2)
+  FastAPI APP-&gt;&gt;AWS BE: RETURN RESPONSE &lt;br&gt; (CHECK Sub-Graph 2)
+  AWS BE-&gt;&gt;FRONTEND: RETURN RESPONSE &lt;br&gt; VIA HTTP</code></pre>
+<h3 id="sub-graph-1">Sub-Graph 1</h3>
+<p>Whenever the FastAPI APP receives:</p>
+<ol>
+<li>Heartbeat from EMBEDDED: the connection object is saved in <code>active_connections.py</code>.</li>
+<li>CallResult or CallError from EMBEDDED: the response is sent to the <code>Future</code> objects in
+   <code>delayed_start_responses.py</code> or <code>delayed_stop_responses.py</code>.</li>
+</ol>
+<pre class="mermaid"><code>flowchart TB
+   embedded_socket.py &lt;--&gt; EMBEDDED
+
+   embedded_socket.py --&gt; active_connections.py
+   embedded_socket.py --&gt; delayed_start_responses.py
+   embedded_socket.py --&gt; delayed_stop_responses.py
+
+   subgraph " "
+      GLOBALS
+
+      active_connections.py
+      auto_stop_threads.py
+      delayed_start_responses.py
+      delayed_stop_responses.py
+
+      style GLOBALS fill:none, stroke:none
+   end</code></pre>
+<h3 id="sub-graph-2">Sub-Graph 2</h3>
+<ol>
+<li><code>start_charging.py</code> and <code>stop_charging.py</code> makes use of data the WebSocket objects in
+   <code>active_connections.py</code> to send the start/stop requests to EMBEDDED.</li>
+<li>The <code>Future</code> objects in <code>delayed_start_responses.py</code> and <code>delayed_stop_responses.py</code> are
+   awaited for the response of embedded from the start/stop request.</li>
+</ol>
+<pre class="mermaid"><code>flowchart TB
+   subgraph " "
+      GLOBALS
+
+      delayed_start_responses.py
+      active_connections.py
+      auto_stop_threads.py
+      delayed_stop_responses.py
+
+      style GLOBALS fill:none, stroke:none
+   end
 
-<pre><code>/api/selectCharger
-</code></pre>
+   active_connections.py --&gt; start_charging.py
+   active_connections.py --&gt; stop_charging.py
 
+   delayed_start_responses.py --&gt; start_charging.py
+   delayed_stop_responses.py --&gt; stop_charging.py
 
-<div class="doc doc-object doc-class">
+   start_charging.py &lt;--&gt; AWS_BE[AWS BE]
+   stop_charging.py &lt;--&gt; AWS_BE</code></pre>
+<h3 id="sub-graph-3">Sub-Graph 3</h3>
+<ol>
+<li>The global variable <code>auto_stop_threads</code> contains the <code>Timer</code> threads that will automatically
+   stop the charging. This dictionary exists to have a way to cancel the timer if the charging
+   is stopped manually.</li>
+</ol>
+<pre class="mermaid"><code>flowchart TB
+   subgraph " "
+      GLOBALS
 
+      delayed_start_responses.py
+      active_connections.py
+      auto_stop_threads.py
+      delayed_stop_responses.py
 
+      style GLOBALS fill:none, stroke:none
+   end
 
-<h3 class="doc doc-heading" id="modules.charger.dtos.SelectChargerRequestDTO.SelectChargerRequestDTO">
-        <code>SelectChargerRequestDTO</code>
+   start_charging.py --&gt; auto_stop_threads.py
+   auto_stop_threads.py --&gt; stop_charging.py</code></pre>
+<h2 id="new-new-system">NEW NEW SYSTEM</h2>
+<pre class="mermaid"><code>sequenceDiagram
+  participant FRONTEND
+  participant FastAPI APP
+  participant EMBEDDED
 
-  
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
-  </span>
+  loop
+    EMBEDDED-&gt;&gt;FastAPI APP: HEARTBEAT &amp; OTHER MESSAGES &lt;br&gt; (CHECK Sub-Graph 1)
+  end
 
-</h3>
+  FRONTEND-&gt;&gt;FastAPI APP: START CHARGING &lt;br&gt; VIA WebSocket
+  FastAPI APP-&gt;&gt;EMBEDDED: START CHARGING &lt;br&gt; (CHECK Sub-Graph 2)
 
+  EMBEDDED-&gt;&gt;FastAPI APP: RETURN RESPONSE &lt;br&gt; (CHECK Sub-Graph 2)
+  FastAPI APP-&gt;&gt;FRONTEND: RETURN RESPONSE &lt;br&gt; VIA WebSocket</code></pre>
 
-  <div class="doc doc-contents first">
 
-  
 
-  <p><strong>Attributes:</strong></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td><code>charger_id</code></td>
-          <td>
-                <code>str</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>(str) Assigned ID of the charger on site</p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td><code>site_id</code></td>
-          <td>
-                <code>str</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>(str) Site id of the transaction</p>
-            </div>
-          </td>
-        </tr>
-    </tbody>
-  </table>
 
 
 
-  
 
-  <div class="doc doc-children">
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-
-  </div>
-
-</div>
-
-<div class="doc doc-object doc-class">
-
-
-
-<h3 class="doc doc-heading" id="modules.charger.dtos.SelectChargerResponseDTO.SelectChargerResponseDTO">
-        <code>SelectChargerResponseDTO</code>
-
-  
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
-  </span>
-
-</h3>
-
-
-  <div class="doc doc-contents first">
-
-  
-
-  <p><strong>Attributes:</strong></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td><code>charger</code></td>
-          <td>
-                <code>dict</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>dictionary containing the charger information based on <code>ChargerDTO</code></p>
-            </div>
-          </td>
-        </tr>
-    </tbody>
-  </table>
-
-
-
-  
-
-  <div class="doc doc-children">
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-
-  </div>
-
-</div>
-
-<div class="doc doc-object doc-class">
-
-
-
-<h3 class="doc doc-heading" id="modules.charger.dtos.ChargerDTO.ChargerDTO">
-        <code>ChargerDTO</code>
-
-  
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
-  </span>
-
-</h3>
-
-
-  <div class="doc doc-contents first">
-
-  
-
-  <p><strong>Attributes:</strong></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td><code>name</code></td>
-          <td>
-                <code>str</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>name that will be displayed for the charger</p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td><code>brand</code></td>
-          <td>
-                <code>str</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>brand of the charger</p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td><code>model</code></td>
-          <td>
-                <code>str</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>model of the charger</p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td><code>location</code></td>
-          <td>
-                <code>str</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>location where the charger can be found</p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td><code>site_id</code></td>
-          <td>
-                <code>int</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>id for the site where the charger is associated</p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td><code>connectors</code></td>
-          <td>
-                <code>list</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>details of the connector related for the charger</p>
-            </div>
-          </td>
-        </tr>
-    </tbody>
-  </table>
-
-
-
-  
-
-  <div class="doc doc-children">
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-
-  </div>
-
-</div>
 
 
 
@@ -885,6 +974,7 @@
             </div>
           
           
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
       </main>
@@ -912,10 +1002,11 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.dff1b7c8.min.js"></script>
+      <script src="../../assets/javascripts/bundle.a7c05c9e.min.js"></script>
       
     
   </body>

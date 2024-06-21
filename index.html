@@ -14,7 +14,7 @@
       
       
       <link rel="icon" href="assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.2.7">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.21">
     
     
       
@@ -22,7 +22,7 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.046329b4.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.66ac8b77.min.css">
       
       
 
@@ -58,16 +58,13 @@
     <body dir="ltr">
   
     
-    
-      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
-    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
         
-        <a href="#installation" class="md-skip">
+        <a href="#how-to-deploy" class="md-skip">
           Skip to content
         </a>
       
@@ -109,6 +106,9 @@
         </div>
       </div>
     </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -193,6 +193,7 @@
     
   
   
+  
     <li class="md-nav__item md-nav__item--active">
       
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
@@ -234,42 +235,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    Installation
-  </a>
-  
-    <nav class="md-nav" aria-label="Installation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-install-mkdocs-via-pip" class="md-nav__link">
-    1. Install mkdocs via pip
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-install-all-the-necessary-packages" class="md-nav__link">
-    2. Install all the necessary packages
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-run-the-server-locally" class="md-nav__link">
-    3. Run the server locally
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#how-to-deploy" class="md-nav__link">
-    How To Deploy
+    <span class="md-ellipsis">
+      How To Deploy
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="How To Deploy">
@@ -277,14 +246,18 @@
         
           <li class="md-nav__item">
   <a href="#1-add-remote-only-once" class="md-nav__link">
-    1. Add Remote [Only Once]
+    <span class="md-ellipsis">
+      1. Add Remote [Only Once]
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#2-deploy" class="md-nav__link">
-    2. Deploy
+    <span class="md-ellipsis">
+      2. Deploy
+    </span>
   </a>
   
 </li>
@@ -307,6 +280,8 @@
   
   
   
+  
+    
     
     
     
@@ -314,10 +289,9 @@
       
         
         
-        
-        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
+          
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
@@ -341,6 +315,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="Charger/Charger%20Reservation/" class="md-nav__link">
         
@@ -361,12 +336,13 @@
   
   
   
+  
     <li class="md-nav__item">
-      <a href="Charger/%5BGET%5D%20selectCharger/" class="md-nav__link">
+      <a href="Charger/Start%20and%20Stop%20Charging/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    [GET] selectCharger
+    Start and Stop Charging
   </span>
   
 
@@ -381,8 +357,135 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="Charger/%5BPOST%5D%20remoteStartCharging/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [POST] remoteStartCharging
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Charger/%5BWebSocket%5D%20clientSocket/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [WebSocket] clientSocket
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Charger/%5BWebSocket%5D%20embeddedSocket/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [WebSocket] embeddedSocket
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Driver
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Driver
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Driver/Charger%20Reservation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Charger Reservation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Driver/%5BPOST%5D%20remoteStartCharging/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -408,78 +511,18 @@
   
   
   
+  
     
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
-        
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Graphs
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            Graphs
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="Graphs/%5BGET%5D%20evGraph/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    [GET] evGraph
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
     
     
     
     <li class="md-nav__item md-nav__item--nested">
       
-        
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
+          
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
@@ -503,6 +546,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="Payment/Flow/" class="md-nav__link">
         
@@ -520,6 +564,7 @@
             
               
                 
+  
   
   
   
@@ -543,6 +588,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="Payment/PayMongo%20Link/" class="md-nav__link">
         
@@ -560,6 +606,7 @@
             
               
                 
+  
   
   
   
@@ -610,42 +657,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    Installation
-  </a>
-  
-    <nav class="md-nav" aria-label="Installation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-install-mkdocs-via-pip" class="md-nav__link">
-    1. Install mkdocs via pip
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-install-all-the-necessary-packages" class="md-nav__link">
-    2. Install all the necessary packages
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-run-the-server-locally" class="md-nav__link">
-    3. Run the server locally
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#how-to-deploy" class="md-nav__link">
-    How To Deploy
+    <span class="md-ellipsis">
+      How To Deploy
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="How To Deploy">
@@ -653,14 +668,18 @@
         
           <li class="md-nav__item">
   <a href="#1-add-remote-only-once" class="md-nav__link">
-    1. Add Remote [Only Once]
+    <span class="md-ellipsis">
+      1. Add Remote [Only Once]
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#2-deploy" class="md-nav__link">
-    2. Deploy
+    <span class="md-ellipsis">
+      2. Deploy
+    </span>
   </a>
   
 </li>
@@ -688,21 +707,6 @@
   <h1>Home</h1>
 
 <p>This is hosted in GitHub Pages. Happy Reading.</p>
-<h2 id="installation">Installation</h2>
-<h3 id="1-install-mkdocs-via-pip">1. Install mkdocs via pip</h3>
-<div class="highlight"><pre><span></span><code>pip install mkdocs
-</code></pre></div>
-<h3 id="2-install-all-the-necessary-packages">2. Install all the necessary packages</h3>
-<div class="highlight"><pre><span></span><code>pip install mkdocs-material
-pip install mkdocstrings
-pip install &quot;mkdocstrings[python]&quot;
-pip install mkdocs-awesome-pages-plugin 
-pip install mkdocs-material 
-pip install mkdocs-autorefs
-</code></pre></div>
-<h3 id="3-run-the-server-locally">3. Run the server locally</h3>
-<div class="highlight"><pre><span></span><code>mkdocs serve
-</code></pre></div>
 <h2 id="how-to-deploy">How To Deploy</h2>
 <p>Only manual deployment is supported. GitHub Pages for private
 repositories is not available for free tier.</p>
@@ -717,11 +721,19 @@ repositories is not available for free tier.</p>
 
 
 
+
+
+
+
+
+
+
                 
               </article>
             </div>
           
           
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
       </main>
@@ -749,10 +761,11 @@ repositories is not available for free tier.</p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["content.code.copy"], "search": "assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    <script id="__config" type="application/json">{"base": ".", "features": ["content.code.copy"], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.dff1b7c8.min.js"></script>
+      <script src="assets/javascripts/bundle.a7c05c9e.min.js"></script>
       
     
   </body>
