@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#how-to-deploy" class="md-skip">
+        <a href="#installation" class="md-skip">
           Skip to content
         </a>
       
@@ -235,6 +235,48 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-install-mkdocs-via-pip" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Install mkdocs via pip
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-install-all-the-necessary-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Install all the necessary packages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-run-the-server-locally" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Run the server locally
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#how-to-deploy" class="md-nav__link">
     <span class="md-ellipsis">
       How To Deploy
@@ -359,6 +401,27 @@
   
   
     <li class="md-nav__item">
+      <a href="Charger/%5BGET%5D%20selectCharger/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [GET] selectCharger
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="Charger/%5BPOST%5D%20remoteStartCharging/" class="md-nav__link">
         
   
@@ -443,7 +506,7 @@
             
   
   <span class="md-ellipsis">
-    Driver
+    Graphs
   </span>
   
 
@@ -453,7 +516,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            Driver
+            Graphs
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -464,32 +527,11 @@
   
   
     <li class="md-nav__item">
-      <a href="Driver/Charger%20Reservation/" class="md-nav__link">
+      <a href="Graphs/%5BGET%5D%20evGraph/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Charger Reservation
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="Driver/%5BPOST%5D%20remoteStartCharging/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    [POST] remoteStartCharging
+    [GET] evGraph
   </span>
   
 
@@ -657,6 +699,48 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-install-mkdocs-via-pip" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Install mkdocs via pip
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-install-all-the-necessary-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Install all the necessary packages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-run-the-server-locally" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Run the server locally
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#how-to-deploy" class="md-nav__link">
     <span class="md-ellipsis">
       How To Deploy
@@ -707,6 +791,21 @@
   <h1>Home</h1>
 
 <p>This is hosted in GitHub Pages. Happy Reading.</p>
+<h2 id="installation">Installation</h2>
+<h3 id="1-install-mkdocs-via-pip">1. Install mkdocs via pip</h3>
+<div class="highlight"><pre><span></span><code>pip install mkdocs
+</code></pre></div>
+<h3 id="2-install-all-the-necessary-packages">2. Install all the necessary packages</h3>
+<div class="highlight"><pre><span></span><code>pip install mkdocs-material
+pip install mkdocstrings
+pip install &quot;mkdocstrings[python]&quot;
+pip install mkdocs-awesome-pages-plugin 
+pip install mkdocs-material 
+pip install mkdocs-autorefs
+</code></pre></div>
+<h3 id="3-run-the-server-locally">3. Run the server locally</h3>
+<div class="highlight"><pre><span></span><code>mkdocs serve
+</code></pre></div>
 <h2 id="how-to-deploy">How To Deploy</h2>
 <p>Only manual deployment is supported. GitHub Pages for private
 repositories is not available for free tier.</p>
