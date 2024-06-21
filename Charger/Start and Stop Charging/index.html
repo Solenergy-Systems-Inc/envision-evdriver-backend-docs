@@ -396,6 +396,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="NEW NEW SYSTEM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#in-depth" class="md-nav__link">
+    <span class="md-ellipsis">
+      In-Depth
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -793,6 +808,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="NEW NEW SYSTEM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#in-depth" class="md-nav__link">
+    <span class="md-ellipsis">
+      In-Depth
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -949,14 +979,33 @@
   participant EMBEDDED
 
   loop
-    EMBEDDED-&gt;&gt;FastAPI APP: HEARTBEAT &amp; OTHER MESSAGES &lt;br&gt; (CHECK Sub-Graph 1)
+    EMBEDDED-&gt;&gt;FastAPI APP: HEARTBEAT &amp; OTHER MESSAGES
   end
 
-  FRONTEND-&gt;&gt;FastAPI APP: START CHARGING &lt;br&gt; VIA WebSocket
-  FastAPI APP-&gt;&gt;EMBEDDED: START CHARGING &lt;br&gt; (CHECK Sub-Graph 2)
+  FRONTEND-&gt;&gt;FastAPI APP: START/STOP CHARGING
+  FastAPI APP-&gt;&gt;EMBEDDED: START/STOP CHARGING
 
-  EMBEDDED-&gt;&gt;FastAPI APP: RETURN RESPONSE &lt;br&gt; (CHECK Sub-Graph 2)
-  FastAPI APP-&gt;&gt;FRONTEND: RETURN RESPONSE &lt;br&gt; VIA WebSocket</code></pre>
+  EMBEDDED-&gt;&gt;FastAPI APP: RETURN RESPONSE
+  FastAPI APP-&gt;&gt;FRONTEND: RETURN RESPONSE</code></pre>
+<h3 id="in-depth">In-Depth</h3>
+<p>Whenever EMBEDDED sends the FastAPI APP a:</p>
+<ol>
+<li>Heartbeat: the connection object is saved in <code>embedded_connections.py</code>.</li>
+<li>CallResult or CallError: the response is sent to the <code>Future</code> objects in <code>future_responses.py</code>.</li>
+</ol>
+<pre class="mermaid"><code>flowchart LR
+   CLIENT &lt;--&gt; clientSocket.py
+
+   subgraph " "
+      embedded_connections.py
+      future_responses.py
+   end
+
+   clientSocket.py -- &lt;&lt;&lt; --- embedded_connections.py -- &lt;&lt;&lt; --- embeddedSocket.py
+   clientSocket.py -- &lt;&lt;&lt; --- future_responses.py -- &lt;&lt;&lt; --- embeddedSocket.py
+
+   clientSocket.py --&gt;|Uses WebSocket object&lt;br&gt;from embedded_connections.py| EMBEDDED
+   embeddedSocket.py -- &lt;&lt;&lt; --- EMBEDDED</code></pre>
 
 
 
