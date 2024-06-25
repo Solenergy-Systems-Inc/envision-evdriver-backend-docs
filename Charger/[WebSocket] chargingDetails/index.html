@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../%5BGET%5D%20selectCharger/">
+        <link rel="prev" href="../%5BPOST%5D%20remoteStartCharging/">
       
       
-        <link rel="next" href="../%5BWebSocket%5D%20chargingDetails/">
+        <link rel="next" href="../%5BWebSocket%5D%20clientSocket/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>[POST] remoteStartCharging - Envision EV Documentation</title>
+        <title>[WebSocket] chargingDetails - Envision EV Documentation</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modules.charger.dtos.RemoteStartRequestDTO.RemoteStartRequestDTO" class="md-skip">
+        <a href="#notes" class="md-skip">
           Skip to content
         </a>
       
@@ -105,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              [POST] remoteStartCharging
+              [WebSocket] chargingDetails
             
           </span>
         </div>
@@ -307,6 +307,26 @@
                 
   
   
+  
+    <li class="md-nav__item">
+      <a href="../%5BPOST%5D%20remoteStartCharging/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [POST] remoteStartCharging
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -320,7 +340,7 @@
           
   
   <span class="md-ellipsis">
-    [POST] remoteStartCharging
+    [WebSocket] chargingDetails
   </span>
   
 
@@ -331,7 +351,7 @@
         
   
   <span class="md-ellipsis">
-    [POST] remoteStartCharging
+    [WebSocket] chargingDetails
   </span>
   
 
@@ -351,22 +371,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modules.charger.dtos.RemoteStartRequestDTO.RemoteStartRequestDTO" class="md-nav__link">
-    RemoteStartRequestDTO
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#modules.charger.dtos.RemoteStartResponseDTO.RemoteStartResponseDTO" class="md-nav__link">
-    RemoteStartResponseDTO
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#notes" class="md-nav__link">
     Notes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules.vps.dtos.ChargingDetailsRequestDTO.ChargingDetailsRequestDTO" class="md-nav__link">
+    ChargingDetailsRequestDTO
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules.vps.dtos.ChargingDetailsResponseDTO.ChargingDetailsResponseDTO" class="md-nav__link">
+    ChargingDetailsResponseDTO
   </a>
   
 </li>
@@ -375,26 +395,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%5BWebSocket%5D%20chargingDetails/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    [WebSocket] chargingDetails
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -654,22 +654,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modules.charger.dtos.RemoteStartRequestDTO.RemoteStartRequestDTO" class="md-nav__link">
-    RemoteStartRequestDTO
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#modules.charger.dtos.RemoteStartResponseDTO.RemoteStartResponseDTO" class="md-nav__link">
-    RemoteStartResponseDTO
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#notes" class="md-nav__link">
     Notes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules.vps.dtos.ChargingDetailsRequestDTO.ChargingDetailsRequestDTO" class="md-nav__link">
+    ChargingDetailsRequestDTO
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules.vps.dtos.ChargingDetailsResponseDTO.ChargingDetailsResponseDTO" class="md-nav__link">
+    ChargingDetailsResponseDTO
   </a>
   
 </li>
@@ -689,18 +689,21 @@
                   
 
 
-  <h1>[POST] remoteStartCharging</h1>
+  <h1>[WebSocket] chargingDetails</h1>
 
-<pre><code>/api/remoteStartCharging
+<pre><code>&lt;new-vps-url&gt;/charger/chargingDetails
 </code></pre>
+<h3 id="notes">Notes</h3>
+<p>Ensure that the authorization headers are sent with the request. The Driver ID will be retrieved from this parameter</p>
+<p>The DTOs below are the messages to be sent via WebSocket.</p>
 
 
 <div class="doc doc-object doc-class">
 
 
 
-<h3 class="doc doc-heading" id="modules.charger.dtos.RemoteStartRequestDTO.RemoteStartRequestDTO">
-        <code>RemoteStartRequestDTO</code>
+<h3 class="doc doc-heading" id="modules.vps.dtos.ChargingDetailsRequestDTO.ChargingDetailsRequestDTO">
+        <code>ChargingDetailsRequestDTO</code>
 
   
   <span class="doc doc-labels">
@@ -725,68 +728,24 @@
     </thead>
     <tbody>
         <tr>
-          <td><code>email</code></td>
+          <td><code>transaction_id</code></td>
           <td>
                 <code>str</code>
           </td>
           <td>
             <div class="doc-md-description">
-              <p>EMAIL OF USER</p>
+              <p>Transaction ID of the ongoing charging session</p>
             </div>
           </td>
         </tr>
         <tr>
           <td><code>site_id</code></td>
           <td>
-                <code>int</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>SITE ID OF CHARGER</p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td><code>charger_id</code></td>
-          <td>
                 <code>str</code>
           </td>
           <td>
             <div class="doc-md-description">
-              <p>CHARGER ID TO START</p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td><code>connector_id</code></td>
-          <td>
-                <code>int</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>CONNECTOR ID TO START</p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td><code>duration</code></td>
-          <td>
-                <code>float</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>INTENDED DURATION OF CHARGING</p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td><code>payment_intent_id</code></td>
-          <td>
-                <code><span title="typing.Optional">Optional</span>[str]</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>USE THIS FOR PAYMONGO. OTHERWISE, MONEY WILL BE DEDUCTED TO WALLET</p>
+              <p>Site ID of the transaction</p>
             </div>
           </td>
         </tr>
@@ -819,8 +778,8 @@
 
 
 
-<h3 class="doc doc-heading" id="modules.charger.dtos.RemoteStartResponseDTO.RemoteStartResponseDTO">
-        <code>RemoteStartResponseDTO</code>
+<h3 class="doc doc-heading" id="modules.vps.dtos.ChargingDetailsResponseDTO.ChargingDetailsResponseDTO">
+        <code>ChargingDetailsResponseDTO</code>
 
   
   <span class="doc doc-labels">
@@ -845,13 +804,90 @@
     </thead>
     <tbody>
         <tr>
-          <td><code>transaction_id</code></td>
+          <td><code>duration</code></td>
           <td>
                 <code>str</code>
           </td>
           <td>
             <div class="doc-md-description">
-              <p>CHARGE TRANSACTION ID</p>
+              <p>Duration of the charging session in HH:MM:SS format</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>kwh</code></td>
+          <td>
+                <code>float</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Total energy consumed in kWh</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>latest_kw</code></td>
+          <td>
+                <code>float</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Latest power drawn by the vehicle in kW</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>time_started</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Time when the charging session started in YYYY-MM-DD HH:MM:SS format</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>time_remaining</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Time remaining for the charging session to complete in HH:MM:SS format</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>total</code></td>
+          <td>
+                <code>float</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Total cost of the charging session in PHP</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>cost_breakdown</code></td>
+          <td>
+                <code>dict</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>Breakdown of the cost of the charging session</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>soc</code></td>
+          <td>
+                <code>float</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>State of charge of the vehicle in percentage (optional)</p>
             </div>
           </td>
         </tr>
@@ -878,14 +914,7 @@
 
   </div>
 
-</div><h2 id="notes">Notes</h2>
-<ul>
-<li>If <code>payment_intent_id</code> is indicated, this endpoint will only work for the following cases:<ul>
-<li>If payment method is credit card and the status is awaiting capture.</li>
-<li>If payment method is non-credit card and the status is paid.</li>
-</ul>
-</li>
-</ul>
+</div>
 
 
 
