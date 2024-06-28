@@ -387,6 +387,16 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#request-related-schemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request Related Schemas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Request Related Schemas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#modules.vps.dtos.ClientSocketRequestDTO.ClientSocketRequestDTO" class="md-nav__link">
     <span class="md-ellipsis">
       ClientSocketRequestDTO
@@ -420,6 +430,50 @@
       RemoteStopRequestDTO
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#response-related-schemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response Related Schemas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Response Related Schemas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modules.vps.dtos.RemoteResponseDTO.RemoteResponseDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      RemoteResponseDTO
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="RemoteResponseDTO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modules.vps.enums.CallResultStatusEnum.CallResultStatusEnum" class="md-nav__link">
+    <span class="md-ellipsis">
+      CallResultStatusEnum
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -772,6 +826,16 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#request-related-schemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request Related Schemas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Request Related Schemas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#modules.vps.dtos.ClientSocketRequestDTO.ClientSocketRequestDTO" class="md-nav__link">
     <span class="md-ellipsis">
       ClientSocketRequestDTO
@@ -812,6 +876,50 @@
     </nav>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#response-related-schemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response Related Schemas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Response Related Schemas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modules.vps.dtos.RemoteResponseDTO.RemoteResponseDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      RemoteResponseDTO
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="RemoteResponseDTO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modules.vps.enums.CallResultStatusEnum.CallResultStatusEnum" class="md-nav__link">
+    <span class="md-ellipsis">
+      CallResultStatusEnum
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
     </ul>
   
@@ -837,6 +945,7 @@
 <li>Do not forget to include access tokens in the <code>Authorization</code> header.</li>
 <li>The DTOs below are the messages to be sent via WebSocket.</li>
 </ul>
+<h2 id="request-related-schemas">Request Related Schemas</h2>
 
 
 <div class="doc doc-object doc-class">
@@ -1112,6 +1221,133 @@
         </tr>
     </tbody>
   </table>
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  </div>
+
+
+</div><h2 id="response-related-schemas">Response Related Schemas</h2>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="modules.vps.dtos.RemoteResponseDTO.RemoteResponseDTO" class="doc doc-heading">
+          <code>RemoteResponseDTO</code>
+
+
+</h3>
+
+
+  <div class="doc doc-contents first">
+
+  
+
+
+
+  <p><span class="doc-section-title">Attributes:</span></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.vps.dtos.RemoteResponseDTO.RemoteResponseDTO.status">status</span></code></td>
+          <td>
+                <code><a class="autorefs autorefs-internal" title="modules.vps.enums.CallResultStatusEnum.CallResultStatusEnum" href="#modules.vps.enums.CallResultStatusEnum.CallResultStatusEnum">CallResultStatusEnum</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              
+            </div>
+          </td>
+        </tr>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.vps.dtos.RemoteResponseDTO.RemoteResponseDTO.transaction_id">transaction_id</span></code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  </div>
+
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h4 id="modules.vps.enums.CallResultStatusEnum.CallResultStatusEnum" class="doc doc-heading">
+          <code>CallResultStatusEnum</code>
+
+
+</h4>
+
+
+  <div class="doc doc-contents first">
+
+  
+      <table>
+<thead>
+<tr>
+<th>Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Accepted</td>
+</tr>
+<tr>
+<td>Rejected</td>
+</tr>
+</tbody>
+</table>
 
 
   
