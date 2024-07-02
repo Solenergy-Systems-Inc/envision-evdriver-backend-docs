@@ -467,6 +467,26 @@
   
 </li>
         
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-response" class="md-nav__link">
+    Error Response
+  </a>
+  
+    <nav class="md-nav" aria-label="Error Response">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modules.vps.dtos.WSErrorResponseDTO.WSErrorResponseDTO" class="md-nav__link">
+    WSErrorResponseDTO
+  </a>
+  
+</li>
+        
           <li class="md-nav__item">
   <a href="#notes" class="md-nav__link">
     Notes
@@ -814,6 +834,26 @@
           <li class="md-nav__item">
   <a href="#modules.vps.dtos.ChargingDetailsResponseDTO.ChargingDetailsResponseDTO" class="md-nav__link">
     ChargingDetailsResponseDTO
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-response" class="md-nav__link">
+    Error Response
+  </a>
+  
+    <nav class="md-nav" aria-label="Error Response">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modules.vps.dtos.WSErrorResponseDTO.WSErrorResponseDTO" class="md-nav__link">
+    WSErrorResponseDTO
   </a>
   
 </li>
@@ -1564,6 +1604,83 @@
           <td>
             <div class="doc-md-description">
               <p>State of charge of the vehicle in percentage (optional)</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  </div>
+
+</div><h3 id="error-response">Error Response</h3>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h4 class="doc doc-heading" id="modules.vps.dtos.WSErrorResponseDTO.WSErrorResponseDTO">
+        <code>WSErrorResponseDTO</code>
+
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
+  </span>
+
+</h4>
+
+
+  <div class="doc doc-contents first">
+
+  
+
+  <p><strong>Attributes:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>action</code></td>
+          <td>
+                <code><a class="autorefs autorefs-internal" title="modules.vps.enums.ActionEnum.ActionEnum" href="#modules.vps.enums.ActionEnum.ActionEnum">ActionEnum</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>action to be performed by the server</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><code>error_message</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>error message given in FE - BE code format (i.e. TXN_DONE)</p>
             </div>
           </td>
         </tr>
