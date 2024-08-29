@@ -12,7 +12,7 @@
         <link rel="prev" href="../../Design/">
       
       
-        <link rel="next" href="../../Manager/Design/">
+        <link rel="next" href="../%5BPOST%5D%20cancelReservations/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Design - Envision EV Documentation</title>
+        <title>[GET] userReservations - Envision EV Documentation</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#db-design" class="md-skip">
+        <a href="#modules.parking.driver.__.endpoints.userReservations.UserReservationsResponseDTO" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Design
+              [GET] userReservations
             
           </span>
         </div>
@@ -615,7 +615,7 @@
           
   
   <span class="md-ellipsis">
-    Design
+    [GET] userReservations
   </span>
   
 
@@ -626,7 +626,7 @@
         
   
   <span class="md-ellipsis">
-    Design
+    [GET] userReservations
   </span>
   
 
@@ -646,11 +646,26 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#db-design" class="md-nav__link">
+  <a href="#modules.parking.driver.__.endpoints.userReservations.UserReservationsResponseDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      DB DESIGN
+      UserReservationsResponseDTO
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="UserReservationsResponseDTO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modules.parking.driver.__.endpoints.userReservations.ReservationDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      ReservationDTO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -658,6 +673,69 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5BPOST%5D%20cancelReservations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [POST] cancelReservations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5BPOST%5D%20dayReservations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [POST] dayReservations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5BPOST%5D%20requestReservation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [POST] requestReservation
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -713,11 +791,53 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Manager/Design/" class="md-nav__link">
+      <a href="../../Manager/%5BGET%5D%20getReservations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Design
+    [GET] getReservations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Manager/%5BGET%5D%20getSettings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [GET] getSettings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Manager/%5BPOST%5D%20updateSettings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [POST] updateSettings
   </span>
   
 
@@ -893,11 +1013,26 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#db-design" class="md-nav__link">
+  <a href="#modules.parking.driver.__.endpoints.userReservations.UserReservationsResponseDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      DB DESIGN
+      UserReservationsResponseDTO
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="UserReservationsResponseDTO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modules.parking.driver.__.endpoints.userReservations.ReservationDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      ReservationDTO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -916,22 +1051,192 @@
                   
 
 
-  <h1>Design</h1>
+  <h1>[GET] userReservations</h1>
 
-<h2 id="db-design">DB DESIGN</h2>
-<pre class="mermaid"><code>erDiagram
-    Site ||--O| ParkingReservationTimeSpan : CONTAINS
-    Site ||--O{ ParkingSlot : CONTAINS
-    Site ||--O{ Charger : CONTAINS
+<pre><code>/api/parking/driver/userReservations
+</code></pre>
 
-    ParkingReservationTimeSpan ||--O{ ParkingReservationTimeSlot : CONTAINS
 
-    ParkingReservationTimeSlot ||--|{ "ParkingSlotReservation + History" : "IS USED BY"
+<div class="doc doc-object doc-class">
 
-    ParkingSlot ||--|| "ParkingSlotReservation + History" : "CONTAINS"
-    ParkingSlot ||--|{ "Connector + History" : "LINKS TO"
 
-    Charger ||--|{ "Connector + History" : CONTAINS</code></pre>
+
+<h2 id="modules.parking.driver.__.endpoints.userReservations.UserReservationsResponseDTO" class="doc doc-heading">
+          <code>UserReservationsResponseDTO</code>
+
+
+</h2>
+
+
+  <div class="doc doc-contents first">
+
+  
+
+
+
+  <p><span class="doc-section-title">Attributes:</span></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.parking.driver.__.endpoints.userReservations.UserReservationsResponseDTO.reservations">reservations</span></code></td>
+          <td>
+                <code><span title="typing.List">List</span>[<a class="autorefs autorefs-internal" title="modules.parking.driver.__.endpoints.userReservations.ReservationDTO" href="#modules.parking.driver.__.endpoints.userReservations.ReservationDTO">ReservationDTO</a>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  </div>
+
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="modules.parking.driver.__.endpoints.userReservations.ReservationDTO" class="doc doc-heading">
+          <code>ReservationDTO</code>
+
+
+</h3>
+
+
+  <div class="doc doc-contents first">
+
+  
+
+
+
+  <p><span class="doc-section-title">Attributes:</span></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.parking.driver.__.endpoints.userReservations.ReservationDTO.reservation_id">reservation_id</span></code></td>
+          <td>
+                <code>int</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              
+            </div>
+          </td>
+        </tr>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.parking.driver.__.endpoints.userReservations.ReservationDTO.date">date</span></code></td>
+          <td>
+                <code><span title="modules.core.types.EVDate.EVDate">EVDate</span></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              
+            </div>
+          </td>
+        </tr>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.parking.driver.__.endpoints.userReservations.ReservationDTO.time">time</span></code></td>
+          <td>
+                <code><span title="modules.core.types.EVCivilianTimeRange.EVCivilianTimeRange">EVCivilianTimeRange</span></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              
+            </div>
+          </td>
+        </tr>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.parking.driver.__.endpoints.userReservations.ReservationDTO.site_name">site_name</span></code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              
+            </div>
+          </td>
+        </tr>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.parking.driver.__.endpoints.userReservations.ReservationDTO.charger_name">charger_name</span></code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              
+            </div>
+          </td>
+        </tr>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.parking.driver.__.endpoints.userReservations.ReservationDTO.connector_name">connector_name</span></code></td>
+          <td>
+                <code><span title="typing.List">List</span>[str]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  </div>
+
+
+</div>
 
 
 

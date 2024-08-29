@@ -12,7 +12,7 @@
         <link rel="prev" href="../../Driver/%5BPOST%5D%20deleteRequest/">
       
       
-        <link rel="next" href="../Driver/Design/">
+        <link rel="next" href="../Driver/%5BGET%5D%20userReservations/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -647,11 +647,74 @@
   
   
     <li class="md-nav__item">
-      <a href="../Driver/Design/" class="md-nav__link">
+      <a href="../Driver/%5BGET%5D%20userReservations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Design
+    [GET] userReservations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Driver/%5BPOST%5D%20cancelReservations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [POST] cancelReservations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Driver/%5BPOST%5D%20dayReservations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [POST] dayReservations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Driver/%5BPOST%5D%20requestReservation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [POST] requestReservation
   </span>
   
 
@@ -711,11 +774,53 @@
   
   
     <li class="md-nav__item">
-      <a href="../Manager/Design/" class="md-nav__link">
+      <a href="../Manager/%5BGET%5D%20getReservations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Design
+    [GET] getReservations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Manager/%5BGET%5D%20getSettings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [GET] getSettings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Manager/%5BPOST%5D%20updateSettings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [POST] updateSettings
   </span>
   
 
@@ -926,7 +1031,7 @@
 
     ParkingTimeSlot ||--|{ ParkingSlotReservation : "IS USED BY"
 
-    ParkingSlot ||--|| ParkingSlotReservation : "CONTAINS"
+    ParkingSlot ||--|{ ParkingSlotReservation : "CONTAINS"
     ParkingSlot ||--|{ ParkingSlotToConnectorsJoin : "LINKS TO"
 
     Charger ||--|| ParkingSlotToConnectorsJoin : CONTAINS</code></pre>
