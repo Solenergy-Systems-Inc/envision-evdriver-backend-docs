@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../Capture/">
+        <link rel="prev" href="../..">
       
       
-        <link rel="next" href="../%5BPOST%5D%20createPaymentIntent/">
+        <link rel="next" href="../../Charger/Charger%20Reservation%20%5BSOFT%5D/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>PayMongo Link - Envision EV Documentation</title>
+        <title>Layer - Envision EV Documentation</title>
       
     
     
@@ -97,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              PayMongo Link
+              Layer
             
           </span>
         </div>
@@ -207,17 +207,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -231,7 +233,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             AWS
@@ -242,10 +244,17 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../AWS/Layer/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -254,6 +263,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -1009,19 +1019,17 @@
       
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
@@ -1035,7 +1043,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Payment
@@ -1049,7 +1057,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Flow/" class="md-nav__link">
+      <a href="../../Payment/Flow/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1070,7 +1078,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Capture/" class="md-nav__link">
+      <a href="../../Payment/Capture/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1088,17 +1096,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Payment/PayMongo%20Link/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1107,7 +1108,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -1120,7 +1120,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%5BPOST%5D%20createPaymentIntent/" class="md-nav__link">
+      <a href="../../Payment/%5BPOST%5D%20createPaymentIntent/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1172,10 +1172,37 @@
                   
 
 
-  <h1>PayMongo Link</h1>
+  <h1>Layer</h1>
 
-<pre><code>https://developers.paymongo.com/docs/pipm-workflow
-</code></pre>
+<ol>
+<li>
+<p>Go to the <code>Download Files</code> section of the package you want.</p>
+<p><img alt="Download Files.png" src="Download%20Files.png" /></p>
+</li>
+<li>
+<p>Download the archive for your intended Python version.</p>
+<p>Most packages will only have one archive that is compatible with any platform. In cases
+  of multiple options, look for <code>x86-64</code> AND <code>manylinux</code>, which is what we currently use
+  at the time of writing.</p>
+<p><img alt="Archive.png" src="Archive.png" /></p>
+</li>
+<li>
+<p>Extract its contents to a folder specifically named <code>python</code>.</p>
+<p><img alt="Extract.png" src="Extract.png" /></p>
+</li>
+<li>
+<p>Do the same for its dependencies. The ending folder structure should look like this:</p>
+<p>To find its dependencies, try to install the package in an empty virtual environment,
+  then do <code>pip list</code>.</p>
+<p><img alt="End Folder.png" src="End%20Folder.png" /></p>
+</li>
+<li>
+<p>Zip the folder and upload it to AWS Lambda.</p>
+<p>The name of the archive does not matter. However, make sure that the <code>python</code> folder is at 
+  the base of the archive.</p>
+<p><img alt="Layer Archive.png" src="Layer%20Archive.png" /></p>
+</li>
+</ol>
 
 
 
