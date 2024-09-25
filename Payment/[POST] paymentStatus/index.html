@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../%5BGET%5D%20selectCharger/">
+        <link rel="prev" href="../%5BPOST%5D%20createPaymentIntent/">
       
       
-        <link rel="next" href="../%5BWebSocket%5D%20clientSocket/">
+        <link rel="next" href="../../Site/%5BGET%5D%20allSites/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>[POST] remoteStartCharging - Envision EV Documentation</title>
+        <title>[POST] paymentStatus - Envision EV Documentation</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modules.charger.__.dtos.RemoteStartRequestDTO.RemoteStartRequestDTO" class="md-skip">
+        <a href="#modules.payment.dtos.PaymentStatusDTO.PaymentStatusRequestDTO" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              [POST] remoteStartCharging
+              [POST] paymentStatus
             
           </span>
         </div>
@@ -275,19 +275,17 @@
       
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -301,7 +299,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Charger
@@ -315,7 +313,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Charger%20Reservation%20%5BSOFT%5D/" class="md-nav__link">
+      <a href="../../Charger/Charger%20Reservation%20%5BSOFT%5D/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -336,7 +334,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Start%20and%20Stop%20Charging/" class="md-nav__link">
+      <a href="../../Charger/Start%20and%20Stop%20Charging/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -357,7 +355,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%5BGET%5D%20selectCharger/" class="md-nav__link">
+      <a href="../../Charger/%5BGET%5D%20selectCharger/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -375,28 +373,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    [POST] remoteStartCharging
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Charger/%5BPOST%5D%20remoteStartCharging/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -405,51 +385,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#modules.charger.__.dtos.RemoteStartRequestDTO.RemoteStartRequestDTO" class="md-nav__link">
-    <span class="md-ellipsis">
-      RemoteStartRequestDTO
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#modules.charger.__.dtos.RemoteStartResponseDTO.RemoteStartResponseDTO" class="md-nav__link">
-    <span class="md-ellipsis">
-      RemoteStartResponseDTO
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#notes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Notes
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -462,7 +397,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%5BWebSocket%5D%20clientSocket/" class="md-nav__link">
+      <a href="../../Charger/%5BWebSocket%5D%20clientSocket/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -483,7 +418,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%5BWebSocket%5D%20embeddedSocket/" class="md-nav__link">
+      <a href="../../Charger/%5BWebSocket%5D%20embeddedSocket/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1205,17 +1140,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
           <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
@@ -1229,7 +1166,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Payment
@@ -1243,7 +1180,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Payment/Flow/" class="md-nav__link">
+      <a href="../Flow/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1264,7 +1201,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Payment/Capture/" class="md-nav__link">
+      <a href="../Capture/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1285,7 +1222,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Payment/PayMongo%20Link/" class="md-nav__link">
+      <a href="../PayMongo%20Link/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1306,7 +1243,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Payment/%5BPOST%5D%20createPaymentIntent/" class="md-nav__link">
+      <a href="../%5BPOST%5D%20createPaymentIntent/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1324,10 +1261,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../Payment/%5BPOST%5D%20paymentStatus/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    [POST] paymentStatus
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1336,6 +1291,42 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#modules.payment.dtos.PaymentStatusDTO.PaymentStatusRequestDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      PaymentStatusRequestDTO
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules.payment.dtos.PaymentStatusDTO.PaymentStatusResponseDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      PaymentStatusResponseDTO
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1457,27 +1448,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modules.charger.__.dtos.RemoteStartRequestDTO.RemoteStartRequestDTO" class="md-nav__link">
+  <a href="#modules.payment.dtos.PaymentStatusDTO.PaymentStatusRequestDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      RemoteStartRequestDTO
+      PaymentStatusRequestDTO
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#modules.charger.__.dtos.RemoteStartResponseDTO.RemoteStartResponseDTO" class="md-nav__link">
+  <a href="#modules.payment.dtos.PaymentStatusDTO.PaymentStatusResponseDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      RemoteStartResponseDTO
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#notes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Notes
+      PaymentStatusResponseDTO
     </span>
   </a>
   
@@ -1498,9 +1480,9 @@
                   
 
 
-  <h1>[POST] remoteStartCharging</h1>
+  <h1>[POST] paymentStatus</h1>
 
-<pre><code>/api/remoteStartCharging
+<pre><code>/api/paymentStatus
 </code></pre>
 
 
@@ -1508,8 +1490,8 @@
 
 
 
-<h3 id="modules.charger.__.dtos.RemoteStartRequestDTO.RemoteStartRequestDTO" class="doc doc-heading">
-          <code>RemoteStartRequestDTO</code>
+<h3 id="modules.payment.dtos.PaymentStatusDTO.PaymentStatusRequestDTO" class="doc doc-heading">
+          <code>PaymentStatusRequestDTO</code>
 
 
 </h3>
@@ -1532,68 +1514,24 @@
     </thead>
     <tbody>
         <tr class="doc-section-item">
-          <td><code><span title="modules.charger.__.dtos.RemoteStartRequestDTO.RemoteStartRequestDTO.email">email</span></code></td>
+          <td><code><span title="modules.payment.dtos.PaymentStatusDTO.PaymentStatusRequestDTO.email">email</span></code></td>
           <td>
                 <code>str</code>
           </td>
           <td>
             <div class="doc-md-description">
-              <p>EMAIL OF USER</p>
+              <p>email of the user</p>
             </div>
           </td>
         </tr>
         <tr class="doc-section-item">
-          <td><code><span title="modules.charger.__.dtos.RemoteStartRequestDTO.RemoteStartRequestDTO.site_id">site_id</span></code></td>
-          <td>
-                <code>int</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>SITE ID OF CHARGER</p>
-            </div>
-          </td>
-        </tr>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.charger.__.dtos.RemoteStartRequestDTO.RemoteStartRequestDTO.charger_id">charger_id</span></code></td>
+          <td><code><span title="modules.payment.dtos.PaymentStatusDTO.PaymentStatusRequestDTO.payment_intent_id">payment_intent_id</span></code></td>
           <td>
                 <code>str</code>
           </td>
           <td>
             <div class="doc-md-description">
-              <p>CHARGER ID TO START</p>
-            </div>
-          </td>
-        </tr>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.charger.__.dtos.RemoteStartRequestDTO.RemoteStartRequestDTO.connector_id">connector_id</span></code></td>
-          <td>
-                <code>int</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>CONNECTOR ID TO START</p>
-            </div>
-          </td>
-        </tr>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.charger.__.dtos.RemoteStartRequestDTO.RemoteStartRequestDTO.duration">duration</span></code></td>
-          <td>
-                <code>float</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>INTENDED DURATION OF CHARGING</p>
-            </div>
-          </td>
-        </tr>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.charger.__.dtos.RemoteStartRequestDTO.RemoteStartRequestDTO.payment_intent_id">payment_intent_id</span></code></td>
-          <td>
-                <code><span title="typing.Optional">Optional</span>[str]</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>USE THIS FOR PAYMONGO. OTHERWISE, MONEY WILL BE DEDUCTED TO WALLET</p>
+              <p>payment intent id to get the status of</p>
             </div>
           </td>
         </tr>
@@ -1626,8 +1564,8 @@
 
 
 
-<h3 id="modules.charger.__.dtos.RemoteStartResponseDTO.RemoteStartResponseDTO" class="doc doc-heading">
-          <code>RemoteStartResponseDTO</code>
+<h3 id="modules.payment.dtos.PaymentStatusDTO.PaymentStatusResponseDTO" class="doc doc-heading">
+          <code>PaymentStatusResponseDTO</code>
 
 
 </h3>
@@ -1650,13 +1588,13 @@
     </thead>
     <tbody>
         <tr class="doc-section-item">
-          <td><code><span title="modules.charger.__.dtos.RemoteStartResponseDTO.RemoteStartResponseDTO.transaction_id">transaction_id</span></code></td>
+          <td><code><span title="modules.payment.dtos.PaymentStatusDTO.PaymentStatusResponseDTO.payment_status">payment_status</span></code></td>
           <td>
                 <code>str</code>
           </td>
           <td>
             <div class="doc-md-description">
-              <p>CHARGE TRANSACTION ID</p>
+              <p>status of the payment</p>
             </div>
           </td>
         </tr>
@@ -1683,14 +1621,7 @@
   </div>
 
 
-</div><h2 id="notes">Notes</h2>
-<ul>
-<li>If <code>payment_intent_id</code> is indicated, this endpoint will only work for the following cases:<ul>
-<li>If payment method is credit card and the status is awaiting capture.</li>
-<li>If payment method is non-credit card and the status is paid.</li>
-</ul>
-</li>
-</ul>
+</div><p>```</p>
 
 
 
