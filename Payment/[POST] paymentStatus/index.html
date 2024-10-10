@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../PayMongo%20Link/">
+        <link rel="prev" href="../%5BPOST%5D%20createPaymentIntent/">
       
       
-        <link rel="next" href="../%5BPOST%5D%20paymentStatus/">
+        <link rel="next" href="../../Site/%5BGET%5D%20allSites/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>[POST] createPaymentIntent - Envision EV Documentation</title>
+        <title>[POST] paymentStatus - Envision EV Documentation</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modules.payment.dtos.CreateIntentRequestDTO.CreateIntentRequestDTO" class="md-skip">
+        <a href="#modules.payment.dtos.PaymentStatusDTO.PaymentStatusRequestDTO" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              [POST] createPaymentIntent
+              [POST] paymentStatus
             
           </span>
         </div>
@@ -1282,6 +1282,27 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5BPOST%5D%20createPaymentIntent/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [POST] createPaymentIntent
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -1296,7 +1317,7 @@
           
   
   <span class="md-ellipsis">
-    [POST] createPaymentIntent
+    [POST] paymentStatus
   </span>
   
 
@@ -1307,7 +1328,7 @@
         
   
   <span class="md-ellipsis">
-    [POST] createPaymentIntent
+    [POST] paymentStatus
   </span>
   
 
@@ -1327,27 +1348,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modules.payment.dtos.CreateIntentRequestDTO.CreateIntentRequestDTO" class="md-nav__link">
+  <a href="#modules.payment.dtos.PaymentStatusDTO.PaymentStatusRequestDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      CreateIntentRequestDTO
+      PaymentStatusRequestDTO
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#payment-combinations" class="md-nav__link">
+  <a href="#modules.payment.dtos.PaymentStatusDTO.PaymentStatusResponseDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      Payment Combinations
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#modules.payment.dtos.CreateIntentResponseDTO.CreateIntentResponseDTO" class="md-nav__link">
-    <span class="md-ellipsis">
-      CreateIntentResponseDTO
+      PaymentStatusResponseDTO
     </span>
   </a>
   
@@ -1357,27 +1369,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%5BPOST%5D%20paymentStatus/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    [POST] paymentStatus
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -1499,27 +1490,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modules.payment.dtos.CreateIntentRequestDTO.CreateIntentRequestDTO" class="md-nav__link">
+  <a href="#modules.payment.dtos.PaymentStatusDTO.PaymentStatusRequestDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      CreateIntentRequestDTO
+      PaymentStatusRequestDTO
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#payment-combinations" class="md-nav__link">
+  <a href="#modules.payment.dtos.PaymentStatusDTO.PaymentStatusResponseDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      Payment Combinations
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#modules.payment.dtos.CreateIntentResponseDTO.CreateIntentResponseDTO" class="md-nav__link">
-    <span class="md-ellipsis">
-      CreateIntentResponseDTO
+      PaymentStatusResponseDTO
     </span>
   </a>
   
@@ -1540,9 +1522,9 @@
                   
 
 
-  <h1>[POST] createPaymentIntent</h1>
+  <h1>[POST] paymentStatus</h1>
 
-<pre><code>/api/createPaymentIntent
+<pre><code>/api/paymentStatus
 </code></pre>
 
 
@@ -1550,11 +1532,11 @@
 
 
 
-<h2 id="modules.payment.dtos.CreateIntentRequestDTO.CreateIntentRequestDTO" class="doc doc-heading">
-            <code>CreateIntentRequestDTO</code>
+<h3 id="modules.payment.dtos.PaymentStatusDTO.PaymentStatusRequestDTO" class="doc doc-heading">
+            <code>PaymentStatusRequestDTO</code>
 
 
-</h2>
+</h3>
 
 
     <div class="doc doc-contents first">
@@ -1573,46 +1555,24 @@
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code><span title="modules.payment.dtos.CreateIntentRequestDTO.CreateIntentRequestDTO.amount">amount</span></code></td>
-            <td>
-                  <code>int</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>INTENDED AMOUNT FOR PAYMENT</p>
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.payment.dtos.CreateIntentRequestDTO.CreateIntentRequestDTO.email">email</span></code></td>
+            <td><code><span title="modules.payment.dtos.PaymentStatusDTO.PaymentStatusRequestDTO.email">email</span></code></td>
             <td>
                   <code>str</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>EMAIL OF PAYER</p>
+                <p>email of the user</p>
               </div>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="modules.payment.dtos.CreateIntentRequestDTO.CreateIntentRequestDTO.purpose">purpose</span></code></td>
+            <td><code><span title="modules.payment.dtos.PaymentStatusDTO.PaymentStatusRequestDTO.payment_intent_id">payment_intent_id</span></code></td>
             <td>
-                  <code><span title="modules.payment.enums.IntentPurposeEnum.IntentPurposeEnum">IntentPurposeEnum</span></code>
+                  <code>str</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p><a class="autorefs autorefs-internal" href="#payment-combinations">LOOK AT Payment Combinations FOR VALUES.</a></p>
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.payment.dtos.CreateIntentRequestDTO.CreateIntentRequestDTO.payment_method">payment_method</span></code></td>
-            <td>
-                  <code><a class="autorefs autorefs-internal" title="modules.payment.enums.PaymentMethodEnum.PaymentMethodEnum" href="../../Invoices/Charging%20Receipt/#modules.payment.enums.PaymentMethodEnum.PaymentMethodEnum">PaymentMethodEnum</a></code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p><a class="autorefs autorefs-internal" href="#payment-combinations">LOOK AT Payment Combinations FOR VALUES.</a></p>
+                <p>payment intent id to get the status of</p>
               </div>
             </td>
           </tr>
@@ -1638,63 +1598,17 @@
 
     </div>
 
-</div><h2 id="payment-combinations">Payment Combinations</h2>
-<p>Use the literal values inside the cells.</p>
-<p>The <code>capture_type</code> column is only here for visualization. Ignore it.</p>
-<div class="doc">
-    <table>
-        <thead>
-            <tr>
-                <th>purpose</th>
-                <th>payment_method</th>
-                <th>capture_type</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td rowspan="4" style="vertical-align: middle">Top Up</td>
-                <td>card</td>
-                <td rowspan="4" style="vertical-align: middle">automatic</td>
-            </tr>
-            <tr>
-                <td>gcash</td>
-            </tr>
-            <tr>
-                <td>grab_pay</td>
-            </tr>
-            <tr>
-                <td>paymaya</td>
-            </tr>
-            <tr>
-                <td rowspan="4" style="vertical-align: middle">Straight Payment</td>
-                <td>card</td>
-                <td>manual</td>
-            </tr>
-            <tr>
-                <td>gcash</td>
-                <td rowspan="3" style="vertical-align: middle">automatic</td>
-            </tr>
-            <tr>
-                <td>grab_pay</td>
-            </tr>
-            <tr>
-                <td>paymaya</td>
-            </tr>
-        </tbody>
-    </table>
 </div>
-
-
 
 <div class="doc doc-object doc-class">
 
 
 
-<h2 id="modules.payment.dtos.CreateIntentResponseDTO.CreateIntentResponseDTO" class="doc doc-heading">
-            <code>CreateIntentResponseDTO</code>
+<h3 id="modules.payment.dtos.PaymentStatusDTO.PaymentStatusResponseDTO" class="doc doc-heading">
+            <code>PaymentStatusResponseDTO</code>
 
 
-</h2>
+</h3>
 
 
     <div class="doc doc-contents first">
@@ -1713,13 +1627,13 @@
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code><span title="modules.payment.dtos.CreateIntentResponseDTO.CreateIntentResponseDTO.client_key">client_key</span></code></td>
+            <td><code><span title="modules.payment.dtos.PaymentStatusDTO.PaymentStatusResponseDTO.payment_status">payment_status</span></code></td>
             <td>
                   <code>str</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>USED FOR ATTACHING PAYMENT INTENT AND METHOD</p>
+                <p>status of the payment</p>
               </div>
             </td>
           </tr>
@@ -1745,7 +1659,7 @@
 
     </div>
 
-</div>
+</div><p>```</p>
 
 
 
