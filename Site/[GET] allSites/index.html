@@ -1573,7 +1573,7 @@
             </td>
             <td>
               <div class="doc-md-description">
-                
+                <p>list of sites</p>
               </div>
             </td>
           </tr>
@@ -1634,7 +1634,7 @@
             </td>
             <td>
               <div class="doc-md-description">
-                
+                <p>unique id assigned to a site</p>
               </div>
             </td>
           </tr>
@@ -1645,7 +1645,7 @@
             </td>
             <td>
               <div class="doc-md-description">
-                
+                <p>name of the site</p>
               </div>
             </td>
           </tr>
@@ -1656,7 +1656,7 @@
             </td>
             <td>
               <div class="doc-md-description">
-                
+                <p>latitudinal coordinates of the site</p>
               </div>
             </td>
           </tr>
@@ -1667,7 +1667,84 @@
             </td>
             <td>
               <div class="doc-md-description">
-                
+                <p>longitudinal coordinates of the site</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.site.__.endpoints.allSites.SiteDTO.site_address">site_address</span></code></td>
+            <td>
+                  <code>str</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>address of the site</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.site.__.endpoints.allSites.SiteDTO.site_img">site_img</span></code></td>
+            <td>
+                  <code><span title="typing.Optional">Optional</span>[str]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>link of the site image</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.site.__.endpoints.allSites.SiteDTO.google_id">google_id</span></code></td>
+            <td>
+                  <code>str</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>google id of the site</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.site.__.endpoints.allSites.SiteDTO.charger_count">charger_count</span></code></td>
+            <td>
+                  <code>int</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>number of chargers at the site regardless of status</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.site.__.endpoints.allSites.SiteDTO.charger_types">charger_types</span></code></td>
+            <td>
+                  <code><span title="typing.List">List</span>[<a class="autorefs autorefs-internal" title="modules.core.enums.ChargerTypeEnum.ChargerTypeEnum" href="../%5BGET%5D%20siteDetails/#modules.core.enums.ChargerTypeEnum.ChargerTypeEnum">ChargerTypeEnum</a>]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>list of unique charger types (AC/DC)</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.site.__.endpoints.allSites.SiteDTO.max_charging">max_charging</span></code></td>
+            <td>
+                  <code><span title="typing.List">List</span>[float]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>list of unique max charging values</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.site.__.endpoints.allSites.SiteDTO.charging_price">charging_price</span></code></td>
+            <td>
+                  <code><span title="typing.List">List</span>[float]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>list of unique charging prices at price / kwh</p>
               </div>
             </td>
           </tr>
