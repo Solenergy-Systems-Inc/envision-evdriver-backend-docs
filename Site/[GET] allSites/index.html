@@ -1427,6 +1427,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="SiteDTO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modules.charger.__.enums.ConnectorTypeEnum.ConnectorTypeEnum" class="md-nav__link">
+    <span class="md-ellipsis">
+      ConnectorTypeEnum
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modules.core.enums.ChargerTypeEnum.ChargerTypeEnum" class="md-nav__link">
+    <span class="md-ellipsis">
+      ChargerTypeEnum
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -1511,6 +1535,30 @@
       SiteDTO
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="SiteDTO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modules.charger.__.enums.ConnectorTypeEnum.ConnectorTypeEnum" class="md-nav__link">
+    <span class="md-ellipsis">
+      ConnectorTypeEnum
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modules.core.enums.ChargerTypeEnum.ChargerTypeEnum" class="md-nav__link">
+    <span class="md-ellipsis">
+      ChargerTypeEnum
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1718,11 +1766,22 @@
           <tr class="doc-section-item">
             <td><code><span title="modules.site.__.endpoints.allSites.SiteDTO.charger_types">charger_types</span></code></td>
             <td>
-                  <code><span title="typing.List">List</span>[<a class="autorefs autorefs-internal" title="modules.core.enums.ChargerTypeEnum.ChargerTypeEnum" href="../%5BGET%5D%20siteDetails/#modules.core.enums.ChargerTypeEnum.ChargerTypeEnum">ChargerTypeEnum</a>]</code>
+                  <code><span title="typing.List">List</span>[<a class="autorefs autorefs-internal" title="modules.core.enums.ChargerTypeEnum.ChargerTypeEnum" href="#modules.core.enums.ChargerTypeEnum.ChargerTypeEnum">ChargerTypeEnum</a>]</code>
             </td>
             <td>
               <div class="doc-md-description">
                 <p>list of unique charger types (AC/DC)</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.site.__.endpoints.allSites.SiteDTO.connector_types">connector_types</span></code></td>
+            <td>
+                  <code><span title="typing.List">List</span>[<a class="autorefs autorefs-internal" title="modules.charger.__.enums.ConnectorTypeEnum.ConnectorTypeEnum" href="#modules.charger.__.enums.ConnectorTypeEnum.ConnectorTypeEnum">ConnectorTypeEnum</a>]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>list of unique connector types available at the site</p>
               </div>
             </td>
           </tr>
@@ -1745,6 +1804,166 @@
             <td>
               <div class="doc-md-description">
                 <p>list of unique charging prices at price / kwh</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h4 id="modules.charger.__.enums.ConnectorTypeEnum.ConnectorTypeEnum" class="doc doc-heading">
+            <code>ConnectorTypeEnum</code>
+
+
+</h4>
+
+
+    <div class="doc doc-contents first">
+
+
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.charger.__.enums.ConnectorTypeEnum.ConnectorTypeEnum.TYPE_2">TYPE_2</span></code></td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Type 2 connector</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.charger.__.enums.ConnectorTypeEnum.ConnectorTypeEnum.CHADEMO">CHADEMO</span></code></td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>CHAdeMO connector</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.charger.__.enums.ConnectorTypeEnum.ConnectorTypeEnum.CCS2">CCS2</span></code></td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>CCS2 connector</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h4 id="modules.core.enums.ChargerTypeEnum.ChargerTypeEnum" class="doc doc-heading">
+            <code>ChargerTypeEnum</code>
+
+
+</h4>
+
+
+    <div class="doc doc-contents first">
+
+
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.core.enums.ChargerTypeEnum.ChargerTypeEnum.AC">AC</span></code></td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Alternating Current</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.core.enums.ChargerTypeEnum.ChargerTypeEnum.DC">DC</span></code></td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Direct Current</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.core.enums.ChargerTypeEnum.ChargerTypeEnum.AC/DC">AC/DC</span></code></td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Alternating and Direct Current</p>
               </div>
             </td>
           </tr>
