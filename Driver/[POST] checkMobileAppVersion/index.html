@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../%5BGET%5D%20driverHistory/">
+        <link rel="prev" href="../%5BGET%5D%20userBalance/">
       
       
-        <link rel="next" href="../%5BPOST%5D%20checkMobileAppVersion/">
+        <link rel="next" href="../%5BPOST%5D%20checkSessionValidity/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>[GET] userBalance - Envision EV Documentation</title>
+        <title>[POST] checkMobileAppVersion - Envision EV Documentation</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modules.driver.dtos.UserBalanceDTO.UserBalanceRequestDTO" class="md-skip">
+        <a href="#modules.driver.endpoints.checkMobileAppVersion.CheckMobileAppVersionRequestDTO" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              [GET] userBalance
+              [POST] checkMobileAppVersion
             
           </span>
         </div>
@@ -501,6 +501,27 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5BGET%5D%20userBalance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [GET] userBalance
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -515,7 +536,7 @@
           
   
   <span class="md-ellipsis">
-    [GET] userBalance
+    [POST] checkMobileAppVersion
   </span>
   
 
@@ -526,7 +547,7 @@
         
   
   <span class="md-ellipsis">
-    [GET] userBalance
+    [POST] checkMobileAppVersion
   </span>
   
 
@@ -546,18 +567,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modules.driver.dtos.UserBalanceDTO.UserBalanceRequestDTO" class="md-nav__link">
+  <a href="#modules.driver.endpoints.checkMobileAppVersion.CheckMobileAppVersionRequestDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      UserBalanceRequestDTO
+      CheckMobileAppVersionRequestDTO
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#modules.driver.dtos.UserBalanceDTO.UserBalanceResponseDTO" class="md-nav__link">
+  <a href="#modules.core.dtos.ResponseDTO.ResponseDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      UserBalanceResponseDTO
+      ResponseDTO
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#expected-error-messages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Expected Error Messages
     </span>
   </a>
   
@@ -567,27 +597,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%5BPOST%5D%20checkMobileAppVersion/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    [POST] checkMobileAppVersion
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -1511,18 +1520,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modules.driver.dtos.UserBalanceDTO.UserBalanceRequestDTO" class="md-nav__link">
+  <a href="#modules.driver.endpoints.checkMobileAppVersion.CheckMobileAppVersionRequestDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      UserBalanceRequestDTO
+      CheckMobileAppVersionRequestDTO
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#modules.driver.dtos.UserBalanceDTO.UserBalanceResponseDTO" class="md-nav__link">
+  <a href="#modules.core.dtos.ResponseDTO.ResponseDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      UserBalanceResponseDTO
+      ResponseDTO
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#expected-error-messages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Expected Error Messages
     </span>
   </a>
   
@@ -1543,9 +1561,9 @@
                   
 
 
-  <h1>[GET] userBalance</h1>
+  <h1>[POST] checkMobileAppVersion</h1>
 
-<pre><code>/api/userBalance
+<pre><code>/api/driver/checkMobileAppVersion
 </code></pre>
 
 
@@ -1553,8 +1571,8 @@
 
 
 
-<h3 id="modules.driver.dtos.UserBalanceDTO.UserBalanceRequestDTO" class="doc doc-heading">
-            <code>UserBalanceRequestDTO</code>
+<h3 id="modules.driver.endpoints.checkMobileAppVersion.CheckMobileAppVersionRequestDTO" class="doc doc-heading">
+            <code>CheckMobileAppVersionRequestDTO</code>
 
 
 </h3>
@@ -1576,13 +1594,13 @@
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code><span title="modules.driver.dtos.UserBalanceDTO.UserBalanceRequestDTO.email">email</span></code></td>
+            <td><code><span title="modules.driver.endpoints.checkMobileAppVersion.CheckMobileAppVersionRequestDTO.mobile_app_version">mobile_app_version</span></code></td>
             <td>
-                  <code>str</code>
+                  <code><span title="typing.Optional">Optional</span>[str]</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>email address of the user</p>
+                
               </div>
             </td>
           </tr>
@@ -1619,8 +1637,8 @@
 
 
 
-<h3 id="modules.driver.dtos.UserBalanceDTO.UserBalanceResponseDTO" class="doc doc-heading">
-            <code>UserBalanceResponseDTO</code>
+<h3 id="modules.core.dtos.ResponseDTO.ResponseDTO" class="doc doc-heading">
+            <code>ResponseDTO</code>
 
 
 </h3>
@@ -1642,13 +1660,35 @@
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code><span title="modules.driver.dtos.UserBalanceDTO.UserBalanceResponseDTO.envision_balance">envision_balance</span></code></td>
+            <td><code><span title="modules.core.dtos.ResponseDTO.ResponseDTO.statusCode">statusCode</span></code></td>
             <td>
-                  <code>float</code>
+                  <code>int</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>EV wallet balance</p>
+                <p>status code of the response</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.core.dtos.ResponseDTO.ResponseDTO.headers">headers</span></code></td>
+            <td>
+                  <code>dict</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>headers of the response</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.core.dtos.ResponseDTO.ResponseDTO.body">body</span></code></td>
+            <td>
+                  <code><span title="typing_extensions.Annotated">Annotated</span>[<span title="typing.Optional">Optional</span>[<span title="modules.core.dtos.MessageBaseModel.ResponseBodyBaseModel">ResponseBodyBaseModel</span>], <span title="pydantic.PlainSerializer">PlainSerializer</span>(lambda body: <span title="modules.core.dtos.ResponseDTO.ResponseDTO.body.model_dump_json">model_dump_json</span>(), when_used=unless - none)]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>body of the response</p>
               </div>
             </td>
           </tr>
@@ -1679,7 +1719,10 @@
 
     </div>
 
-</div>
+</div><h3 id="expected-error-messages">Expected Error Messages</h3>
+<ul>
+<li><strong>INVALID_APP_VERSION</strong></li>
+</ul>
 
 
 
