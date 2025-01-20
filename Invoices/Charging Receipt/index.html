@@ -9,14 +9,14 @@
       
       
       
-        <link rel="prev" href="../../Driver/Forgot%20Password/%5BPOST%5D%20resetPassword/">
+        <link rel="prev" href="../../Embedded/%5BPOST%5D%20verifyRFID/">
       
       
         <link rel="next" href="../../Parking/Design/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.21">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.66ac8b77.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.35f28582.min.css">
       
       
 
@@ -47,7 +47,7 @@
     
       <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -85,12 +85,12 @@
     <a href="../.." title="Envision EV Documentation" class="md-header__button md-logo" aria-label="Envision EV Documentation" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -110,13 +110,13 @@
     </div>
     
     
-      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
       <label class="md-header__button md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -125,21 +125,21 @@
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </nav>
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -180,7 +180,7 @@
     <a href="../.." title="Envision EV Documentation" class="md-nav__button md-logo" aria-label="Envision EV Documentation" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
     Envision EV Documentation
@@ -886,6 +886,69 @@
       
   
   
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Embedded
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Embedded
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Embedded/%5BPOST%5D%20verifyRFID/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [POST] verifyRFID
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -898,10 +961,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -912,8 +975,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_5">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Invoices
           </label>
@@ -1075,10 +1138,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1089,8 +1152,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Parking
           </label>
@@ -1131,10 +1194,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2" >
         
           
-          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1145,8 +1208,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6_2">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_2">
             <span class="md-nav__icon md-icon"></span>
             Driver
           </label>
@@ -1237,10 +1300,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3" >
         
           
-          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7_3" id="__nav_7_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1251,8 +1314,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6_3">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3">
             <span class="md-nav__icon md-icon"></span>
             Manager
           </label>
@@ -1350,10 +1413,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1364,8 +1427,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             Payment
           </label>
@@ -1497,10 +1560,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
         
           
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1511,8 +1574,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             Site
           </label>
@@ -1695,44 +1758,43 @@
 
 
 <h3 id="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptRequestDTO" class="doc doc-heading">
-          <code>ChargingReceiptRequestDTO</code>
+            <code>ChargingReceiptRequestDTO</code>
 
 
 </h3>
 
 
-  <div class="doc doc-contents first">
-
-  
+    <div class="doc doc-contents first">
 
 
 
-  <p><span class="doc-section-title">Attributes:</span></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptRequestDTO.transaction_id">transaction_id</span></code></td>
-          <td>
-                <code>str</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>unique ID of the transaction</p>
-            </div>
-          </td>
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
         </tr>
-    </tbody>
-  </table>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptRequestDTO.transaction_id">transaction_id</span></code></td>
+            <td>
+                  <code>str</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>unique ID of the transaction</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
 
 
-  
+
 
   <div class="doc doc-children">
 
@@ -1748,8 +1810,7 @@
 
   </div>
 
-  </div>
-
+    </div>
 
 </div>
 
@@ -1758,88 +1819,87 @@
 
 
 <h3 id="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptResponseDTO" class="doc doc-heading">
-          <code>ChargingReceiptResponseDTO</code>
+            <code>ChargingReceiptResponseDTO</code>
 
 
 </h3>
 
 
-  <div class="doc doc-contents first">
-
-  
+    <div class="doc doc-contents first">
 
 
 
-  <p><span class="doc-section-title">Attributes:</span></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptResponseDTO.charger">charger</span></code></td>
-          <td>
-                <code><a class="autorefs autorefs-internal" title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptChargerDTO" href="#modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptChargerDTO">ChargingReceiptChargerDTO</a></code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>charger details</p>
-            </div>
-          </td>
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
         </tr>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptResponseDTO.transaction">transaction</span></code></td>
-          <td>
-                <code><a class="autorefs autorefs-internal" title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptTransactionDTO" href="#modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptTransactionDTO">ChargingReceiptTransactionDTO</a></code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>transaction details</p>
-            </div>
-          </td>
-        </tr>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptResponseDTO.cost">cost</span></code></td>
-          <td>
-                <code><a class="autorefs autorefs-internal" title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptCostingDTO" href="#modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptCostingDTO">ChargingReceiptCostingDTO</a></code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>costing breakdown</p>
-            </div>
-          </td>
-        </tr>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptResponseDTO.refunds">refunds</span></code></td>
-          <td>
-                <code><a class="autorefs autorefs-internal" title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptRefundsDTO" href="#modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptRefundsDTO">ChargingReceiptRefundsDTO</a></code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>refund details if any</p>
-            </div>
-          </td>
-        </tr>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptResponseDTO.payment">payment</span></code></td>
-          <td>
-                <code><a class="autorefs autorefs-internal" title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptPaymentDetailsDTO" href="#modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptPaymentDetailsDTO">ChargingReceiptPaymentDetailsDTO</a></code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>payment details</p>
-            </div>
-          </td>
-        </tr>
-    </tbody>
-  </table>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptResponseDTO.charger">charger</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptChargerDTO" href="#modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptChargerDTO">ChargingReceiptChargerDTO</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>charger details</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptResponseDTO.transaction">transaction</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptTransactionDTO" href="#modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptTransactionDTO">ChargingReceiptTransactionDTO</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>transaction details</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptResponseDTO.cost">cost</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptCostingDTO" href="#modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptCostingDTO">ChargingReceiptCostingDTO</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>costing breakdown</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptResponseDTO.refunds">refunds</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptRefundsDTO" href="#modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptRefundsDTO">ChargingReceiptRefundsDTO</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>refund details if any</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptResponseDTO.payment">payment</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptPaymentDetailsDTO" href="#modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptPaymentDetailsDTO">ChargingReceiptPaymentDetailsDTO</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>payment details</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
 
 
-  
+
 
   <div class="doc doc-children">
 
@@ -1855,8 +1915,7 @@
 
   </div>
 
-  </div>
-
+    </div>
 
 </div>
 
@@ -1865,66 +1924,65 @@
 
 
 <h4 id="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptChargerDTO" class="doc doc-heading">
-          <code>ChargingReceiptChargerDTO</code>
+            <code>ChargingReceiptChargerDTO</code>
 
 
 </h4>
 
 
-  <div class="doc doc-contents first">
-
-  
+    <div class="doc doc-contents first">
 
 
 
-  <p><span class="doc-section-title">Attributes:</span></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptChargerDTO.name">name</span></code></td>
-          <td>
-                <code>str</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>name of the charger</p>
-            </div>
-          </td>
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
         </tr>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptChargerDTO.connector">connector</span></code></td>
-          <td>
-                <code>str</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>connector type</p>
-            </div>
-          </td>
-        </tr>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptChargerDTO.location">location</span></code></td>
-          <td>
-                <code>str</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>location of the charger</p>
-            </div>
-          </td>
-        </tr>
-    </tbody>
-  </table>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptChargerDTO.name">name</span></code></td>
+            <td>
+                  <code>str</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>name of the charger</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptChargerDTO.connector">connector</span></code></td>
+            <td>
+                  <code>str</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>connector type</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptChargerDTO.location">location</span></code></td>
+            <td>
+                  <code>str</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>location of the charger</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
 
 
-  
+
 
   <div class="doc doc-children">
 
@@ -1940,8 +1998,7 @@
 
   </div>
 
-  </div>
-
+    </div>
 
 </div>
 
@@ -1950,88 +2007,87 @@
 
 
 <h4 id="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptTransactionDTO" class="doc doc-heading">
-          <code>ChargingReceiptTransactionDTO</code>
+            <code>ChargingReceiptTransactionDTO</code>
 
 
 </h4>
 
 
-  <div class="doc doc-contents first">
-
-  
+    <div class="doc doc-contents first">
 
 
 
-  <p><span class="doc-section-title">Attributes:</span></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptTransactionDTO.id">id</span></code></td>
-          <td>
-                <code>str</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>transaction id</p>
-            </div>
-          </td>
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
         </tr>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptTransactionDTO.duration">duration</span></code></td>
-          <td>
-                <code>str</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>duration in standard format HH:MM:SS</p>
-            </div>
-          </td>
-        </tr>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptTransactionDTO.start">start</span></code></td>
-          <td>
-                <code>str</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>start time of the transaction in YY-MM-DD HH:MM:SS</p>
-            </div>
-          </td>
-        </tr>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptTransactionDTO.end">end</span></code></td>
-          <td>
-                <code>str</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>end time of the transaction in YY-MM-DD HH:MM:SS</p>
-            </div>
-          </td>
-        </tr>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptTransactionDTO.kwh">kwh</span></code></td>
-          <td>
-                <code>float</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>kwh consumed during the transaction</p>
-            </div>
-          </td>
-        </tr>
-    </tbody>
-  </table>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptTransactionDTO.id">id</span></code></td>
+            <td>
+                  <code>str</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>transaction id</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptTransactionDTO.duration">duration</span></code></td>
+            <td>
+                  <code>str</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>duration in standard format HH:MM:SS</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptTransactionDTO.start">start</span></code></td>
+            <td>
+                  <code>str</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>start time of the transaction in YY-MM-DD HH:MM:SS</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptTransactionDTO.end">end</span></code></td>
+            <td>
+                  <code>str</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>end time of the transaction in YY-MM-DD HH:MM:SS</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptTransactionDTO.kwh">kwh</span></code></td>
+            <td>
+                  <code>float</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>kwh consumed during the transaction</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
 
 
-  
+
 
   <div class="doc doc-children">
 
@@ -2047,8 +2103,7 @@
 
   </div>
 
-  </div>
-
+    </div>
 
 </div>
 
@@ -2057,88 +2112,87 @@
 
 
 <h4 id="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptCostingDTO" class="doc doc-heading">
-          <code>ChargingReceiptCostingDTO</code>
+            <code>ChargingReceiptCostingDTO</code>
 
 
 </h4>
 
 
-  <div class="doc doc-contents first">
-
-  
+    <div class="doc doc-contents first">
 
 
 
-  <p><span class="doc-section-title">Attributes:</span></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptCostingDTO.breakdown">breakdown</span></code></td>
-          <td>
-                <code>dict</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>costing breakdown</p>
-            </div>
-          </td>
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
         </tr>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptCostingDTO.subtotal">subtotal</span></code></td>
-          <td>
-                <code>float</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>subtotal without the vat</p>
-            </div>
-          </td>
-        </tr>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptCostingDTO.vat">vat</span></code></td>
-          <td>
-                <code>float</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>value added tax</p>
-            </div>
-          </td>
-        </tr>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptCostingDTO.discount">discount</span></code></td>
-          <td>
-                <code>dict</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>discount if available</p>
-            </div>
-          </td>
-        </tr>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptCostingDTO.total_price">total_price</span></code></td>
-          <td>
-                <code>float</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>sum of all costs</p>
-            </div>
-          </td>
-        </tr>
-    </tbody>
-  </table>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptCostingDTO.breakdown">breakdown</span></code></td>
+            <td>
+                  <code>dict</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>costing breakdown</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptCostingDTO.subtotal">subtotal</span></code></td>
+            <td>
+                  <code>float</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>subtotal without the vat</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptCostingDTO.vat">vat</span></code></td>
+            <td>
+                  <code>float</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>value added tax</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptCostingDTO.discount">discount</span></code></td>
+            <td>
+                  <code>dict</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>discount if available</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptCostingDTO.total_price">total_price</span></code></td>
+            <td>
+                  <code>float</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>sum of all costs</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
 
 
-  
+
 
   <div class="doc doc-children">
 
@@ -2154,8 +2208,7 @@
 
   </div>
 
-  </div>
-
+    </div>
 
 </div>
 
@@ -2164,66 +2217,65 @@
 
 
 <h4 id="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptRefundsDTO" class="doc doc-heading">
-          <code>ChargingReceiptRefundsDTO</code>
+            <code>ChargingReceiptRefundsDTO</code>
 
 
 </h4>
 
 
-  <div class="doc doc-contents first">
-
-  
+    <div class="doc doc-contents first">
 
 
 
-  <p><span class="doc-section-title">Attributes:</span></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptRefundsDTO.amount">amount</span></code></td>
-          <td>
-                <code>float</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>refunded amount in PHP</p>
-            </div>
-          </td>
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
         </tr>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptRefundsDTO.status">status</span></code></td>
-          <td>
-                <code>str</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>status of the refund process</p>
-            </div>
-          </td>
-        </tr>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptRefundsDTO.datetime">datetime</span></code></td>
-          <td>
-                <code>str</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>time refunded</p>
-            </div>
-          </td>
-        </tr>
-    </tbody>
-  </table>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptRefundsDTO.amount">amount</span></code></td>
+            <td>
+                  <code>float</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>refunded amount in PHP</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptRefundsDTO.status">status</span></code></td>
+            <td>
+                  <code>str</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>status of the refund process</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptRefundsDTO.datetime">datetime</span></code></td>
+            <td>
+                  <code>str</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>time refunded</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
 
 
-  
+
 
   <div class="doc doc-children">
 
@@ -2239,8 +2291,7 @@
 
   </div>
 
-  </div>
-
+    </div>
 
 </div>
 
@@ -2249,55 +2300,54 @@
 
 
 <h4 id="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptPaymentDetailsDTO" class="doc doc-heading">
-          <code>ChargingReceiptPaymentDetailsDTO</code>
+            <code>ChargingReceiptPaymentDetailsDTO</code>
 
 
 </h4>
 
 
-  <div class="doc doc-contents first">
-
-  
+    <div class="doc doc-contents first">
 
 
 
-  <p><span class="doc-section-title">Attributes:</span></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptPaymentDetailsDTO.amount">amount</span></code></td>
-          <td>
-                <code>float</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>price paid in PHP</p>
-            </div>
-          </td>
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
         </tr>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptPaymentDetailsDTO.method">method</span></code></td>
-          <td>
-                <code><span title="typing.Union">Union</span>[str, <a class="autorefs autorefs-internal" title="modules.payment.enums.PaymentMethodEnum.PaymentMethodEnum" href="#modules.payment.enums.PaymentMethodEnum.PaymentMethodEnum">PaymentMethodEnum</a>]</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>payment method used for the transaction</p>
-            </div>
-          </td>
-        </tr>
-    </tbody>
-  </table>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptPaymentDetailsDTO.amount">amount</span></code></td>
+            <td>
+                  <code>float</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>price paid in PHP</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.charger.__.dtos.ChargingReceiptRequestDTO.ChargingReceiptPaymentDetailsDTO.method">method</span></code></td>
+            <td>
+                  <code><span title="typing.Union">Union</span>[str, <a class="autorefs autorefs-internal" title="modules.payment.enums.PaymentMethodEnum.PaymentMethodEnum" href="#modules.payment.enums.PaymentMethodEnum.PaymentMethodEnum">PaymentMethodEnum</a>]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>payment method used for the transaction</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
 
 
-  
+
 
   <div class="doc doc-children">
 
@@ -2313,8 +2363,7 @@
 
   </div>
 
-  </div>
-
+    </div>
 
 </div>
 
@@ -2323,93 +2372,92 @@
 
 
 <h4 id="modules.payment.enums.PaymentMethodEnum.PaymentMethodEnum" class="doc doc-heading">
-          <code>PaymentMethodEnum</code>
+            <code>PaymentMethodEnum</code>
 
 
 </h4>
 
 
-  <div class="doc doc-contents first">
-
-  
+    <div class="doc doc-contents first">
 
 
 
-  <p><span class="doc-section-title">Attributes:</span></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.payment.enums.PaymentMethodEnum.PaymentMethodEnum.CARD">CARD</span></code></td>
-          <td>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>credit / debit card</p>
-            </div>
-          </td>
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
         </tr>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.payment.enums.PaymentMethodEnum.PaymentMethodEnum.GCASH">GCASH</span></code></td>
-          <td>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>GCASH</p>
-            </div>
-          </td>
-        </tr>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.payment.enums.PaymentMethodEnum.PaymentMethodEnum.GRAB_PAY">GRAB_PAY</span></code></td>
-          <td>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>GrabPay</p>
-            </div>
-          </td>
-        </tr>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.payment.enums.PaymentMethodEnum.PaymentMethodEnum.MAYA">MAYA</span></code></td>
-          <td>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>PayMaya</p>
-            </div>
-          </td>
-        </tr>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.payment.enums.PaymentMethodEnum.PaymentMethodEnum.WALLET">WALLET</span></code></td>
-          <td>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>wallet</p>
-            </div>
-          </td>
-        </tr>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.payment.enums.PaymentMethodEnum.PaymentMethodEnum.FREE">FREE</span></code></td>
-          <td>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>null</p>
-            </div>
-          </td>
-        </tr>
-    </tbody>
-  </table>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.payment.enums.PaymentMethodEnum.PaymentMethodEnum.CARD">CARD</span></code></td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>credit / debit card</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.payment.enums.PaymentMethodEnum.PaymentMethodEnum.GCASH">GCASH</span></code></td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>GCASH</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.payment.enums.PaymentMethodEnum.PaymentMethodEnum.GRAB_PAY">GRAB_PAY</span></code></td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>GrabPay</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.payment.enums.PaymentMethodEnum.PaymentMethodEnum.MAYA">MAYA</span></code></td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>PayMaya</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.payment.enums.PaymentMethodEnum.PaymentMethodEnum.WALLET">WALLET</span></code></td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>wallet</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.payment.enums.PaymentMethodEnum.PaymentMethodEnum.FREE">FREE</span></code></td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>null</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
 
 
-  
+
 
   <div class="doc doc-children">
 
@@ -2425,8 +2473,7 @@
 
   </div>
 
-  </div>
-
+    </div>
 
 </div>
 
@@ -2475,10 +2522,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.a7c05c9e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>
       
     
   </body>
