@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../../AWS/Layers/">
+        <link rel="prev" href="../../Invoices/Charging%20Receipt/">
       
       
-        <link rel="next" href="../Start%20and%20Stop%20Charging/">
+        <link rel="next" href="../../Parking/Design/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Charger Reservation [SOFT] - Envision EV Documentation</title>
+        <title>[POST] reportIssue - Envision EV Documentation</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#connect-url" class="md-skip">
+        <a href="#modules.issue_reporting.routes.reportIssue.ReportIssueRequestDTO" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Charger Reservation [SOFT]
+              [POST] reportIssue
             
           </span>
         </div>
@@ -275,19 +275,17 @@
       
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -301,7 +299,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Charger
@@ -312,28 +310,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Charger Reservation [SOFT]
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Charger/Charger%20Reservation%20%5BSOFT%5D/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -342,75 +322,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#connect-url" class="md-nav__link">
-    <span class="md-ellipsis">
-      Connect URL
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reserving-a-charger" class="md-nav__link">
-    <span class="md-ellipsis">
-      Reserving a Charger
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Reserving a Charger">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#modules.charger.soft_reservation.__.dtos.ReserveChargerRequestDTO.ReserveChargerRequestDTO" class="md-nav__link">
-    <span class="md-ellipsis">
-      ReserveChargerRequestDTO
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#modules.charger.soft_reservation.__.enums.ReservationCommandEnum.ReservationCommandEnum" class="md-nav__link">
-    <span class="md-ellipsis">
-      ReservationCommandEnum
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#modules.charger.soft_reservation.__.enums.ReservationErrorEnum.ReservationErrorEnum" class="md-nav__link">
-    <span class="md-ellipsis">
-      ReservationErrorEnum
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -423,7 +334,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Start%20and%20Stop%20Charging/" class="md-nav__link">
+      <a href="../../Charger/Start%20and%20Stop%20Charging/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -444,7 +355,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%5BGET%5D%20selectCharger/" class="md-nav__link">
+      <a href="../../Charger/%5BGET%5D%20selectCharger/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -465,7 +376,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%5BPOST%5D%20remoteStartCharging/" class="md-nav__link">
+      <a href="../../Charger/%5BPOST%5D%20remoteStartCharging/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -486,7 +397,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%5BWebSocket%5D%20clientSocket/" class="md-nav__link">
+      <a href="../../Charger/%5BWebSocket%5D%20clientSocket/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -507,7 +418,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%5BWebSocket%5D%20embeddedSocket/" class="md-nav__link">
+      <a href="../../Charger/%5BWebSocket%5D%20embeddedSocket/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1270,17 +1181,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
         
           
           <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
@@ -1294,7 +1207,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             Issue Reporting
@@ -1305,10 +1218,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../Issue%20Reporting/%5BPOST%5D%20reportIssue/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    [POST] reportIssue
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1317,6 +1248,42 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#modules.issue_reporting.routes.reportIssue.ReportIssueRequestDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      ReportIssueRequestDTO
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules.issue_reporting.services.parse_multipart.MultipartFileDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      MultipartFileDTO
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1860,53 +1827,20 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#connect-url" class="md-nav__link">
+  <a href="#modules.issue_reporting.routes.reportIssue.ReportIssueRequestDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      Connect URL
+      ReportIssueRequestDTO
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#reserving-a-charger" class="md-nav__link">
+  <a href="#modules.issue_reporting.services.parse_multipart.MultipartFileDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      Reserving a Charger
+      MultipartFileDTO
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Reserving a Charger">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#modules.charger.soft_reservation.__.dtos.ReserveChargerRequestDTO.ReserveChargerRequestDTO" class="md-nav__link">
-    <span class="md-ellipsis">
-      ReserveChargerRequestDTO
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#modules.charger.soft_reservation.__.enums.ReservationCommandEnum.ReservationCommandEnum" class="md-nav__link">
-    <span class="md-ellipsis">
-      ReservationCommandEnum
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#modules.charger.soft_reservation.__.enums.ReservationErrorEnum.ReservationErrorEnum" class="md-nav__link">
-    <span class="md-ellipsis">
-      ReservationErrorEnum
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1925,74 +1859,26 @@
                   
 
 
-  <h1>Charger Reservation [SOFT]</h1>
+  <h1>[POST] reportIssue</h1>
 
-<h2 id="connect-url">Connect URL</h2>
-<pre><code>THIS IS A SECRET. MESSAGE A DEV.
+<pre><code>/api/issueReporting/reportIssue
 </code></pre>
-<h2 id="reserving-a-charger">Reserving a Charger</h2>
-<ol>
-<li>
-<p>The client connects to the websocket.</p>
-</li>
-<li>
-<p>Upon connecting, the client sends a
-<a class="autorefs autorefs-internal" href="#modules.charger.soft_reservation.__.dtos.ReserveChargerRequestDTO.ReserveChargerRequestDTO">message</a>
-with <code>command</code> set to <code>START</code>.</p>
-<ul>
-<li>If there is an existing reservation within the time limit, an error will be thrown.</li>
-<li>If there is an existing reservation past the time limit, the reservation will be overwritten.</li>
-<li>If the client disconnects without sending <code>HOLD</code> prior, the reservation will be cancelled.</li>
-<li>If the charger is not <code>Preparing</code>, an error will be thrown.</li>
-</ul>
-</li>
-<li>
-<p>Before paying, the client sends a
-<a class="autorefs autorefs-internal" href="#modules.charger.soft_reservation.__.dtos.ReserveChargerRequestDTO.ReserveChargerRequestDTO">message</a>
-with <code>command</code> set to <code>HOLD</code>.</p>
-<ul>
-<li>If reservation does not exist, an error will be thrown.</li>
-<li>If a different user email tries to hold the reservation, an error will be thrown.</li>
-<li>If the reservation is not active, an error will be thrown.</li>
-</ul>
-</li>
-<li>
-<p>Upon returning, the client sends a
-<a class="autorefs autorefs-internal" href="#modules.charger.soft_reservation.__.dtos.ReserveChargerRequestDTO.ReserveChargerRequestDTO">message</a>
-with <code>command</code> set to <code>RESUME</code>.</p>
-<ul>
-<li>If reservation does not exist, an error will be thrown.</li>
-<li>If a different user email tries to hold the reservation, an error will be thrown.</li>
-<li>If the reservation is not on hold, an error will be thrown.</li>
-</ul>
-</li>
-<li>
-<p>[Optional] Upon returning, the client sends a
-<a class="autorefs autorefs-internal" href="#modules.charger.soft_reservation.__.dtos.ReserveChargerRequestDTO.ReserveChargerRequestDTO">message</a>
-with <code>command</code> set to <code>CANCEL</code>.</p>
-<ul>
-<li>If reservation does not exist, an error will be thrown.</li>
-<li>If a different user email tries to hold the reservation, an error will be thrown.</li>
-</ul>
-</li>
-</ol>
 
 
 <div class="doc doc-object doc-class">
 
 
 
-<h3 id="modules.charger.soft_reservation.__.dtos.ReserveChargerRequestDTO.ReserveChargerRequestDTO" class="doc doc-heading">
-          <code>ReserveChargerRequestDTO</code>
+<h2 id="modules.issue_reporting.routes.reportIssue.ReportIssueRequestDTO" class="doc doc-heading">
+          <code>ReportIssueRequestDTO</code>
 
 
-</h3>
+</h2>
 
 
   <div class="doc doc-contents first">
 
   
-      <p>This should be the message of the request from the client.</p>
 
 
 
@@ -2007,68 +1893,90 @@ with <code>command</code> set to <code>CANCEL</code>.</p>
     </thead>
     <tbody>
         <tr class="doc-section-item">
-          <td><code><span title="modules.charger.soft_reservation.__.dtos.ReserveChargerRequestDTO.ReserveChargerRequestDTO.action">action</span></code></td>
+          <td><code><span title="modules.issue_reporting.routes.reportIssue.ReportIssueRequestDTO.category">category</span></code></td>
           <td>
                 <code>str</code>
           </td>
           <td>
             <div class="doc-md-description">
-              <p>ALWAYS SET TO 'reserveCharger'</p>
+              
             </div>
           </td>
         </tr>
         <tr class="doc-section-item">
-          <td><code><span title="modules.charger.soft_reservation.__.dtos.ReserveChargerRequestDTO.ReserveChargerRequestDTO.site_id">site_id</span></code></td>
+          <td><code><span title="modules.issue_reporting.routes.reportIssue.ReportIssueRequestDTO.subcategory">subcategory</span></code></td>
           <td>
-                <code>int</code>
+                <code><span title="typing.Optional">Optional</span>[str]</code>
           </td>
           <td>
             <div class="doc-md-description">
-              <p>SITE OF CHARGER TO RESERVE</p>
+              
             </div>
           </td>
         </tr>
         <tr class="doc-section-item">
-          <td><code><span title="modules.charger.soft_reservation.__.dtos.ReserveChargerRequestDTO.ReserveChargerRequestDTO.charger_id">charger_id</span></code></td>
+          <td><code><span title="modules.issue_reporting.routes.reportIssue.ReportIssueRequestDTO.site_id">site_id</span></code></td>
+          <td>
+                <code><span title="typing.Optional">Optional</span>[int]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              
+            </div>
+          </td>
+        </tr>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.issue_reporting.routes.reportIssue.ReportIssueRequestDTO.transaction_id">transaction_id</span></code></td>
+          <td>
+                <code><span title="typing.Optional">Optional</span>[str]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              
+            </div>
+          </td>
+        </tr>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.issue_reporting.routes.reportIssue.ReportIssueRequestDTO.reservation_id">reservation_id</span></code></td>
+          <td>
+                <code><span title="typing.Optional">Optional</span>[str]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              
+            </div>
+          </td>
+        </tr>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.issue_reporting.routes.reportIssue.ReportIssueRequestDTO.method_of_payment">method_of_payment</span></code></td>
+          <td>
+                <code><span title="typing.Optional">Optional</span>[str]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              
+            </div>
+          </td>
+        </tr>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.issue_reporting.routes.reportIssue.ReportIssueRequestDTO.details">details</span></code></td>
           <td>
                 <code>str</code>
           </td>
           <td>
             <div class="doc-md-description">
-              <p>CHARGER TO RESERVE</p>
+              
             </div>
           </td>
         </tr>
         <tr class="doc-section-item">
-          <td><code><span title="modules.charger.soft_reservation.__.dtos.ReserveChargerRequestDTO.ReserveChargerRequestDTO.connector_id">connector_id</span></code></td>
+          <td><code><span title="modules.issue_reporting.routes.reportIssue.ReportIssueRequestDTO.files">files</span></code></td>
           <td>
-                <code>int</code>
+                <code><a class="autorefs autorefs-internal" title="modules.issue_reporting.services.parse_multipart.MultipartFileDTO" href="#modules.issue_reporting.services.parse_multipart.MultipartFileDTO">MultipartFileDTO</a></code>
           </td>
           <td>
             <div class="doc-md-description">
-              <p>CONNECTOR TO BE USED WITHIN THE CHARGER</p>
-            </div>
-          </td>
-        </tr>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.charger.soft_reservation.__.dtos.ReserveChargerRequestDTO.ReserveChargerRequestDTO.command">command</span></code></td>
-          <td>
-                <code><span title="typing.Union">Union</span>[str, <a class="autorefs autorefs-internal" title="modules.charger.soft_reservation.__.enums.ReservationCommandEnum.ReservationCommandEnum" href="#modules.charger.soft_reservation.__.enums.ReservationCommandEnum.ReservationCommandEnum">ReservationCommandEnum</a>]</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>SHOULD BE ONE OF THE ENUM</p>
-            </div>
-          </td>
-        </tr>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.charger.soft_reservation.__.dtos.ReserveChargerRequestDTO.ReserveChargerRequestDTO.email">email</span></code></td>
-          <td>
-                <code>str</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>EMAIL OF RESERVER</p>
+              
             </div>
           </td>
         </tr>
@@ -2101,103 +2009,11 @@ with <code>command</code> set to <code>CANCEL</code>.</p>
 
 
 
-<h3 id="modules.charger.soft_reservation.__.enums.ReservationCommandEnum.ReservationCommandEnum" class="doc doc-heading">
-          <code>ReservationCommandEnum</code>
+<h2 id="modules.issue_reporting.services.parse_multipart.MultipartFileDTO" class="doc doc-heading">
+          <code>MultipartFileDTO</code>
 
 
-</h3>
-
-
-  <div class="doc doc-contents first">
-
-  
-
-
-
-  <p><span class="doc-section-title">Attributes:</span></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.charger.soft_reservation.__.enums.ReservationCommandEnum.ReservationCommandEnum.START">START</span></code></td>
-          <td>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>USED UPON CONNECTING TO THE WEBSOCKET</p>
-            </div>
-          </td>
-        </tr>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.charger.soft_reservation.__.enums.ReservationCommandEnum.ReservationCommandEnum.HOLD">HOLD</span></code></td>
-          <td>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>USED JUST BEFORE PAYMENT REDIRECTION</p>
-            </div>
-          </td>
-        </tr>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.charger.soft_reservation.__.enums.ReservationCommandEnum.ReservationCommandEnum.RESUME">RESUME</span></code></td>
-          <td>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>USED AFTER PAYING</p>
-            </div>
-          </td>
-        </tr>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.charger.soft_reservation.__.enums.ReservationCommandEnum.ReservationCommandEnum.CANCEL">CANCEL</span></code></td>
-          <td>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>USED TO CANCEL RESERVATION</p>
-            </div>
-          </td>
-        </tr>
-    </tbody>
-  </table>
-
-
-  
-
-  <div class="doc doc-children">
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-
-  </div>
-
-
-</div>
-
-<div class="doc doc-object doc-class">
-
-
-
-<h3 id="modules.charger.soft_reservation.__.enums.ReservationErrorEnum.ReservationErrorEnum" class="doc doc-heading">
-          <code>ReservationErrorEnum</code>
-
-
-</h3>
+</h2>
 
 
   <div class="doc doc-contents first">
@@ -2217,72 +2033,24 @@ with <code>command</code> set to <code>CANCEL</code>.</p>
     </thead>
     <tbody>
         <tr class="doc-section-item">
-          <td><code><span title="modules.charger.soft_reservation.__.enums.ReservationErrorEnum.ReservationErrorEnum.INVALID_COMMAND">INVALID_COMMAND</span></code></td>
+          <td><code><span title="modules.issue_reporting.services.parse_multipart.MultipartFileDTO.filename">filename</span></code></td>
           <td>
+                <code>str</code>
           </td>
           <td>
             <div class="doc-md-description">
-              <p>INVALID <code>command</code> FIELD</p>
+              
             </div>
           </td>
         </tr>
         <tr class="doc-section-item">
-          <td><code><span title="modules.charger.soft_reservation.__.enums.ReservationErrorEnum.ReservationErrorEnum.EXISTING_RESERVATION">EXISTING_RESERVATION</span></code></td>
+          <td><code><span title="modules.issue_reporting.services.parse_multipart.MultipartFileDTO.content">content</span></code></td>
           <td>
+                <code>bytes</code>
           </td>
           <td>
             <div class="doc-md-description">
-              <p>THERE IS AN EXISTING CHARGER RESERVATION</p>
-            </div>
-          </td>
-        </tr>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.charger.soft_reservation.__.enums.ReservationErrorEnum.ReservationErrorEnum.NON_EXISTING_RESERVATION">NON_EXISTING_RESERVATION</span></code></td>
-          <td>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>THERE IS NO EXISTING CHARGER RESERVATION</p>
-            </div>
-          </td>
-        </tr>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.charger.soft_reservation.__.enums.ReservationErrorEnum.ReservationErrorEnum.DIFFERENT_USER_EMAIL">DIFFERENT_USER_EMAIL</span></code></td>
-          <td>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>DIFFERENT USER IS TRYING TO INTERACT WITH THE RESERVATION</p>
-            </div>
-          </td>
-        </tr>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.charger.soft_reservation.__.enums.ReservationErrorEnum.ReservationErrorEnum.CHARGER_NOT_PREPARING">CHARGER_NOT_PREPARING</span></code></td>
-          <td>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>CHARGER IS NOT IN PREPARING STATUS</p>
-            </div>
-          </td>
-        </tr>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.charger.soft_reservation.__.enums.ReservationErrorEnum.ReservationErrorEnum.CHARGER_RESERVATION_NOT_HOLDABLE">CHARGER_RESERVATION_NOT_HOLDABLE</span></code></td>
-          <td>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>CHARGER RESERVATION IS NOT HOLDABLE</p>
-            </div>
-          </td>
-        </tr>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.charger.soft_reservation.__.enums.ReservationErrorEnum.ReservationErrorEnum.CHARGER_RESERVATION_NOT_RESUMEABLE">CHARGER_RESERVATION_NOT_RESUMEABLE</span></code></td>
-          <td>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>CHARGER RESERVATION IS NOT RESUMEABLE</p>
+              
             </div>
           </td>
         </tr>
