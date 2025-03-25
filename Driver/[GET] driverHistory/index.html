@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modules.driver.dtos.DriverHistoryRequestDTO" class="md-skip">
+        <a href="#modules.driver.endpoints.driver_history.DriverHistoryRequestDTO" class="md-skip">
           Skip to content
         </a>
       
@@ -588,7 +588,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modules.driver.dtos.DriverHistoryRequestDTO" class="md-nav__link">
+  <a href="#modules.driver.endpoints.driver_history.DriverHistoryRequestDTO" class="md-nav__link">
     <span class="md-ellipsis">
       DriverHistoryRequestDTO
     </span>
@@ -597,11 +597,35 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#modules.driver.dtos.DriverHistoryResponseDTO" class="md-nav__link">
+  <a href="#modules.driver.endpoints.driver_history.DriverHistoryResponseDTO" class="md-nav__link">
     <span class="md-ellipsis">
       DriverHistoryResponseDTO
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="DriverHistoryResponseDTO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modules.driver.endpoints.driver_history.DriverHistoryDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      DriverHistoryDTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modules.driver.endpoints.driver_history.TotalDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      TotalDTO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1275,11 +1299,95 @@
   
   
     <li class="md-nav__item">
+      <a href="../../Issue%20Reporting/%5BGET%5D%20getIssueDetails/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [GET] getIssueDetails
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Issue%20Reporting/%5BGET%5D%20getIssueList/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [GET] getIssueList
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Issue%20Reporting/%5BGET%5D%20getIssueMessages/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [GET] getIssueMessages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../Issue%20Reporting/%5BPOST%5D%20reportIssue/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     [POST] reportIssue
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Issue%20Reporting/%5BPOST%5D%20sendIssueReply/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [POST] sendIssueReply
   </span>
   
 
@@ -1827,7 +1935,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modules.driver.dtos.DriverHistoryRequestDTO" class="md-nav__link">
+  <a href="#modules.driver.endpoints.driver_history.DriverHistoryRequestDTO" class="md-nav__link">
     <span class="md-ellipsis">
       DriverHistoryRequestDTO
     </span>
@@ -1836,11 +1944,35 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#modules.driver.dtos.DriverHistoryResponseDTO" class="md-nav__link">
+  <a href="#modules.driver.endpoints.driver_history.DriverHistoryResponseDTO" class="md-nav__link">
     <span class="md-ellipsis">
       DriverHistoryResponseDTO
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="DriverHistoryResponseDTO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modules.driver.endpoints.driver_history.DriverHistoryDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      DriverHistoryDTO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modules.driver.endpoints.driver_history.TotalDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      TotalDTO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1865,17 +1997,80 @@
 </code></pre>
 
 
-<div class="doc doc-object doc-module">
+<div class="doc doc-object doc-class">
 
 
 
-<h3 id="modules.driver.dtos.DriverHistoryRequestDTO" class="doc doc-heading">
+<h3 id="modules.driver.endpoints.driver_history.DriverHistoryRequestDTO" class="doc doc-heading">
           <code>DriverHistoryRequestDTO</code>
 
 
 </h3>
 
+
   <div class="doc doc-contents first">
+
+  
+
+
+
+  <p><span class="doc-section-title">Attributes:</span></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.driver.endpoints.driver_history.DriverHistoryRequestDTO.email">email</span></code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>email address of the driver</p>
+            </div>
+          </td>
+        </tr>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.driver.endpoints.driver_history.DriverHistoryRequestDTO.end">end</span></code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>end datetime in the format of "%Y-%m-%d %H:%M:%S"</p>
+            </div>
+          </td>
+        </tr>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.driver.endpoints.driver_history.DriverHistoryRequestDTO.num_transactions">num_transactions</span></code></td>
+          <td>
+                <code><span title="typing.Optional">Optional</span>[str]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>number of transactions to retrieve</p>
+            </div>
+          </td>
+        </tr>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.driver.endpoints.driver_history.DriverHistoryRequestDTO.start">start</span></code></td>
+          <td>
+                <code><span title="typing.Optional">Optional</span>[str]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>start datetime in the format of "%Y-%m-%d %H:%M:%S"</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
 
   
 
@@ -1895,19 +2090,61 @@
 
   </div>
 
+
 </div>
 
-<div class="doc doc-object doc-module">
+<div class="doc doc-object doc-class">
 
 
 
-<h3 id="modules.driver.dtos.DriverHistoryResponseDTO" class="doc doc-heading">
+<h3 id="modules.driver.endpoints.driver_history.DriverHistoryResponseDTO" class="doc doc-heading">
           <code>DriverHistoryResponseDTO</code>
 
 
 </h3>
 
+
   <div class="doc doc-contents first">
+
+  
+
+
+
+  <p><span class="doc-section-title">Attributes:</span></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.driver.endpoints.driver_history.DriverHistoryResponseDTO.driver_history">driver_history</span></code></td>
+          <td>
+                <code><span title="typing.List">List</span>[<a class="autorefs autorefs-internal" title="modules.driver.endpoints.driver_history.DriverHistoryDTO" href="#modules.driver.endpoints.driver_history.DriverHistoryDTO">DriverHistoryDTO</a>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>list of DriverHistoryDTO</p>
+            </div>
+          </td>
+        </tr>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.driver.endpoints.driver_history.DriverHistoryResponseDTO.total">total</span></code></td>
+          <td>
+                <code><a class="autorefs autorefs-internal" title="modules.driver.endpoints.driver_history.TotalDTO" href="#modules.driver.endpoints.driver_history.TotalDTO">TotalDTO</a></code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>TotalDTO</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
 
   
 
@@ -1926,6 +2163,221 @@
   </div>
 
   </div>
+
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h4 id="modules.driver.endpoints.driver_history.DriverHistoryDTO" class="doc doc-heading">
+          <code>DriverHistoryDTO</code>
+
+
+</h4>
+
+
+  <div class="doc doc-contents first">
+
+  
+
+
+
+  <p><span class="doc-section-title">Attributes:</span></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.driver.endpoints.driver_history.DriverHistoryDTO.ref_num">ref_num</span></code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>transaction_id</p>
+            </div>
+          </td>
+        </tr>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.driver.endpoints.driver_history.DriverHistoryDTO.charger">charger</span></code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>charger name</p>
+            </div>
+          </td>
+        </tr>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.driver.endpoints.driver_history.DriverHistoryDTO.connector">connector</span></code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>connector type</p>
+            </div>
+          </td>
+        </tr>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.driver.endpoints.driver_history.DriverHistoryDTO.start_time">start_time</span></code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>datetime of transaction start in YYYY-MM-DD HH:MM:SS format</p>
+            </div>
+          </td>
+        </tr>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.driver.endpoints.driver_history.DriverHistoryDTO.site_id">site_id</span></code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>site id</p>
+            </div>
+          </td>
+        </tr>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.driver.endpoints.driver_history.DriverHistoryDTO.duration">duration</span></code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>duration of transaction in DD:HH:MM:SS format</p>
+            </div>
+          </td>
+        </tr>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.driver.endpoints.driver_history.DriverHistoryDTO.kwh">kwh</span></code></td>
+          <td>
+                <code>float</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>kwh consumed</p>
+            </div>
+          </td>
+        </tr>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.driver.endpoints.driver_history.DriverHistoryDTO.cost">cost</span></code></td>
+          <td>
+                <code>float</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>cost of the charging session</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  </div>
+
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h4 id="modules.driver.endpoints.driver_history.TotalDTO" class="doc doc-heading">
+          <code>TotalDTO</code>
+
+
+</h4>
+
+
+  <div class="doc doc-contents first">
+
+  
+
+
+
+  <p><span class="doc-section-title">Attributes:</span></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.driver.endpoints.driver_history.TotalDTO.kwh">kwh</span></code></td>
+          <td>
+                <code>float</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>total kwh consumed</p>
+            </div>
+          </td>
+        </tr>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.driver.endpoints.driver_history.TotalDTO.duration">duration</span></code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              <p>total duration of transactions in DD:HH:MM:SS format</p>
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  </div>
+
 
 </div>
 

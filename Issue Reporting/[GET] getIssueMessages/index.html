@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../%5BPOST%5D%20checkSessionValidity/">
+        <link rel="prev" href="../%5BGET%5D%20getIssueList/">
       
       
-        <link rel="next" href="../%5BPOST%5D%20logout/">
+        <link rel="next" href="../%5BPOST%5D%20reportIssue/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>[POST] login - Envision EV Documentation</title>
+        <title>[GET] getIssueMessages - Envision EV Documentation</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modules.driver.dtos.LoginDTOs.LoginRequestDTO" class="md-skip">
+        <a href="#modules.issue_reporting.routes.getIssueMessages.GetIssueMessagesRequestDTO" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              [POST] login
+              [GET] getIssueMessages
             
           </span>
         </div>
@@ -506,19 +506,17 @@
       
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -532,7 +530,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Driver
@@ -546,7 +544,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%5BGET%5D%20driverHistory/" class="md-nav__link">
+      <a href="../../Driver/%5BGET%5D%20driverHistory/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -567,7 +565,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%5BGET%5D%20topUpHistory/" class="md-nav__link">
+      <a href="../../Driver/%5BGET%5D%20topUpHistory/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -588,7 +586,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%5BGET%5D%20userBalance/" class="md-nav__link">
+      <a href="../../Driver/%5BGET%5D%20userBalance/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -609,7 +607,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%5BPOST%5D%20checkMobileAppVersion/" class="md-nav__link">
+      <a href="../../Driver/%5BPOST%5D%20checkMobileAppVersion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -630,7 +628,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%5BPOST%5D%20checkSessionValidity/" class="md-nav__link">
+      <a href="../../Driver/%5BPOST%5D%20checkSessionValidity/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -648,28 +646,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    [POST] login
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Driver/%5BPOST%5D%20login/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -678,42 +658,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#modules.driver.dtos.LoginDTOs.LoginRequestDTO" class="md-nav__link">
-    <span class="md-ellipsis">
-      LoginRequestDTO
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#modules.driver.dtos.LoginDTOs.LoginResponseDTO" class="md-nav__link">
-    <span class="md-ellipsis">
-      LoginResponseDTO
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -726,7 +670,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%5BPOST%5D%20logout/" class="md-nav__link">
+      <a href="../../Driver/%5BPOST%5D%20logout/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -747,7 +691,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%5BPOST%5D%20signUp/" class="md-nav__link">
+      <a href="../../Driver/%5BPOST%5D%20signUp/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -803,7 +747,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Account%20Deletion/%5BGET%5D%20deleteSchedule/" class="md-nav__link">
+      <a href="../../Driver/Account%20Deletion/%5BGET%5D%20deleteSchedule/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -824,7 +768,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Account%20Deletion/%5BPOST%5D%20deleteCancel/" class="md-nav__link">
+      <a href="../../Driver/Account%20Deletion/%5BPOST%5D%20deleteCancel/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -845,7 +789,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Account%20Deletion/%5BPOST%5D%20deleteInstant/" class="md-nav__link">
+      <a href="../../Driver/Account%20Deletion/%5BPOST%5D%20deleteInstant/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -866,7 +810,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Account%20Deletion/%5BPOST%5D%20deleteRequest/" class="md-nav__link">
+      <a href="../../Driver/Account%20Deletion/%5BPOST%5D%20deleteRequest/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -930,7 +874,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Forgot%20Password/%5BPOST%5D%20checkPasswordRequest/" class="md-nav__link">
+      <a href="../../Driver/Forgot%20Password/%5BPOST%5D%20checkPasswordRequest/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -951,7 +895,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Forgot%20Password/%5BPOST%5D%20initiatePasswordReset/" class="md-nav__link">
+      <a href="../../Driver/Forgot%20Password/%5BPOST%5D%20initiatePasswordReset/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -972,7 +916,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Forgot%20Password/%5BPOST%5D%20instantInitiatePasswordReset/" class="md-nav__link">
+      <a href="../../Driver/Forgot%20Password/%5BPOST%5D%20instantInitiatePasswordReset/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -993,7 +937,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Forgot%20Password/%5BPOST%5D%20resetPassword/" class="md-nav__link">
+      <a href="../../Driver/Forgot%20Password/%5BPOST%5D%20resetPassword/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1057,7 +1001,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../RFID/%5BPOST%5D%20blockRFID/" class="md-nav__link">
+      <a href="../../Driver/RFID/%5BPOST%5D%20blockRFID/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1078,7 +1022,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../RFID/%5BPOST%5D%20getRFIDDetails/" class="md-nav__link">
+      <a href="../../Driver/RFID/%5BPOST%5D%20getRFIDDetails/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1237,17 +1181,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
         
           
           <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
@@ -1261,7 +1207,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             Issue Reporting
@@ -1275,7 +1221,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Issue%20Reporting/%5BGET%5D%20getIssueDetails/" class="md-nav__link">
+      <a href="../%5BGET%5D%20getIssueDetails/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1296,7 +1242,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Issue%20Reporting/%5BGET%5D%20getIssueList/" class="md-nav__link">
+      <a href="../%5BGET%5D%20getIssueList/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1314,10 +1260,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../Issue%20Reporting/%5BGET%5D%20getIssueMessages/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    [GET] getIssueMessages
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1326,6 +1290,51 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#modules.issue_reporting.routes.getIssueMessages.GetIssueMessagesRequestDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      GetIssueMessagesRequestDTO
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules.issue_reporting.routes.getIssueMessages.GetIssueMessagesResponseDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      GetIssueMessagesResponseDTO
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules.issue_reporting.routes.getIssueMessages.MessageDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      MessageDTO
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1338,7 +1347,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Issue%20Reporting/%5BPOST%5D%20reportIssue/" class="md-nav__link">
+      <a href="../%5BPOST%5D%20reportIssue/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1359,7 +1368,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Issue%20Reporting/%5BPOST%5D%20sendIssueReply/" class="md-nav__link">
+      <a href="../%5BPOST%5D%20sendIssueReply/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1911,18 +1920,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modules.driver.dtos.LoginDTOs.LoginRequestDTO" class="md-nav__link">
+  <a href="#modules.issue_reporting.routes.getIssueMessages.GetIssueMessagesRequestDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      LoginRequestDTO
+      GetIssueMessagesRequestDTO
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#modules.driver.dtos.LoginDTOs.LoginResponseDTO" class="md-nav__link">
+  <a href="#modules.issue_reporting.routes.getIssueMessages.GetIssueMessagesResponseDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      LoginResponseDTO
+      GetIssueMessagesResponseDTO
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules.issue_reporting.routes.getIssueMessages.MessageDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      MessageDTO
     </span>
   </a>
   
@@ -1943,9 +1961,9 @@
                   
 
 
-  <h1>[POST] login</h1>
+  <h1>[GET] getIssueMessages</h1>
 
-<pre><code>/api/login
+<pre><code>/api/issueReporting/getIssueMessages
 </code></pre>
 
 
@@ -1953,11 +1971,11 @@
 
 
 
-<h3 id="modules.driver.dtos.LoginDTOs.LoginRequestDTO" class="doc doc-heading">
-          <code>LoginRequestDTO</code>
+<h2 id="modules.issue_reporting.routes.getIssueMessages.GetIssueMessagesRequestDTO" class="doc doc-heading">
+          <code>GetIssueMessagesRequestDTO</code>
 
 
-</h3>
+</h2>
 
 
   <div class="doc doc-contents first">
@@ -1977,24 +1995,13 @@
     </thead>
     <tbody>
         <tr class="doc-section-item">
-          <td><code><span title="modules.driver.dtos.LoginDTOs.LoginRequestDTO.email">email</span></code></td>
+          <td><code><span title="modules.issue_reporting.routes.getIssueMessages.GetIssueMessagesRequestDTO.issue_id">issue_id</span></code></td>
           <td>
-                <code>str</code>
+                <code>int</code>
           </td>
           <td>
             <div class="doc-md-description">
-              <p>Email address of the user</p>
-            </div>
-          </td>
-        </tr>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.driver.dtos.LoginDTOs.LoginRequestDTO.password">password</span></code></td>
-          <td>
-                <code>str</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>Password of the user</p>
+              
             </div>
           </td>
         </tr>
@@ -2027,11 +2034,11 @@
 
 
 
-<h3 id="modules.driver.dtos.LoginDTOs.LoginResponseDTO" class="doc doc-heading">
-          <code>LoginResponseDTO</code>
+<h2 id="modules.issue_reporting.routes.getIssueMessages.GetIssueMessagesResponseDTO" class="doc doc-heading">
+          <code>GetIssueMessagesResponseDTO</code>
 
 
-</h3>
+</h2>
 
 
   <div class="doc doc-contents first">
@@ -2051,68 +2058,109 @@
     </thead>
     <tbody>
         <tr class="doc-section-item">
-          <td><code><span title="modules.driver.dtos.LoginDTOs.LoginResponseDTO.driver_id">driver_id</span></code></td>
+          <td><code><span title="modules.issue_reporting.routes.getIssueMessages.GetIssueMessagesResponseDTO.messages">messages</span></code></td>
+          <td>
+                <code><span title="typing.List">List</span>[<a class="autorefs autorefs-internal" title="modules.issue_reporting.routes.getIssueMessages.MessageDTO" href="#modules.issue_reporting.routes.getIssueMessages.MessageDTO">MessageDTO</a>]</code>
+          </td>
+          <td>
+            <div class="doc-md-description">
+              
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  </div>
+
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="modules.issue_reporting.routes.getIssueMessages.MessageDTO" class="doc doc-heading">
+          <code>MessageDTO</code>
+
+
+</h2>
+
+
+  <div class="doc doc-contents first">
+
+  
+
+
+
+  <p><span class="doc-section-title">Attributes:</span></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr class="doc-section-item">
+          <td><code><span title="modules.issue_reporting.routes.getIssueMessages.MessageDTO.message">message</span></code></td>
           <td>
                 <code>str</code>
           </td>
           <td>
             <div class="doc-md-description">
-              <p>unique id assigned to the driver</p>
+              
             </div>
           </td>
         </tr>
         <tr class="doc-section-item">
-          <td><code><span title="modules.driver.dtos.LoginDTOs.LoginResponseDTO.first_name">first_name</span></code></td>
+          <td><code><span title="modules.issue_reporting.routes.getIssueMessages.MessageDTO.user">user</span></code></td>
           <td>
                 <code>str</code>
           </td>
           <td>
             <div class="doc-md-description">
-              <p>first name of the driver</p>
+              
             </div>
           </td>
         </tr>
         <tr class="doc-section-item">
-          <td><code><span title="modules.driver.dtos.LoginDTOs.LoginResponseDTO.last_name">last_name</span></code></td>
+          <td><code><span title="modules.issue_reporting.routes.getIssueMessages.MessageDTO.created_date">created_date</span></code></td>
           <td>
-                <code>str</code>
+                <code><span title="modules.core.types.EVAwareDateTime.EVAwareDateTime">EVAwareDateTime</span></code>
           </td>
           <td>
             <div class="doc-md-description">
-              <p>last name of the driver</p>
+              
             </div>
           </td>
         </tr>
         <tr class="doc-section-item">
-          <td><code><span title="modules.driver.dtos.LoginDTOs.LoginResponseDTO.email_address">email_address</span></code></td>
+          <td><code><span title="modules.issue_reporting.routes.getIssueMessages.MessageDTO.file_urls">file_urls</span></code></td>
           <td>
-                <code>str</code>
+                <code><span title="typing.List">List</span>[str]</code>
           </td>
           <td>
             <div class="doc-md-description">
-              <p>email address of the driver</p>
-            </div>
-          </td>
-        </tr>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.driver.dtos.LoginDTOs.LoginResponseDTO.rfid">rfid</span></code></td>
-          <td>
-                <code>str</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>unique rfid tag assigned to the driver if any</p>
-            </div>
-          </td>
-        </tr>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.driver.dtos.LoginDTOs.LoginResponseDTO.token">token</span></code></td>
-          <td>
-                <code>str</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              <p>session token generated for the driver</p>
+              
             </div>
           </td>
         </tr>

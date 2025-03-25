@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../../Invoices/Charging%20Receipt/">
+        <link rel="prev" href="../%5BGET%5D%20getIssueMessages/">
       
       
-        <link rel="next" href="../../Parking/Design/">
+        <link rel="next" href="../%5BPOST%5D%20sendIssueReply/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -1218,6 +1218,69 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5BGET%5D%20getIssueDetails/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [GET] getIssueDetails
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5BGET%5D%20getIssueList/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [GET] getIssueList
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5BGET%5D%20getIssueMessages/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [GET] getIssueMessages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -1272,9 +1335,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#modules.issue_reporting.services.parse_multipart.MultipartFileDTO" class="md-nav__link">
+  <a href="#modules.issue_reporting.routes.reportIssue.ReportIssueResponseDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      MultipartFileDTO
+      ReportIssueResponseDTO
     </span>
   </a>
   
@@ -1284,6 +1347,27 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5BPOST%5D%20sendIssueReply/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [POST] sendIssueReply
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1836,9 +1920,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#modules.issue_reporting.services.parse_multipart.MultipartFileDTO" class="md-nav__link">
+  <a href="#modules.issue_reporting.routes.reportIssue.ReportIssueResponseDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      MultipartFileDTO
+      ReportIssueResponseDTO
     </span>
   </a>
   
@@ -1970,9 +2054,9 @@
           </td>
         </tr>
         <tr class="doc-section-item">
-          <td><code><span title="modules.issue_reporting.routes.reportIssue.ReportIssueRequestDTO.files">files</span></code></td>
+          <td><code><span title="modules.issue_reporting.routes.reportIssue.ReportIssueRequestDTO.file_names">file_names</span></code></td>
           <td>
-                <code><a class="autorefs autorefs-internal" title="modules.issue_reporting.services.parse_multipart.MultipartFileDTO" href="#modules.issue_reporting.services.parse_multipart.MultipartFileDTO">MultipartFileDTO</a></code>
+                <code><span title="typing.Set">Set</span>[str]</code>
           </td>
           <td>
             <div class="doc-md-description">
@@ -2009,8 +2093,8 @@
 
 
 
-<h2 id="modules.issue_reporting.services.parse_multipart.MultipartFileDTO" class="doc doc-heading">
-          <code>MultipartFileDTO</code>
+<h2 id="modules.issue_reporting.routes.reportIssue.ReportIssueResponseDTO" class="doc doc-heading">
+          <code>ReportIssueResponseDTO</code>
 
 
 </h2>
@@ -2033,9 +2117,9 @@
     </thead>
     <tbody>
         <tr class="doc-section-item">
-          <td><code><span title="modules.issue_reporting.services.parse_multipart.MultipartFileDTO.filename">filename</span></code></td>
+          <td><code><span title="modules.issue_reporting.routes.reportIssue.ReportIssueResponseDTO.issue_id">issue_id</span></code></td>
           <td>
-                <code>str</code>
+                <code>int</code>
           </td>
           <td>
             <div class="doc-md-description">
@@ -2044,9 +2128,9 @@
           </td>
         </tr>
         <tr class="doc-section-item">
-          <td><code><span title="modules.issue_reporting.services.parse_multipart.MultipartFileDTO.content">content</span></code></td>
+          <td><code><span title="modules.issue_reporting.routes.reportIssue.ReportIssueResponseDTO.pre_signed_urls">pre_signed_urls</span></code></td>
           <td>
-                <code>bytes</code>
+                <code><span title="typing.Dict">Dict</span></code>
           </td>
           <td>
             <div class="doc-md-description">

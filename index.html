@@ -309,6 +309,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#be-system-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      BE System Overview
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1328,11 +1337,95 @@
   
   
     <li class="md-nav__item">
+      <a href="Issue%20Reporting/%5BGET%5D%20getIssueDetails/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [GET] getIssueDetails
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Issue%20Reporting/%5BGET%5D%20getIssueList/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [GET] getIssueList
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Issue%20Reporting/%5BGET%5D%20getIssueMessages/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [GET] getIssueMessages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="Issue%20Reporting/%5BPOST%5D%20reportIssue/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     [POST] reportIssue
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Issue%20Reporting/%5BPOST%5D%20sendIssueReply/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [POST] sendIssueReply
   </span>
   
 
@@ -1954,6 +2047,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#be-system-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      BE System Overview
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1978,10 +2080,8 @@
 </code></pre></div>
 <h3 id="2-install-all-the-necessary-packages">2. Install all the necessary packages</h3>
 <div class="highlight"><pre><span></span><code>pip install mkdocs-material
-pip install mkdocstrings
 pip install &quot;mkdocstrings[python]&quot;
 pip install mkdocs-awesome-pages-plugin 
-pip install mkdocs-material 
 pip install mkdocs-autorefs
 </code></pre></div>
 <h3 id="3-run-the-server-locally">3. Run the server locally</h3>
@@ -1996,6 +2096,31 @@ repositories is not available for free tier.</p>
 <h3 id="2-deploy">2. Deploy</h3>
 <div class="highlight"><pre><span></span><code>mkdocs gh-deploy -r docs
 </code></pre></div>
+<h2 id="be-system-overview">BE System Overview</h2>
+<pre class="mermaid"><code>---
+config:
+     flowchart:
+        subGraphTitleMargin:
+            top: 10
+---
+flowchart LR
+
+    fe_manager["EVCS Manager"] --- std["Standard"]
+    fe_manager["EVCS Manager"] --- be_aws["BE (Serverless on AWS)"]
+
+    fe_driver["EVCS Driver Web (Next.js) \n&amp;\n EVCS Driver Mobile (Flutter)"] --- be_aws["BE (Serverless on AWS)"]
+    fe_driver ---|CONTROL| be_ws["BE (FastAPI on VPS)"]
+
+    subgraph be["EV BE"]
+        be_aws --- misc["PayMongo, AWS SQS, ITEXMO, etc."]
+        be_aws --- db
+        be_de["BE (Dagster)"] --- db[AWS RDS]
+        be_ws --- db
+    end
+
+    be_ws --- em[Embedded]
+
+    em --- Charger</code></pre>
 
 
 
