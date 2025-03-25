@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../%5BGET%5D%20getIssueList/">
+        <link rel="prev" href="../%5BGET%5D%20getIssueMessages/">
       
       
-        <link rel="next" href="../%5BPOST%5D%20markIssueRead/">
+        <link rel="next" href="../%5BPOST%5D%20reportIssue/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>[GET] getIssueMessages - Envision EV Documentation</title>
+        <title>[POST] markIssueRead - Envision EV Documentation</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modules.issue_reporting.routes.getIssueMessages.GetIssueMessagesRequestDTO" class="md-skip">
+        <a href="#modules.issue_reporting.routes.markIssueRead.MarkIssueReadRequestDTO" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              [GET] getIssueMessages
+              [POST] markIssueRead
             
           </span>
         </div>
@@ -1260,6 +1260,27 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5BGET%5D%20getIssueMessages/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [GET] getIssueMessages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -1274,7 +1295,7 @@
           
   
   <span class="md-ellipsis">
-    [GET] getIssueMessages
+    [POST] markIssueRead
   </span>
   
 
@@ -1285,7 +1306,7 @@
         
   
   <span class="md-ellipsis">
-    [GET] getIssueMessages
+    [POST] markIssueRead
   </span>
   
 
@@ -1305,27 +1326,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modules.issue_reporting.routes.getIssueMessages.GetIssueMessagesRequestDTO" class="md-nav__link">
+  <a href="#modules.issue_reporting.routes.markIssueRead.MarkIssueReadRequestDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      GetIssueMessagesRequestDTO
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#modules.issue_reporting.routes.getIssueMessages.GetIssueMessagesResponseDTO" class="md-nav__link">
-    <span class="md-ellipsis">
-      GetIssueMessagesResponseDTO
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#modules.issue_reporting.routes.getIssueMessages.MessageDTO" class="md-nav__link">
-    <span class="md-ellipsis">
-      MessageDTO
+      MarkIssueReadRequestDTO
     </span>
   </a>
   
@@ -1335,27 +1338,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%5BPOST%5D%20markIssueRead/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    [POST] markIssueRead
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -1941,27 +1923,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modules.issue_reporting.routes.getIssueMessages.GetIssueMessagesRequestDTO" class="md-nav__link">
+  <a href="#modules.issue_reporting.routes.markIssueRead.MarkIssueReadRequestDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      GetIssueMessagesRequestDTO
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#modules.issue_reporting.routes.getIssueMessages.GetIssueMessagesResponseDTO" class="md-nav__link">
-    <span class="md-ellipsis">
-      GetIssueMessagesResponseDTO
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#modules.issue_reporting.routes.getIssueMessages.MessageDTO" class="md-nav__link">
-    <span class="md-ellipsis">
-      MessageDTO
+      MarkIssueReadRequestDTO
     </span>
   </a>
   
@@ -1982,9 +1946,9 @@
                   
 
 
-  <h1>[GET] getIssueMessages</h1>
+  <h1>[POST] markIssueRead</h1>
 
-<pre><code>/api/issueReporting/getIssueMessages
+<pre><code>/api/issueReporting/markIssueRead
 </code></pre>
 
 
@@ -1992,8 +1956,8 @@
 
 
 
-<h2 id="modules.issue_reporting.routes.getIssueMessages.GetIssueMessagesRequestDTO" class="doc doc-heading">
-          <code>GetIssueMessagesRequestDTO</code>
+<h2 id="modules.issue_reporting.routes.markIssueRead.MarkIssueReadRequestDTO" class="doc doc-heading">
+          <code>MarkIssueReadRequestDTO</code>
 
 
 </h2>
@@ -2016,168 +1980,9 @@
     </thead>
     <tbody>
         <tr class="doc-section-item">
-          <td><code><span title="modules.issue_reporting.routes.getIssueMessages.GetIssueMessagesRequestDTO.issue_id">issue_id</span></code></td>
+          <td><code><span title="modules.issue_reporting.routes.markIssueRead.MarkIssueReadRequestDTO.issue_id">issue_id</span></code></td>
           <td>
                 <code>int</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              
-            </div>
-          </td>
-        </tr>
-    </tbody>
-  </table>
-
-
-  
-
-  <div class="doc doc-children">
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-
-  </div>
-
-
-</div>
-
-<div class="doc doc-object doc-class">
-
-
-
-<h2 id="modules.issue_reporting.routes.getIssueMessages.GetIssueMessagesResponseDTO" class="doc doc-heading">
-          <code>GetIssueMessagesResponseDTO</code>
-
-
-</h2>
-
-
-  <div class="doc doc-contents first">
-
-  
-
-
-
-  <p><span class="doc-section-title">Attributes:</span></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.issue_reporting.routes.getIssueMessages.GetIssueMessagesResponseDTO.messages">messages</span></code></td>
-          <td>
-                <code><span title="typing.List">List</span>[<a class="autorefs autorefs-internal" title="modules.issue_reporting.routes.getIssueMessages.MessageDTO" href="#modules.issue_reporting.routes.getIssueMessages.MessageDTO">MessageDTO</a>]</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              
-            </div>
-          </td>
-        </tr>
-    </tbody>
-  </table>
-
-
-  
-
-  <div class="doc doc-children">
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-
-  </div>
-
-
-</div>
-
-<div class="doc doc-object doc-class">
-
-
-
-<h2 id="modules.issue_reporting.routes.getIssueMessages.MessageDTO" class="doc doc-heading">
-          <code>MessageDTO</code>
-
-
-</h2>
-
-
-  <div class="doc doc-contents first">
-
-  
-
-
-
-  <p><span class="doc-section-title">Attributes:</span></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.issue_reporting.routes.getIssueMessages.MessageDTO.message">message</span></code></td>
-          <td>
-                <code>str</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              
-            </div>
-          </td>
-        </tr>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.issue_reporting.routes.getIssueMessages.MessageDTO.user">user</span></code></td>
-          <td>
-                <code>str</code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              
-            </div>
-          </td>
-        </tr>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.issue_reporting.routes.getIssueMessages.MessageDTO.created_date">created_date</span></code></td>
-          <td>
-                <code><span title="modules.core.types.EVAwareDateTime.EVAwareDateTime">EVAwareDateTime</span></code>
-          </td>
-          <td>
-            <div class="doc-md-description">
-              
-            </div>
-          </td>
-        </tr>
-        <tr class="doc-section-item">
-          <td><code><span title="modules.issue_reporting.routes.getIssueMessages.MessageDTO.file_urls">file_urls</span></code></td>
-          <td>
-                <code><span title="typing.List">List</span>[str]</code>
           </td>
           <td>
             <div class="doc-md-description">
