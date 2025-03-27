@@ -1852,7 +1852,7 @@
           <tr class="doc-section-item">
             <td><code><span title="modules.driver.endpoints.edit_driver_info.EditDriverInfoRequestDTO.first_name">first_name</span></code></td>
             <td>
-                  <code><span title="typing_extensions.Annotated">Annotated</span>[str, <span title="pydantic.BeforeValidator">BeforeValidator</span>(<span title="modules.core.services.blankTextToNone.blankTextToNone">blankTextToNone</span>)]</code>
+                  <code>str</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -1863,7 +1863,7 @@
           <tr class="doc-section-item">
             <td><code><span title="modules.driver.endpoints.edit_driver_info.EditDriverInfoRequestDTO.last_name">last_name</span></code></td>
             <td>
-                  <code><span title="typing_extensions.Annotated">Annotated</span>[str, <span title="pydantic.BeforeValidator">BeforeValidator</span>(<span title="modules.core.services.blankTextToNone.blankTextToNone">blankTextToNone</span>)]</code>
+                  <code>str</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -1874,11 +1874,11 @@
           <tr class="doc-section-item">
             <td><code><span title="modules.driver.endpoints.edit_driver_info.EditDriverInfoRequestDTO.phone_number">phone_number</span></code></td>
             <td>
-                  <code><span title="typing_extensions.Annotated">Annotated</span>[str, <span title="pydantic.AfterValidator">AfterValidator</span>(<span title="modules.driver.services.validate_ph_number.validate_ph_number">validate_ph_number</span>)]</code>
+                  <code>str</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>str</p>
+                <p>accepts the format of 09XXXXXXXXX / +639XXXXXXXXX / 9XXXXXXXXX</p>
               </div>
             </td>
           </tr>
