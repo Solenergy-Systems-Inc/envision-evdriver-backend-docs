@@ -9,22 +9,22 @@
       
       
       
-        <link rel="prev" href="../%5BPOST%5D%20instantInitiatePasswordReset/">
+        <link rel="prev" href="../%5BPOST%5D%20signUp/">
       
       
-        <link rel="next" href="../../RFID/%5BPOST%5D%20blockRFID/">
+        <link rel="next" href="../Account%20Deletion/%5BGET%5D%20deleteSchedule/">
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
     
     
       
-        <title>[POST] resetPassword - Envision EV Documentation</title>
+        <title>[POST] uploadProfilePicture - Envision EV Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.35f28582.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.35f28582.min.css">
       
       
 
@@ -43,11 +43,11 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
     
-      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modules.driver.dtos.PasswordResetDTOs.ResetPasswordRequestDTO" class="md-skip">
+        <a href="#modules.driver.endpoints.upload_profile_picture.UploadProfilePictureRequestDTO" class="md-skip">
           Skip to content
         </a>
       
@@ -82,7 +82,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Envision EV Documentation" class="md-header__button md-logo" aria-label="Envision EV Documentation" data-md-component="logo">
+    <a href="../.." title="Envision EV Documentation" class="md-header__button md-logo" aria-label="Envision EV Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              [POST] resetPassword
+              [POST] uploadProfilePicture
             
           </span>
         </div>
@@ -177,7 +177,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Envision EV Documentation" class="md-nav__button md-logo" aria-label="Envision EV Documentation" data-md-component="logo">
+    <a href="../.." title="Envision EV Documentation" class="md-nav__button md-logo" aria-label="Envision EV Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -195,7 +195,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -250,7 +250,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../AWS/Layers/" class="md-nav__link">
+      <a href="../../AWS/Layers/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -313,7 +313,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Charger/Charger%20Reservation%20%5BSOFT%5D/" class="md-nav__link">
+      <a href="../../Charger/Charger%20Reservation%20%5BSOFT%5D/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -334,7 +334,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Charger/Start%20and%20Stop%20Charging/" class="md-nav__link">
+      <a href="../../Charger/Start%20and%20Stop%20Charging/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -355,7 +355,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Charger/%5BGET%5D%20selectCharger/" class="md-nav__link">
+      <a href="../../Charger/%5BGET%5D%20selectCharger/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -376,7 +376,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Charger/%5BPOST%5D%20remoteStartCharging/" class="md-nav__link">
+      <a href="../../Charger/%5BPOST%5D%20remoteStartCharging/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -397,7 +397,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Charger/%5BWebSocket%5D%20clientSocket/" class="md-nav__link">
+      <a href="../../Charger/%5BWebSocket%5D%20clientSocket/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -418,7 +418,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Charger/%5BWebSocket%5D%20embeddedSocket/" class="md-nav__link">
+      <a href="../../Charger/%5BWebSocket%5D%20embeddedSocket/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -481,7 +481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Dagster/" class="md-nav__link">
+      <a href="../../Dagster/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -546,7 +546,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%5BGET%5D%20driverHistory/" class="md-nav__link">
+      <a href="../%5BGET%5D%20driverHistory/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -567,7 +567,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%5BGET%5D%20ongoingChargingSessions/" class="md-nav__link">
+      <a href="../%5BGET%5D%20ongoingChargingSessions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -588,7 +588,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%5BGET%5D%20topUpHistory/" class="md-nav__link">
+      <a href="../%5BGET%5D%20topUpHistory/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -609,7 +609,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%5BGET%5D%20userBalance/" class="md-nav__link">
+      <a href="../%5BGET%5D%20userBalance/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -630,7 +630,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%5BPOST%5D%20checkMobileAppVersion/" class="md-nav__link">
+      <a href="../%5BPOST%5D%20checkMobileAppVersion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -651,7 +651,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%5BPOST%5D%20checkSessionValidity/" class="md-nav__link">
+      <a href="../%5BPOST%5D%20checkSessionValidity/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -672,7 +672,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%5BPOST%5D%20edit/" class="md-nav__link">
+      <a href="../%5BPOST%5D%20edit/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -693,7 +693,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%5BPOST%5D%20login/" class="md-nav__link">
+      <a href="../%5BPOST%5D%20login/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -714,7 +714,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%5BPOST%5D%20logout/" class="md-nav__link">
+      <a href="../%5BPOST%5D%20logout/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -735,7 +735,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%5BPOST%5D%20signUp/" class="md-nav__link">
+      <a href="../%5BPOST%5D%20signUp/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -753,10 +753,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../%5BPOST%5D%20uploadProfilePicture/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    [POST] uploadProfilePicture
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -765,6 +783,51 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#modules.driver.endpoints.upload_profile_picture.UploadProfilePictureRequestDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      UploadProfilePictureRequestDTO
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules.driver.endpoints.upload_profile_picture.UploadProfilePictureResponseDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      UploadProfilePictureResponseDTO
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#known-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      KNOWN ERRORS:
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -812,7 +875,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Account%20Deletion/%5BGET%5D%20deleteSchedule/" class="md-nav__link">
+      <a href="../Account%20Deletion/%5BGET%5D%20deleteSchedule/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -833,7 +896,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Account%20Deletion/%5BPOST%5D%20deleteCancel/" class="md-nav__link">
+      <a href="../Account%20Deletion/%5BPOST%5D%20deleteCancel/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -854,7 +917,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Account%20Deletion/%5BPOST%5D%20deleteInstant/" class="md-nav__link">
+      <a href="../Account%20Deletion/%5BPOST%5D%20deleteInstant/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -875,7 +938,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Account%20Deletion/%5BPOST%5D%20deleteRequest/" class="md-nav__link">
+      <a href="../Account%20Deletion/%5BPOST%5D%20deleteRequest/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -901,19 +964,17 @@
                 
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_13" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_13" >
         
           
           <label class="md-nav__link" for="__nav_5_13" id="__nav_5_13_label" tabindex="0">
@@ -927,7 +988,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_13_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_13_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5_13">
             <span class="md-nav__icon md-icon"></span>
             Forgot Password
@@ -941,7 +1002,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%5BPOST%5D%20checkPasswordRequest/" class="md-nav__link">
+      <a href="../Forgot%20Password/%5BPOST%5D%20checkPasswordRequest/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -962,7 +1023,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%5BPOST%5D%20initiatePasswordReset/" class="md-nav__link">
+      <a href="../Forgot%20Password/%5BPOST%5D%20initiatePasswordReset/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -983,7 +1044,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%5BPOST%5D%20instantInitiatePasswordReset/" class="md-nav__link">
+      <a href="../Forgot%20Password/%5BPOST%5D%20instantInitiatePasswordReset/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1001,28 +1062,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    [POST] resetPassword
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../Forgot%20Password/%5BPOST%5D%20resetPassword/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1031,60 +1074,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#modules.driver.dtos.PasswordResetDTOs.ResetPasswordRequestDTO" class="md-nav__link">
-    <span class="md-ellipsis">
-      ResetPasswordRequestDTO
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#modules.driver.dtos.PasswordResetDTOs.ChangePasswordDTO" class="md-nav__link">
-    <span class="md-ellipsis">
-      ChangePasswordDTO
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#notes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Notes:
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#expected-error-messages" class="md-nav__link">
-    <span class="md-ellipsis">
-      Expected error messages
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1140,7 +1129,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../RFID/%5BPOST%5D%20blockRFID/" class="md-nav__link">
+      <a href="../RFID/%5BPOST%5D%20blockRFID/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1161,7 +1150,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../RFID/%5BPOST%5D%20getRFIDDetails/" class="md-nav__link">
+      <a href="../RFID/%5BPOST%5D%20getRFIDDetails/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1232,7 +1221,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Embedded/%5BPOST%5D%20verifyRFID/" class="md-nav__link">
+      <a href="../../Embedded/%5BPOST%5D%20verifyRFID/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1295,7 +1284,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Invoices/Charging%20Receipt/" class="md-nav__link">
+      <a href="../../Invoices/Charging%20Receipt/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1358,7 +1347,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Issue%20Reporting/%5BGET%5D%20getIssueDetails/" class="md-nav__link">
+      <a href="../../Issue%20Reporting/%5BGET%5D%20getIssueDetails/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1379,7 +1368,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Issue%20Reporting/%5BGET%5D%20getIssueList/" class="md-nav__link">
+      <a href="../../Issue%20Reporting/%5BGET%5D%20getIssueList/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1400,7 +1389,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Issue%20Reporting/%5BGET%5D%20getIssueMessages/" class="md-nav__link">
+      <a href="../../Issue%20Reporting/%5BGET%5D%20getIssueMessages/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1421,7 +1410,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Issue%20Reporting/%5BPOST%5D%20markIssueRead/" class="md-nav__link">
+      <a href="../../Issue%20Reporting/%5BPOST%5D%20markIssueRead/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1442,7 +1431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Issue%20Reporting/%5BPOST%5D%20reportIssue/" class="md-nav__link">
+      <a href="../../Issue%20Reporting/%5BPOST%5D%20reportIssue/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1463,7 +1452,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Issue%20Reporting/%5BPOST%5D%20sendIssueReply/" class="md-nav__link">
+      <a href="../../Issue%20Reporting/%5BPOST%5D%20sendIssueReply/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1526,7 +1515,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Parking/Design/" class="md-nav__link">
+      <a href="../../Parking/Design/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1582,7 +1571,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Parking/Driver/%5BGET%5D%20dayReservations/" class="md-nav__link">
+      <a href="../../Parking/Driver/%5BGET%5D%20dayReservations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1603,7 +1592,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Parking/Driver/%5BGET%5D%20userReservations/" class="md-nav__link">
+      <a href="../../Parking/Driver/%5BGET%5D%20userReservations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1624,7 +1613,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Parking/Driver/%5BPOST%5D%20requestReservation/" class="md-nav__link">
+      <a href="../../Parking/Driver/%5BPOST%5D%20requestReservation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1688,7 +1677,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Parking/Manager/%5BGET%5D%20getReservations/" class="md-nav__link">
+      <a href="../../Parking/Manager/%5BGET%5D%20getReservations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1709,7 +1698,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Parking/Manager/%5BGET%5D%20getSettings/" class="md-nav__link">
+      <a href="../../Parking/Manager/%5BGET%5D%20getSettings/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1730,7 +1719,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Parking/Manager/%5BPOST%5D%20updateSettings/" class="md-nav__link">
+      <a href="../../Parking/Manager/%5BPOST%5D%20updateSettings/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1801,7 +1790,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Payment/Flow/" class="md-nav__link">
+      <a href="../../Payment/Flow/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1822,7 +1811,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Payment/Capture/" class="md-nav__link">
+      <a href="../../Payment/Capture/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1843,7 +1832,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Payment/PayMongo%20Link/" class="md-nav__link">
+      <a href="../../Payment/PayMongo%20Link/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1864,7 +1853,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Payment/%5BPOST%5D%20createPaymentIntent/" class="md-nav__link">
+      <a href="../../Payment/%5BPOST%5D%20createPaymentIntent/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1885,7 +1874,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Payment/%5BPOST%5D%20paymentStatus/" class="md-nav__link">
+      <a href="../../Payment/%5BPOST%5D%20paymentStatus/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1948,7 +1937,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Site/%5BGET%5D%20allSites/" class="md-nav__link">
+      <a href="../../Site/%5BGET%5D%20allSites/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1969,7 +1958,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Site/%5BGET%5D%20siteDetails/" class="md-nav__link">
+      <a href="../../Site/%5BGET%5D%20siteDetails/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2015,36 +2004,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modules.driver.dtos.PasswordResetDTOs.ResetPasswordRequestDTO" class="md-nav__link">
+  <a href="#modules.driver.endpoints.upload_profile_picture.UploadProfilePictureRequestDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      ResetPasswordRequestDTO
+      UploadProfilePictureRequestDTO
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#modules.driver.dtos.PasswordResetDTOs.ChangePasswordDTO" class="md-nav__link">
+  <a href="#modules.driver.endpoints.upload_profile_picture.UploadProfilePictureResponseDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      ChangePasswordDTO
+      UploadProfilePictureResponseDTO
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#notes" class="md-nav__link">
+  <a href="#known-errors" class="md-nav__link">
     <span class="md-ellipsis">
-      Notes:
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#expected-error-messages" class="md-nav__link">
-    <span class="md-ellipsis">
-      Expected error messages
+      KNOWN ERRORS:
     </span>
   </a>
   
@@ -2065,9 +2045,9 @@
                   
 
 
-  <h1>[POST] resetPassword</h1>
+  <h1>[POST] uploadProfilePicture</h1>
 
-<pre><code>/api/driver/resetPassword
+<pre><code>/api/driver/uploadProfilePicture
 </code></pre>
 
 
@@ -2075,11 +2055,11 @@
 
 
 
-<h3 id="modules.driver.dtos.PasswordResetDTOs.ResetPasswordRequestDTO" class="doc doc-heading">
-            <code>ResetPasswordRequestDTO</code>
+<h2 id="modules.driver.endpoints.upload_profile_picture.UploadProfilePictureRequestDTO" class="doc doc-heading">
+            <code>UploadProfilePictureRequestDTO</code>
 
 
-</h3>
+</h2>
 
 
     <div class="doc doc-contents first">
@@ -2098,13 +2078,13 @@
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code><span title="modules.driver.dtos.PasswordResetDTOs.ResetPasswordRequestDTO.data">data</span></code></td>
+            <td><code><span title="modules.driver.endpoints.upload_profile_picture.UploadProfilePictureRequestDTO.file_name">file_name</span></code></td>
             <td>
                   <code>str</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>encrypted data containing ChangePasswordDTO</p>
+                <p>filename of the file to be uploaded via pre-signed url</p>
               </div>
             </td>
           </tr>
@@ -2136,11 +2116,11 @@
 
 
 
-<h3 id="modules.driver.dtos.PasswordResetDTOs.ChangePasswordDTO" class="doc doc-heading">
-            <code>ChangePasswordDTO</code>
+<h2 id="modules.driver.endpoints.upload_profile_picture.UploadProfilePictureResponseDTO" class="doc doc-heading">
+            <code>UploadProfilePictureResponseDTO</code>
 
 
-</h3>
+</h2>
 
 
     <div class="doc doc-contents first">
@@ -2159,24 +2139,13 @@
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code><span title="modules.driver.dtos.PasswordResetDTOs.ChangePasswordDTO.request_id">request_id</span></code></td>
+            <td><code><span title="modules.driver.endpoints.upload_profile_picture.UploadProfilePictureResponseDTO.pre_signed_url">pre_signed_url</span></code></td>
             <td>
                   <code>str</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>encrypted request id</p>
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.driver.dtos.PasswordResetDTOs.ChangePasswordDTO.password">password</span></code></td>
-            <td>
-                  <code>str</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>new password</p>
+                <p>Link to upload driver's profile picture</p>
               </div>
             </td>
           </tr>
@@ -2202,14 +2171,8 @@
 
     </div>
 
-</div><h3 id="notes">Notes:</h3>
-<ul>
-<li>Expect the normal response to be returned with a status of 200 OK.</li>
-</ul>
-<h3 id="expected-error-messages">Expected error messages</h3>
-<ul>
-<li><code>ACCOUNT_NOT_EXIST</code> - If the email provided is not associated with any account.</li>
-</ul>
+</div><h2 id="known-errors">KNOWN ERRORS:</h2>
+<p><code>INVALID_FILE_FORMAT</code> - If the user uploads a file other than a <code>jpg</code>, <code>jpeg</code>, and <code>png</code>.</p>
 
 
 
@@ -2256,10 +2219,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy"], "search": "../../../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.56dfad97.min.js"></script>
+      <script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>
       
     
   </body>
