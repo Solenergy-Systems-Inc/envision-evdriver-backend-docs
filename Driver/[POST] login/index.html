@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modules.driver.dtos.LoginDTOs.LoginRequestDTO" class="md-skip">
+        <a href="#modules.driver.endpoints.login.LoginRequestDTO" class="md-skip">
           Skip to content
         </a>
       
@@ -735,7 +735,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modules.driver.dtos.LoginDTOs.LoginRequestDTO" class="md-nav__link">
+  <a href="#modules.driver.endpoints.login.LoginRequestDTO" class="md-nav__link">
     <span class="md-ellipsis">
       LoginRequestDTO
     </span>
@@ -744,7 +744,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#modules.driver.dtos.LoginDTOs.LoginResponseDTO" class="md-nav__link">
+  <a href="#modules.driver.endpoints.login.LoginResponseDTO" class="md-nav__link">
     <span class="md-ellipsis">
       LoginResponseDTO
     </span>
@@ -1995,7 +1995,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modules.driver.dtos.LoginDTOs.LoginRequestDTO" class="md-nav__link">
+  <a href="#modules.driver.endpoints.login.LoginRequestDTO" class="md-nav__link">
     <span class="md-ellipsis">
       LoginRequestDTO
     </span>
@@ -2004,7 +2004,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#modules.driver.dtos.LoginDTOs.LoginResponseDTO" class="md-nav__link">
+  <a href="#modules.driver.endpoints.login.LoginResponseDTO" class="md-nav__link">
     <span class="md-ellipsis">
       LoginResponseDTO
     </span>
@@ -2037,7 +2037,7 @@
 
 
 
-<h3 id="modules.driver.dtos.LoginDTOs.LoginRequestDTO" class="doc doc-heading">
+<h3 id="modules.driver.endpoints.login.LoginRequestDTO" class="doc doc-heading">
             <code>LoginRequestDTO</code>
 
 
@@ -2060,7 +2060,7 @@
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code><span title="modules.driver.dtos.LoginDTOs.LoginRequestDTO.email">email</span></code></td>
+            <td><code><span title="modules.driver.endpoints.login.LoginRequestDTO.email">email</span></code></td>
             <td>
                   <code>str</code>
             </td>
@@ -2071,7 +2071,7 @@
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="modules.driver.dtos.LoginDTOs.LoginRequestDTO.password">password</span></code></td>
+            <td><code><span title="modules.driver.endpoints.login.LoginRequestDTO.password">password</span></code></td>
             <td>
                   <code>str</code>
             </td>
@@ -2109,7 +2109,7 @@
 
 
 
-<h3 id="modules.driver.dtos.LoginDTOs.LoginResponseDTO" class="doc doc-heading">
+<h3 id="modules.driver.endpoints.login.LoginResponseDTO" class="doc doc-heading">
             <code>LoginResponseDTO</code>
 
 
@@ -2132,7 +2132,7 @@
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code><span title="modules.driver.dtos.LoginDTOs.LoginResponseDTO.driver_id">driver_id</span></code></td>
+            <td><code><span title="modules.driver.endpoints.login.LoginResponseDTO.driver_id">driver_id</span></code></td>
             <td>
                   <code>str</code>
             </td>
@@ -2143,7 +2143,7 @@
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="modules.driver.dtos.LoginDTOs.LoginResponseDTO.first_name">first_name</span></code></td>
+            <td><code><span title="modules.driver.endpoints.login.LoginResponseDTO.first_name">first_name</span></code></td>
             <td>
                   <code>str</code>
             </td>
@@ -2154,7 +2154,7 @@
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="modules.driver.dtos.LoginDTOs.LoginResponseDTO.last_name">last_name</span></code></td>
+            <td><code><span title="modules.driver.endpoints.login.LoginResponseDTO.last_name">last_name</span></code></td>
             <td>
                   <code>str</code>
             </td>
@@ -2165,7 +2165,7 @@
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="modules.driver.dtos.LoginDTOs.LoginResponseDTO.email_address">email_address</span></code></td>
+            <td><code><span title="modules.driver.endpoints.login.LoginResponseDTO.email_address">email_address</span></code></td>
             <td>
                   <code>str</code>
             </td>
@@ -2176,9 +2176,20 @@
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="modules.driver.dtos.LoginDTOs.LoginResponseDTO.rfid">rfid</span></code></td>
+            <td><code><span title="modules.driver.endpoints.login.LoginResponseDTO.token">token</span></code></td>
             <td>
                   <code>str</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>session token generated for the driver</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.driver.endpoints.login.LoginResponseDTO.rfid">rfid</span></code></td>
+            <td>
+                  <code><span title="typing.Optional">Optional</span>[str]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -2187,13 +2198,24 @@
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="modules.driver.dtos.LoginDTOs.LoginResponseDTO.token">token</span></code></td>
+            <td><code><span title="modules.driver.endpoints.login.LoginResponseDTO.phone_number">phone_number</span></code></td>
             <td>
-                  <code>str</code>
+                  <code><span title="typing.Optional">Optional</span>[str]</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>session token generated for the driver</p>
+                <p>registered phone number of the user</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.driver.endpoints.login.LoginResponseDTO.profile_picture">profile_picture</span></code></td>
+            <td>
+                  <code><span title="typing.Optional">Optional</span>[str]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>link to the user's uploaded profile picture</p>
               </div>
             </td>
           </tr>
