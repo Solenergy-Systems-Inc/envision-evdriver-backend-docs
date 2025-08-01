@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modules.driver.endpoints.login.LoginRequestDTO" class="md-skip">
+        <a href="#modules.driver.dtos.LoginDTOs.LoginRequestDTO" class="md-skip">
           Skip to content
         </a>
       
@@ -946,11 +946,26 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modules.driver.endpoints.login.LoginRequestDTO" class="md-nav__link">
+  <a href="#modules.driver.dtos.LoginDTOs.LoginRequestDTO" class="md-nav__link">
     <span class="md-ellipsis">
       LoginRequestDTO
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="LoginRequestDTO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modules.driver.dtos.LoginDTOs.DecryptedLoginDataDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      DecryptedLoginDataDTO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -3182,11 +3197,26 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modules.driver.endpoints.login.LoginRequestDTO" class="md-nav__link">
+  <a href="#modules.driver.dtos.LoginDTOs.LoginRequestDTO" class="md-nav__link">
     <span class="md-ellipsis">
       LoginRequestDTO
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="LoginRequestDTO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modules.driver.dtos.LoginDTOs.DecryptedLoginDataDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      DecryptedLoginDataDTO
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -3225,7 +3255,7 @@
 
 
 
-<h3 id="modules.driver.endpoints.login.LoginRequestDTO" class="doc doc-heading">
+<h3 id="modules.driver.dtos.LoginDTOs.LoginRequestDTO" class="doc doc-heading">
             <code>LoginRequestDTO</code>
 
 
@@ -3248,24 +3278,85 @@
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code><span title="modules.driver.endpoints.login.LoginRequestDTO.email">email</span></code></td>
+            <td><code><span title="modules.driver.dtos.LoginDTOs.LoginRequestDTO.data">data</span></code></td>
             <td>
                   <code>str</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>Email address of the user</p>
+                <p>encrypted data containing the user's credentials in the format of DecryptedLoginDataDTO</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h4 id="modules.driver.dtos.LoginDTOs.DecryptedLoginDataDTO" class="doc doc-heading">
+            <code>DecryptedLoginDataDTO</code>
+
+
+</h4>
+
+
+    <div class="doc doc-contents first">
+
+
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.driver.dtos.LoginDTOs.DecryptedLoginDataDTO.email">email</span></code></td>
+            <td>
+                  <code>str</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>email address of the driver</p>
               </div>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="modules.driver.endpoints.login.LoginRequestDTO.password">password</span></code></td>
+            <td><code><span title="modules.driver.dtos.LoginDTOs.DecryptedLoginDataDTO.password">password</span></code></td>
             <td>
                   <code>str</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>Password of the user</p>
+                <p>password of the driver</p>
               </div>
             </td>
           </tr>

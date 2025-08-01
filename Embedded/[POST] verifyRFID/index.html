@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modules.embedded.dtos.VerifyRFIDDTOs.VerifyRFIDRequestDTO" class="md-skip">
+        <a href="#modules.embedded.endpoints.verifyRFID.VerifyRFIDRequestDTO" class="md-skip">
           Skip to content
         </a>
       
@@ -2324,9 +2324,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modules.embedded.dtos.VerifyRFIDDTOs.VerifyRFIDRequestDTO" class="md-nav__link">
+  <a href="#modules.embedded.endpoints.verifyRFID.VerifyRFIDRequestDTO" class="md-nav__link">
     <span class="md-ellipsis">
       VerifyRFIDRequestDTO
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules.embedded.endpoints.verifyRFID.VerifyRFIDResponseDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      VerifyRFIDResponseDTO
     </span>
   </a>
   
@@ -3182,9 +3191,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modules.embedded.dtos.VerifyRFIDDTOs.VerifyRFIDRequestDTO" class="md-nav__link">
+  <a href="#modules.embedded.endpoints.verifyRFID.VerifyRFIDRequestDTO" class="md-nav__link">
     <span class="md-ellipsis">
       VerifyRFIDRequestDTO
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules.embedded.endpoints.verifyRFID.VerifyRFIDResponseDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      VerifyRFIDResponseDTO
     </span>
   </a>
   
@@ -3225,7 +3243,7 @@
 
 
 
-<h3 id="modules.embedded.dtos.VerifyRFIDDTOs.VerifyRFIDRequestDTO" class="doc doc-heading">
+<h3 id="modules.embedded.endpoints.verifyRFID.VerifyRFIDRequestDTO" class="doc doc-heading">
             <code>VerifyRFIDRequestDTO</code>
 
 
@@ -3248,7 +3266,7 @@
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code><span title="modules.embedded.dtos.VerifyRFIDDTOs.VerifyRFIDRequestDTO.rfid">rfid</span></code></td>
+            <td><code><span title="modules.embedded.endpoints.verifyRFID.VerifyRFIDRequestDTO.rfid">rfid</span></code></td>
             <td>
                   <code>str</code>
             </td>
@@ -3259,13 +3277,85 @@
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="modules.embedded.dtos.VerifyRFIDDTOs.VerifyRFIDRequestDTO.site_id">site_id</span></code></td>
+            <td><code><span title="modules.embedded.endpoints.verifyRFID.VerifyRFIDRequestDTO.site_id">site_id</span></code></td>
             <td>
                   <code>[int]</code>
             </td>
             <td>
               <div class="doc-md-description">
                 <p>site id of the EVCS</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="modules.embedded.endpoints.verifyRFID.VerifyRFIDResponseDTO" class="doc doc-heading">
+            <code>VerifyRFIDResponseDTO</code>
+
+
+</h3>
+
+
+    <div class="doc doc-contents first">
+
+
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.embedded.endpoints.verifyRFID.VerifyRFIDResponseDTO.balance">balance</span></code></td>
+            <td>
+                  <code><span title="typing.Optional">Optional</span>[float]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>User's wallet balance to be used to start a max budget based charging session.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.embedded.endpoints.verifyRFID.VerifyRFIDResponseDTO.level">level</span></code></td>
+            <td>
+                  <code><span title="modules.embedded.enums.UserLevelEnum.UserLevelEnum">UserLevelEnum</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Indicates the level of access the user has at the site.</p>
               </div>
             </td>
           </tr>
