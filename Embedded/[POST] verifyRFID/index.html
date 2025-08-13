@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../../Parking/Manager/%5BPOST%5D%20updateSettings/">
+        <link rel="prev" href="../%5BGET%5D%20pricing-profile/">
       
       
-        <link rel="next" href="../Capture/">
+        <link rel="next" href="../../Invoices/Charging%20Receipt/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Flow - Envision EV Documentation</title>
+        <title>[POST] verifyRFID - Envision EV Documentation</title>
       
     
     
@@ -65,6 +65,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#modules.embedded.endpoints.verifyRFID.VerifyRFIDRequestDTO" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -97,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Flow
+              [POST] verifyRFID
             
           </span>
         </div>
@@ -2230,18 +2235,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
         
           
           <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
@@ -2257,7 +2264,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             Embedded
@@ -2271,7 +2278,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Embedded/%5BGET%5D%20pricing-profile/" class="md-nav__link">
+      <a href="../%5BGET%5D%20pricing-profile/" class="md-nav__link">
         
   
   
@@ -2291,10 +2298,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../Embedded/%5BPOST%5D%20verifyRFID/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    [POST] verifyRFID
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -2305,6 +2332,66 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#modules.embedded.endpoints.verifyRFID.VerifyRFIDRequestDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      VerifyRFIDRequestDTO
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules.embedded.endpoints.verifyRFID.VerifyRFIDResponseDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      VerifyRFIDResponseDTO
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="VerifyRFIDResponseDTO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modules.embedded.enums.UserLevelEnum.UserLevelEnum" class="md-nav__link">
+    <span class="md-ellipsis">
+      UserLevelEnum
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#important-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Important Notes:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2870,20 +2957,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
         
           
           <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
@@ -2899,7 +2984,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_12">
             <span class="md-nav__icon md-icon"></span>
             Payment
@@ -2910,17 +2995,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Payment/Flow/" class="md-nav__link">
         
   
   
@@ -2931,7 +3009,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -2944,7 +3021,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Capture/" class="md-nav__link">
+      <a href="../../Payment/Capture/" class="md-nav__link">
         
   
   
@@ -2967,7 +3044,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../PayMongo%20Link/" class="md-nav__link">
+      <a href="../../Payment/PayMongo%20Link/" class="md-nav__link">
         
   
   
@@ -2990,7 +3067,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%5BPOST%5D%20createPaymentIntent/" class="md-nav__link">
+      <a href="../../Payment/%5BPOST%5D%20createPaymentIntent/" class="md-nav__link">
         
   
   
@@ -3013,7 +3090,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%5BPOST%5D%20paymentStatus/" class="md-nav__link">
+      <a href="../../Payment/%5BPOST%5D%20paymentStatus/" class="md-nav__link">
         
   
   
@@ -3145,6 +3222,56 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#modules.embedded.endpoints.verifyRFID.VerifyRFIDRequestDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      VerifyRFIDRequestDTO
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modules.embedded.endpoints.verifyRFID.VerifyRFIDResponseDTO" class="md-nav__link">
+    <span class="md-ellipsis">
+      VerifyRFIDResponseDTO
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="VerifyRFIDResponseDTO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modules.embedded.enums.UserLevelEnum.UserLevelEnum" class="md-nav__link">
+    <span class="md-ellipsis">
+      UserLevelEnum
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#important-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Important Notes:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -3159,18 +3286,253 @@
 
 
 
-  <h1>Flow</h1>
+  <h1>[POST] verifyRFID</h1>
 
-<ol>
-<li>Send a <a href="../%5BPOST%5D%20createPaymentIntent/">Payment Intent</a> Request.<ul>
-<li>Set <code>capture_type</code> to <code>automatic</code> for immediate payment.</li>
-<li>Set <code>capture_type</code> to <code>manual</code> for credit card hold-and-capture payment.</li>
+<pre><code>/api/embedded/verifyRFID
+</code></pre>
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="modules.embedded.endpoints.verifyRFID.VerifyRFIDRequestDTO" class="doc doc-heading">
+            <code>VerifyRFIDRequestDTO</code>
+
+
+</h2>
+
+
+    <div class="doc doc-contents first">
+
+
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.embedded.endpoints.verifyRFID.VerifyRFIDRequestDTO.rfid">rfid</span></code></td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>assigned RFID tag of a user</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.embedded.endpoints.verifyRFID.VerifyRFIDRequestDTO.site_id">site_id</span></code></td>
+            <td>
+                  <code>[<span title="int">int</span>]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>site id of the EVCS</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="modules.embedded.endpoints.verifyRFID.VerifyRFIDResponseDTO" class="doc doc-heading">
+            <code>VerifyRFIDResponseDTO</code>
+
+
+</h2>
+
+
+    <div class="doc doc-contents first">
+
+
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.embedded.endpoints.verifyRFID.VerifyRFIDResponseDTO.balance">balance</span></code></td>
+            <td>
+                  <code><span title="typing.Optional">Optional</span>[<span title="float">float</span>]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>User's wallet balance to be used to start a max budget based charging session.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.embedded.endpoints.verifyRFID.VerifyRFIDResponseDTO.level">level</span></code></td>
+            <td>
+                  <code><a class="autorefs autorefs-internal" title="UserLevelEnum (modules.embedded.enums.UserLevelEnum.UserLevelEnum)" href="#modules.embedded.enums.UserLevelEnum.UserLevelEnum">UserLevelEnum</a></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Indicates the level of access the user has at the site.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="modules.embedded.enums.UserLevelEnum.UserLevelEnum" class="doc doc-heading">
+            <code>UserLevelEnum</code>
+
+
+</h3>
+
+
+    <div class="doc doc-contents first">
+
+
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.embedded.enums.UserLevelEnum.UserLevelEnum.ADMIN">ADMIN</span></code></td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Represents an administrator user level.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="modules.embedded.enums.UserLevelEnum.UserLevelEnum.USER">USER</span></code></td>
+            <td>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Represents a standard user level.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div><h3 id="important-notes">Important Notes:</h3>
+<ul>
+<li>The RFID tag must be registered in the system before it can be verified.</li>
+<li>If the RFID is valid, the status code will be an HTTP 200.</li>
+<li>If the RFID is invalid, the status code will be an HTTP 400 with an error message.</li>
+<li>Expected error messages:<ul>
+<li>"WRONG_PARAMS": Either the driver id or the site id is wrong.</li>
+<li>"PRIVATE_SITE_ACCESS_DENIED": The site is private and the driver is not allowed to use the EV charger.</li>
 </ul>
 </li>
-<li>Create Payment Method in FRONTEND.</li>
-<li>Attach Payment Intent and Method in FRONTEND.</li>
-<li>If applicable, <a href="../Capture/">capture</a> will be done automatically after charging.</li>
-</ol>
+</ul>
 
 
 
