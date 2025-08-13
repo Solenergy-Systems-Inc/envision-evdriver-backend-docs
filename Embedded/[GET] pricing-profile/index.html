@@ -20,7 +20,7 @@
     
     
       
-        <title>[POST] verifyRFID - Envision EV Documentation</title>
+        <title>[GET] pricing profile - Envision EV Documentation</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modules.embedded.endpoints.verifyRFID.VerifyRFIDRequestDTO" class="md-skip">
+        <a href="#modules.embedded.endpoints.get_pricing_profile.GetPricingProfileRequestDTO" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              [POST] verifyRFID
+              [GET] pricing profile
             
           </span>
         </div>
@@ -2290,7 +2290,7 @@
   
   
   <span class="md-ellipsis">
-    [POST] verifyRFID
+    [GET] pricing profile
     
   </span>
   
@@ -2303,7 +2303,7 @@
   
   
   <span class="md-ellipsis">
-    [POST] verifyRFID
+    [GET] pricing profile
     
   </span>
   
@@ -2324,44 +2324,20 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modules.embedded.endpoints.verifyRFID.VerifyRFIDRequestDTO" class="md-nav__link">
+  <a href="#modules.embedded.endpoints.get_pricing_profile.GetPricingProfileRequestDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      VerifyRFIDRequestDTO
+      GetPricingProfileRequestDTO
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#modules.embedded.endpoints.verifyRFID.VerifyRFIDResponseDTO" class="md-nav__link">
+  <a href="#modules.embedded.endpoints.get_pricing_profile.GetPricingProfileResponseDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      VerifyRFIDResponseDTO
+      GetPricingProfileResponseDTO
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="VerifyRFIDResponseDTO">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#modules.embedded.enums.UserLevelEnum.UserLevelEnum" class="md-nav__link">
-    <span class="md-ellipsis">
-      UserLevelEnum
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#important-notes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Important Notes:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -3206,44 +3182,20 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modules.embedded.endpoints.verifyRFID.VerifyRFIDRequestDTO" class="md-nav__link">
+  <a href="#modules.embedded.endpoints.get_pricing_profile.GetPricingProfileRequestDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      VerifyRFIDRequestDTO
+      GetPricingProfileRequestDTO
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#modules.embedded.endpoints.verifyRFID.VerifyRFIDResponseDTO" class="md-nav__link">
+  <a href="#modules.embedded.endpoints.get_pricing_profile.GetPricingProfileResponseDTO" class="md-nav__link">
     <span class="md-ellipsis">
-      VerifyRFIDResponseDTO
+      GetPricingProfileResponseDTO
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="VerifyRFIDResponseDTO">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#modules.embedded.enums.UserLevelEnum.UserLevelEnum" class="md-nav__link">
-    <span class="md-ellipsis">
-      UserLevelEnum
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#important-notes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Important Notes:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -3263,9 +3215,9 @@
 
 
 
-  <h1>[POST] verifyRFID</h1>
+  <h1>[GET] pricing profile</h1>
 
-<pre><code>/api/embedded/verifyRFID
+<pre><code>/api/embedded/pricing-profile
 </code></pre>
 
 
@@ -3273,8 +3225,8 @@
 
 
 
-<h2 id="modules.embedded.endpoints.verifyRFID.VerifyRFIDRequestDTO" class="doc doc-heading">
-            <code>VerifyRFIDRequestDTO</code>
+<h2 id="modules.embedded.endpoints.get_pricing_profile.GetPricingProfileRequestDTO" class="doc doc-heading">
+            <code>GetPricingProfileRequestDTO</code>
 
 
 </h2>
@@ -3296,29 +3248,18 @@
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code><span title="modules.embedded.endpoints.verifyRFID.VerifyRFIDRequestDTO.rfid">rfid</span></code></td>
+            <td><code><span title="modules.embedded.endpoints.get_pricing_profile.GetPricingProfileRequestDTO.site_id">site_id</span></code></td>
             <td>
-                  <code><span title="str">str</span></code>
+                  <code><span title="int">int</span></code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>assigned RFID tag of a user</p>
+                
               </div>
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="modules.embedded.endpoints.verifyRFID.VerifyRFIDRequestDTO.site_id">site_id</span></code></td>
-            <td>
-                  <code><span title="typing_extensions.Annotated">Annotated</span>[<span title="int">int</span>, <span title="pydantic.BeforeValidator">BeforeValidator</span>(<span title="int">int</span>)]</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>site id of the EVCS</p>
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.embedded.endpoints.verifyRFID.VerifyRFIDRequestDTO.charger_id">charger_id</span></code></td>
+            <td><code><span title="modules.embedded.endpoints.get_pricing_profile.GetPricingProfileRequestDTO.charger_id">charger_id</span></code></td>
             <td>
                   <code><span title="str">str</span></code>
             </td>
@@ -3329,7 +3270,7 @@
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="modules.embedded.endpoints.verifyRFID.VerifyRFIDRequestDTO.connector_id">connector_id</span></code></td>
+            <td><code><span title="modules.embedded.endpoints.get_pricing_profile.GetPricingProfileRequestDTO.connector_id">connector_id</span></code></td>
             <td>
                   <code><span title="int">int</span></code>
             </td>
@@ -3373,8 +3314,8 @@
 
 
 
-<h2 id="modules.embedded.endpoints.verifyRFID.VerifyRFIDResponseDTO" class="doc doc-heading">
-            <code>VerifyRFIDResponseDTO</code>
+<h2 id="modules.embedded.endpoints.get_pricing_profile.GetPricingProfileResponseDTO" class="doc doc-heading">
+            <code>GetPricingProfileResponseDTO</code>
 
 
 </h2>
@@ -3396,29 +3337,7 @@
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code><span title="modules.embedded.endpoints.verifyRFID.VerifyRFIDResponseDTO.balance">balance</span></code></td>
-            <td>
-                  <code><span title="typing.Optional">Optional</span>[<span title="float">float</span>]</code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>User's wallet balance to be used to start a max budget based charging session.</p>
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.embedded.endpoints.verifyRFID.VerifyRFIDResponseDTO.level">level</span></code></td>
-            <td>
-                  <code><a class="autorefs autorefs-internal" title="UserLevelEnum (modules.embedded.enums.UserLevelEnum.UserLevelEnum)" href="#modules.embedded.enums.UserLevelEnum.UserLevelEnum">UserLevelEnum</a></code>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>Indicates the level of access the user has at the site.</p>
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.embedded.endpoints.verifyRFID.VerifyRFIDResponseDTO.pricing_profile">pricing_profile</span></code></td>
+            <td><code><span title="modules.embedded.endpoints.get_pricing_profile.GetPricingProfileResponseDTO.pricing_profile">pricing_profile</span></code></td>
             <td>
                   <code><span title="typing.Dict">Dict</span>[<span title="str">str</span>, <span title="int">int</span>]</code>
             </td>
@@ -3457,92 +3376,6 @@
     </div>
 
 </div>
-
-<div class="doc doc-object doc-class">
-
-
-
-<h3 id="modules.embedded.enums.UserLevelEnum.UserLevelEnum" class="doc doc-heading">
-            <code>UserLevelEnum</code>
-
-
-</h3>
-
-
-    <div class="doc doc-contents first">
-
-
-
-
-<p><span class="doc-section-title">Attributes:</span></p>
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Type</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.embedded.enums.UserLevelEnum.UserLevelEnum.ADMIN">ADMIN</span></code></td>
-            <td>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>Represents an administrator user level.</p>
-              </div>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="modules.embedded.enums.UserLevelEnum.UserLevelEnum.USER">USER</span></code></td>
-            <td>
-            </td>
-            <td>
-              <div class="doc-md-description">
-                <p>Represents a standard user level.</p>
-              </div>
-            </td>
-          </tr>
-      </tbody>
-    </table>
-
-
-
-
-
-
-
-
-
-
-  <div class="doc doc-children">
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-
-    </div>
-
-</div><h3 id="important-notes">Important Notes:</h3>
-<ul>
-<li>The RFID tag must be registered in the system before it can be verified.</li>
-<li>If the RFID is valid, the status code will be an HTTP 200.</li>
-<li>If the RFID is invalid, the status code will be an HTTP 400 with an error message.</li>
-<li>Expected error messages:<ul>
-<li>"WRONG_PARAMS": Either the driver id or the site id is wrong.</li>
-<li>"PRIVATE_SITE_ACCESS_DENIED": The site is private and the driver is not allowed to use the EV charger.</li>
-</ul>
-</li>
-</ul>
 
 
 
